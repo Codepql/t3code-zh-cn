@@ -1,6 +1,6 @@
 # 更新记录
 
-## 0.2.0
+## 0.0.1
 
 - 增加 `apply`、`restore`、`upgrade`、`status` 和 `check` 命令。
 - 将备份和状态数据移到用户 `.t3/localization/zh-CN` 目录。
