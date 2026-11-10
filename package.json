@@ -1,0 +1,31 @@
+{
+  "name": "t3code-zh-cn",
+  "version": "0.2.0",
+  "description": "T3 Code 简体中文本地化补丁与命令行工具",
+  "type": "module",
+  "bin": { "t3code-zh-CN": "bin/t3code-zh-CN.mjs" },
+  "scripts": {
+    "check": "node --check patch.mjs && node --check lib.mjs && node --check platform.mjs && node --check bin/t3code-zh-CN.mjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "files": [
+    "bin/",
+    "vendor/",
+    "patch.mjs",
+    "lib.mjs",
+    "platform.mjs",
+    "compatibility.json",
+    "context-translations.json",
+    "display-maps.json",
+    "formatter-labels.json",
+    "literal-overrides.json",
+    "zh-CN.json",
+    "LICENSE",
+    "NOTICE.md",
+    "README.md"
+  ],
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "keywords": ["t3-code", "localization", "中文", "i18n"]
+}

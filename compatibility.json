@@ -1,0 +1,547 @@
+{
+  "version": "0.1.8",
+  "commit": "bf469bb19669",
+  "serverSha256": "020e467c9be0cadd297a7295ef0deeeb02690d6a1d3cc1f6dbb45d6076a39051",
+  "files": [
+    {
+      "path": "apps/server/dist/client/assets/AddProviderInstanceDialog-DZAHyT2q.js",
+      "count": 323,
+      "hash": "3f0a2c50fe08ef01961b88f35879e9de2ec71ac3c39e80b93d20fca5539b61f5"
+    },
+    {
+      "path": "apps/server/dist/client/assets/AdvancedSettings-DodE_kFj.js",
+      "count": 1,
+      "hash": "b92188c8ed92e770ec5be08a90a315053dbf97b087568ec14f493caeeb7360d7"
+    },
+    {
+      "path": "apps/server/dist/client/assets/AppRouteModal-OTS1D1Ab.js",
+      "count": 2,
+      "hash": "f0a5fec11cafbe925861858ca23e3ba49106e4f0bdf6b3a4ac8b368b0b8a4754"
+    },
+    {
+      "path": "apps/server/dist/client/assets/BinaryViewer-QkHhw4y3.js",
+      "count": 13,
+      "hash": "660c999dac1256c6c539fa71e1a838c60a5423a3200d99f49878ef1821db13cb"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ChatMarkdown-CkTR1bqT.js",
+      "count": 99,
+      "hash": "e85b6097bcd7b6c0be986b32aa1ae7d245338afce916c401f43f2a3327c9fa13"
+    },
+    {
+      "path": "apps/server/dist/client/assets/CliCommandSettingsRow-DHxDrPhK.js",
+      "count": 2,
+      "hash": "b5dba8f54d3d293df808a48e82a4fb31b1628372e19b512375cd6726951d3dc7"
+    },
+    {
+      "path": "apps/server/dist/client/assets/CommandBlock-Ct9gC7Qf.js",
+      "count": 1,
+      "hash": "3cf3f3c3dd81a45c00d0ee38084907cc20d01ebfa5a1bae3e7156b94c8a95b42"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ConnectionDiagnosisDetails-IzYxMK3r.js",
+      "count": 8,
+      "hash": "5e6174a31b2bce49633ce189bc18d0df9d7a79aa8106f4852e40ee7002a91526"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ConnectionsSettings-CBKkhRli.js",
+      "count": 326,
+      "hash": "a76a57ada912adf8b7cf293b0841025c75ee0155fe519332e81245dab5ba5c3d"
+    },
+    {
+      "path": "apps/server/dist/client/assets/DevicePanel-2RraA8Ei.js",
+      "count": 90,
+      "hash": "1eba2b7f42dff4bd4c1b9242a23b75ee25e94f8e302bf71c31ff83a5692efea2"
+    },
+    {
+      "path": "apps/server/dist/client/assets/DeviceSetup-CWnaLZYU.js",
+      "count": 12,
+      "hash": "d11165c6e1a100a389061a732fb09588d0f4f193f768281442904d31395c95d0"
+    },
+    {
+      "path": "apps/server/dist/client/assets/DiffCommentAnnotation-C0RuxD95.js",
+      "count": 9,
+      "hash": "03760e66ca2d9d64a57d9834804d94988fccbee1bbbe13884355aa6009b61bef"
+    },
+    {
+      "path": "apps/server/dist/client/assets/DiffFileTree-DN8KftQU.js",
+      "count": 5,
+      "hash": "fdfcdebf52c324d58de3a88afb8075925885e85cd392610f0e45739c70821213"
+    },
+    {
+      "path": "apps/server/dist/client/assets/DiffPanel-CGL9x8tS.js",
+      "count": 66,
+      "hash": "3a0c9dc7f9f85dba5b3e423b10f92c1b587452c450e312d09476e68235c9a1c5"
+    },
+    {
+      "path": "apps/server/dist/client/assets/DiffWorkerPoolProvider-BWOwOOSH.js",
+      "count": 1,
+      "hash": "2766e9248545eb50b623ba4ea6b2cbe9b5177b88a22a458a51c573ed200f7961"
+    },
+    {
+      "path": "apps/server/dist/client/assets/DocumentPages-C9ZynLEG.js",
+      "count": 3,
+      "hash": "f4b6ecfa56e82e8de69fba580c129b3ec4ef3c93bc87cefd96056a6b5d287452"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ElectronManagedAuthShell-MnznjlR5.js",
+      "count": 2,
+      "hash": "603a11a6b8f956f35414705001f6dd52d628dccc806d5776e1e7937bece68797"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ExpandableText-BBQtjSy_.js",
+      "count": 1,
+      "hash": "631f1a3c06c427de79a0b93b8efc622ae2562a40a0c722a1b33faf6a803364c5"
+    },
+    {
+      "path": "apps/server/dist/client/assets/FileExplorerPane-17_-4uaI.js",
+      "count": 3,
+      "hash": "8e4ce8d3fc19a9c2948c7efa0ba4120c82963e6d063da7e8018c50201f6d366b"
+    },
+    {
+      "path": "apps/server/dist/client/assets/FilePreviewPanel-BJF1nUWo.js",
+      "count": 52,
+      "hash": "9fd415c1630501887372d5bd785bae6ce0789bb3ac847d7e874597a3a9995751"
+    },
+    {
+      "path": "apps/server/dist/client/assets/IntegrationsSettings-C2aVvZqY.js",
+      "count": 207,
+      "hash": "52f38a07cce7aed478b66b5d699f80295b8424f92f761184e344b8a8ca6142f7"
+    },
+    {
+      "path": "apps/server/dist/client/assets/KeybindingsSettings.logic-D98fwNBL.js",
+      "count": 24,
+      "hash": "c7081d90a8f1448ce3f2a8185bc0d2e993eb7251f79ea7790982809b95799e68"
+    },
+    {
+      "path": "apps/server/dist/client/assets/LinkMachineSelect-_7KmK5zq.js",
+      "count": 3,
+      "hash": "3939426d9fd0a1293d54cacc8932d48e3276e3f52b2cf295ef4875a32de7d067"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ManagedPolicy-DnnXDelT.js",
+      "count": 1,
+      "hash": "7bfe6758bdfb6e3fcdc56b5e4bb3c10efec484f912c5235cf98baf7502fe19bd"
+    },
+    {
+      "path": "apps/server/dist/client/assets/NoProjectsHero-Dz-s-Hmw.js",
+      "count": 2,
+      "hash": "873e0d69a3992297fe8ddbbc2a77a4b5b46d106fab438f4548b61a6a7d6d7023"
+    },
+    {
+      "path": "apps/server/dist/client/assets/OfficeViewer-uAyJydiz.js",
+      "count": 2,
+      "hash": "a09311bb2ffbfeee7804c26a86bd5709556188639dbc4bbf8f1d22b13a4daa45"
+    },
+    {
+      "path": "apps/server/dist/client/assets/PanelLayoutControls-Dc0_iR6E.js",
+      "count": 412,
+      "hash": "1de2e9c9e83f7c4af28e7c235ad89d918c5571deda11db7ff02dbdf545f905df"
+    },
+    {
+      "path": "apps/server/dist/client/assets/PdfViewer-CPYhrIHJ.js",
+      "count": 2,
+      "hash": "70939cb59a2da21d95cb1ebb86147daa0bb30c9ef7060c255e46e4abc101e421"
+    },
+    {
+      "path": "apps/server/dist/client/assets/Presentation-CGOCWQx-.js",
+      "count": 1,
+      "hash": "7eb5f8fe174f5c27a74278167242216033d4990f9380cbd1dfbe0feb6fbac0af"
+    },
+    {
+      "path": "apps/server/dist/client/assets/PreviewImageContent-BChqaX_S.js",
+      "count": 2,
+      "hash": "3ffde93ae0e71614c3e1801e9ea469883d227c3bb75bc6f2f8ff03af53b908dd"
+    },
+    {
+      "path": "apps/server/dist/client/assets/PreviewPanel-ClRikUQg.js",
+      "count": 93,
+      "hash": "f584ed00eab3e6976708db8cace852d8cc3ba0e4acbb61bd4c5cf45c882bc587"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ProjectDefaultsSettings-CeGHz_lm.js",
+      "count": 26,
+      "hash": "0c21805046e516f916319b2f6464dbc65c08551929197e6955893eda290d5c39"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ProjectIconPickerDialog-DkADb9V7.js",
+      "count": 7,
+      "hash": "9269a11cb8bdd39ad18977ae3f10e28ed0a4921cc65a95bce53247b882b25653"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ProjectPinButton-BxaV2hrq.js",
+      "count": 1,
+      "hash": "ee2787b613e805d4bc325e65ccdab47dad77aade8be7a801d68e1f4d870e4673"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ProviderModelPicker-BdCFdeZP.js",
+      "count": 6,
+      "hash": "75bb74bcfe152b80a215b8593415e4d541cc34630322c0a022b9b147d023ff3e"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ProviderSettingsForm-bslxfpGz.js",
+      "count": 2,
+      "hash": "346f0e5dacff904e2e9056d976198afb5c447e7408bde8815acbe902489ff813"
+    },
+    {
+      "path": "apps/server/dist/client/assets/PullRequestCodeTab-CQMElxoD.js",
+      "count": 27,
+      "hash": "023038db9d8b5342f584323cbb85c518d06f89fbc0e4a2d1708aa91b645f75cf"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ScheduledTasksSettings-COC2D1rC.js",
+      "count": 126,
+      "hash": "9fd2038df672bd0fb33e2c84994b6e5d410106617e3406d7745a4e264aa0e987"
+    },
+    {
+      "path": "apps/server/dist/client/assets/SecretSourceInput-DmVNRnS7.js",
+      "count": 1,
+      "hash": "72fee50a541598e4f89ad0781cd8b5f182a799a000e34a896f48938284dca6fa"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ServerUpdateAction-kBNmVU7w.js",
+      "count": 5,
+      "hash": "de0bf1b53303601410bce74e154f03939e1443e49373e545cf21c98b862bb6db"
+    },
+    {
+      "path": "apps/server/dist/client/assets/SettingsPanels-BNss_vkZ.js",
+      "count": 272,
+      "hash": "e8ae689cd976a18c9a21bec01455b1fccc33859e1b8ed55fe0b729a79649ee9c"
+    },
+    {
+      "path": "apps/server/dist/client/assets/Sidebar.logic-DSsw2sti.js",
+      "count": 22,
+      "hash": "8cc0defd96c54f8139717815b8118cf875401b9476a7de27ad7de220390fcc5a"
+    },
+    {
+      "path": "apps/server/dist/client/assets/StorageSettings-C9orZ1CW.js",
+      "count": 92,
+      "hash": "df09a7c3e4872bbcb672fe4c0db4e670267109c459742eec6d67595cc06aa05c"
+    },
+    {
+      "path": "apps/server/dist/client/assets/T3ConnectAccountPages-DistD_lX.js",
+      "count": 55,
+      "hash": "25d5b84bbb171bad25f61a494e7607b00df2999b4ad7c18e243a5b3a79adb369"
+    },
+    {
+      "path": "apps/server/dist/client/assets/T3ConnectSidebarSignIn-DwNcRl1y.js",
+      "count": 1,
+      "hash": "e12f28ed87931df47e13b22a655552ca0c4b5c4594cee02eef8cc51aca3d4b78"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ThemeEditorPanel-3rfC--jk.js",
+      "count": 52,
+      "hash": "31e18f7997d96650bf88c83919f0b79e8e4b71791efdf96fc61f8689aff24969"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ThreadDetailsItemsMenu-DgEano2r.js",
+      "count": 22,
+      "hash": "7ea031020c9333f169dad1377db99904502fe26799c90dd94cda912d545d79c1"
+    },
+    {
+      "path": "apps/server/dist/client/assets/ThreadTerminalDrawer-CWCb9Zju.js",
+      "count": 4,
+      "hash": "8de4000b3083016f1d5fc171d63a94f5aa17bd707ce49f307e1b3441ec4d482a"
+    },
+    {
+      "path": "apps/server/dist/client/assets/UsageLimits-D2H6ixWj.js",
+      "count": 34,
+      "hash": "eaad8d5771a346ff79a1a625847cd005a0b892fda5b4c70a292c7043378112b9"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat-DD0i9-XN.js",
+      "count": 695,
+      "hash": "33ba89f35ff7a93c16a54f5ca9e88a5defa12f2f2da39d3d98385e24cfb67af0"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.index-DwBTNfzB.js",
+      "count": 19,
+      "hash": "088992ab8f6bb9ef402521c28d37aff498ee518e8677dfbd2acf7b9f8e71ef6c"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.new-CfEW9NVc.js",
+      "count": 4,
+      "hash": "ea12d86fbd27285b9b8851f76252f61f1baa272698d4894bc47603e87316fa1f"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.pull-requests-BZnYcxRc.js",
+      "count": 74,
+      "hash": "5b0ed518a984f57ded070b884c39ba7d9e8ca6202ca9b39a3f177c1202b99c97"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings-D2HjUnoI.js",
+      "count": 14,
+      "hash": "046db8b8876c4fd7aba6a8e9da7a5596354b5dd436402e2e54b9a2f4511679b3"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.appearance-HB2nsy-N.js",
+      "count": 132,
+      "hash": "6b7dcb2d1a6a223abeb9240c7a578006ec67d18cce2fde530b0e11a023134813"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.archived-BYgbNk9f.js",
+      "count": 10,
+      "hash": "4a04123c242410d72f9b053a84d1e0bb29256863f0edd68347cb311da256fbc6"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.diagnostics-6ZjJ_Vuv.js",
+      "count": 195,
+      "hash": "03ca87547e1189aeeffa211eaa6b387a42f647101f8c16b02ba51f75aba7ee48"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.keybindings-Dftd8-cX.js",
+      "count": 49,
+      "hash": "38c29b1f2cf48c835915c9606dc9f4a4d8342b842b77cbbbdabbf0f830fea006"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.labs-7O0irCM5.js",
+      "count": 24,
+      "hash": "412e059e81f197448c328acd459a699d6ce71be527a4f5a88b9f9ce4e1025187"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.open-source-licenses-BoL1cOQG.js",
+      "count": 19,
+      "hash": "8bba61e895ba6066be5309f84fc58de82c2146764f94dd0af8601d86cb0f4516"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.projects-C1-RZ8b0.js",
+      "count": 59,
+      "hash": "899128b76fab87ebc6a89ba08956256394ef5b189af478dd48bad432c040abf6"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.providers-KSzCyhNy.js",
+      "count": 130,
+      "hash": "97553d849495674481dd144ae0dc7d81a73d6d1cd5a8cffcfe6f72403cc77f5c"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.secrets-BA7Mqzew.js",
+      "count": 25,
+      "hash": "d2bab23ac75bda58389bc85b6ea86287235d234414f8810c35145d44dff9aaf8"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.snap-shot-DxlHfgIH.js",
+      "count": 143,
+      "hash": "1618a761d9c2f778b21be61d0be5cba4b41b92b13f60d9528d9395f6a6be7273"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.source-control-BCKvi8OD.js",
+      "count": 106,
+      "hash": "08c9e24a1543e806f3519b109065656bc55cb42a58182d89b8664e510388bf35"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.voice-CvDXl7zM.js",
+      "count": 154,
+      "hash": "dc82ca84651ac4507f5d7fd80bcd08032f7cb4b280bd777ede6be1741a6a8a59"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.settings.worktrees-CTJUeNX6.js",
+      "count": 20,
+      "hash": "ca817735d3489926d2944050162f18eb556a32af5b30c1adb70fe0968279f662"
+    },
+    {
+      "path": "apps/server/dist/client/assets/_chat.usage-Bqb8WRNb.js",
+      "count": 116,
+      "hash": "afd3d6d08e102e0e7c62361d106df1bab67e4e88bd38750c88fb9b5a7c106baa"
+    },
+    {
+      "path": "apps/server/dist/client/assets/anchoredCopyToast-vuWSEwBZ.js",
+      "count": 1,
+      "hash": "6a26a9fed144120455beddbbcb9cb7510650a22212ab35aee2cd7a755f03a14a"
+    },
+    {
+      "path": "apps/server/dist/client/assets/cloudLinkState-D6XLBjG4.js",
+      "count": 1,
+      "hash": "796fb34168824ae6ad8beb4a9779da27bdc27e0d210aacd353b1208a013962ce"
+    },
+    {
+      "path": "apps/server/dist/client/assets/combobox-CMcG5zjk.js",
+      "count": 1,
+      "hash": "0e51b7d75d6d8887f42a8162bc5ff497b143aee0f25db37de942544b789ca175"
+    },
+    {
+      "path": "apps/server/dist/client/assets/connect-DDa3205l.js",
+      "count": 1,
+      "hash": "1658a8832ff3e1e41c762e3a48cdffe3c5cee7c161c0d57582818a5a5e932034"
+    },
+    {
+      "path": "apps/server/dist/client/assets/contextPresentationRegistry-VcjXUuCc.js",
+      "count": 6,
+      "hash": "435c0b9b8b14584222e700c14c2789737ad09ddce5ae9c303eb84f441a658557"
+    },
+    {
+      "path": "apps/server/dist/client/assets/desktopUpdate.logic-DmslrrRc.js",
+      "count": 1,
+      "hash": "cf0a57e027468eda3f7baaf8f9cdc6a2edc3db2f703bd5441817071bee1f6bcb"
+    },
+    {
+      "path": "apps/server/dist/client/assets/dialog-D50-JKNR.js",
+      "count": 1,
+      "hash": "7e42061b19183e6a805685f7d8a1f23c304a0691eac09e8edda93daa0e4eb11a"
+    },
+    {
+      "path": "apps/server/dist/client/assets/document.worker-CwTHWP7A.js",
+      "count": 1,
+      "hash": "82b80f7eb490e374c6a7d49c5ec2660195bc081785c2506f116f798cd8b8fe21"
+    },
+    {
+      "path": "apps/server/dist/client/assets/guest-DNzsLbec.js",
+      "count": 8,
+      "hash": "bf428a27ef1d99b57e3d6989adb3e0a8173b4cb57aca0ecbc2907095345a7218"
+    },
+    {
+      "path": "apps/server/dist/client/assets/index-CLzqMwDm.js",
+      "count": 1,
+      "hash": "d11d83b374319c0351c274c65e279b28327694fdc9fb6dd3358051adaf53bd1a"
+    },
+    {
+      "path": "apps/server/dist/client/assets/lazy-B5Y7Sho3.js",
+      "count": 3,
+      "hash": "842d1cc6524a7b7d09f37a0612f0b3d9f7ec22d849b5416167b873693a61d302"
+    },
+    {
+      "path": "apps/server/dist/client/assets/linkedPrompt-uh8AXUXL.js",
+      "count": 1,
+      "hash": "8acc79adf189821dd5cbf13f153a67b2630c1008fb1bc0af6c46b8d639c447f7"
+    },
+    {
+      "path": "apps/server/dist/client/assets/main-DSvHOVy-.js",
+      "count": 790,
+      "hash": "80c661e0996f6da08d1cf84e0bc558effbc5d7c62b0aae0f9b5df19c4570d1ed"
+    },
+    {
+      "path": "apps/server/dist/client/assets/openPullRequestLink-CX2FDdgK.js",
+      "count": 1,
+      "hash": "fe8d1aef820dc85fa8328a8a8d767a73ad17626621b996ecf0f53f94bcf54b04"
+    },
+    {
+      "path": "apps/server/dist/client/assets/presentation.worker-DzJoQNIQ.js",
+      "count": 1,
+      "hash": "c2cda2c5fa38151136d7770a0a02ac967108ae57f66abaa9dc2c927be87000e6"
+    },
+    {
+      "path": "apps/server/dist/client/assets/projectGrouping-qnlpDmD3.js",
+      "count": 1,
+      "hash": "9d62179c93e2e8978fff9258a557b1e7da875979d55feb768a3c0ca9c2d66eb6"
+    },
+    {
+      "path": "apps/server/dist/client/assets/projectScripts-J0Gosp2K.js",
+      "count": 28,
+      "hash": "72ad5249e98f3d926ad66741703f0795d1dc9dc2001511a91f0e9fb7741a503b"
+    },
+    {
+      "path": "apps/server/dist/client/assets/pullRequestDetail.logic-D9wt9U2w.js",
+      "count": 2,
+      "hash": "52943ece625f1f1aeccd0b9e335133122d1a4f08d243b9a46fc432c61e639d12"
+    },
+    {
+      "path": "apps/server/dist/client/assets/pullRequestIcons-CN90K0w5.js",
+      "count": 4,
+      "hash": "2389235920b1543b41a68371ff86e8e1e7a500fda9e6361523ce6acabe23857c"
+    },
+    {
+      "path": "apps/server/dist/client/assets/pullRequests-XIfw1Ggm.js",
+      "count": 9,
+      "hash": "1ec5a107b93bd69891b1c2dd069343c9e5e9813808429562ff1576e00b761c12"
+    },
+    {
+      "path": "apps/server/dist/client/assets/rightPanelStore-CtrqnR7C.js",
+      "count": 1,
+      "hash": "1dee51ef360e784b6e511e515e842aed2bcaa5b97f1f26a8a26da5085a80f44c"
+    },
+    {
+      "path": "apps/server/dist/client/assets/runtime-C8w2hF2k.js",
+      "count": 1,
+      "hash": "94d8b0bc59bd3bed5af75fb9d80b356c9d81c22699302eefebba746c0abd1c08"
+    },
+    {
+      "path": "apps/server/dist/client/assets/settingsLayout-CG1Z1AVR.js",
+      "count": 30,
+      "hash": "841ae1a49a7ac0c47943da45580f63a9354c28beb83a2daf3c0d639f21bc098e"
+    },
+    {
+      "path": "apps/server/dist/client/assets/settingsScope-Cg3z-_sy.js",
+      "count": 10,
+      "hash": "d60214bd5fc788f7d7445877a8ed9508668d50471fc8f207ad6683b45f2e1513"
+    },
+    {
+      "path": "apps/server/dist/client/assets/settingsSearch-Dsdib0zA.js",
+      "count": 178,
+      "hash": "ae818674b20c701d30a8ed8095e014430444ddd3d44215ed2422cf5713e6dcde"
+    },
+    {
+      "path": "apps/server/dist/client/assets/sidebar-2Pi3IgB6.js",
+      "count": 2,
+      "hash": "188714fb04b1b17db01520fc865268ef533d6ae4df335c267804720c6fbb7b2d"
+    },
+    {
+      "path": "apps/server/dist/client/assets/spreadsheet.worker-BPh2cSTx.js",
+      "count": 1,
+      "hash": "78e3a45c70c99a9c1920288ebfa0950574f0eeb87c8ede8ca812b6dcc892ebea"
+    },
+    {
+      "path": "apps/server/dist/client/assets/threadOverlayRetention-D_XzWU8p.js",
+      "count": 5,
+      "hash": "c43d3fcedced01982fcf10b9fc34cd9073af6f400df0db9bdb6d0b2ecb17f151"
+    },
+    {
+      "path": "apps/server/dist/client/assets/threadSearch-XDqeSxgD.js",
+      "count": 3,
+      "hash": "d61b33cc00132aadd94f99c81d5ac64d70b1b9dd910f38d86f3a67e3817aa9f7"
+    },
+    {
+      "path": "apps/server/dist/client/assets/toast-BBxSsUmB.js",
+      "count": 1,
+      "hash": "46511ca1a4e2e50cc9e8496fe9aec622b61d3d478082cf3a82bc03f3b72fa4b2"
+    },
+    {
+      "path": "apps/server/dist/client/assets/usageLimits-CB4nELMO.js",
+      "count": 4,
+      "hash": "c7100e562255995efffa73c3deb1c044d980c53138482fac0e4289923c8a93cc"
+    },
+    {
+      "path": "apps/server/dist/client/assets/usageShortcuts-albWj_vG.js",
+      "count": 7,
+      "hash": "0160d15749e8b784cd72e8b7baab04eea48add0ff128b0ca147ac733e0aa3f84"
+    },
+    {
+      "path": "apps/server/dist/client/assets/useEnvironmentSpeechInput-BRa7fsdn.js",
+      "count": 30,
+      "hash": "5adb46d73a4aa02b49f0b70d9ce5b4ea3b2fb43df434e43c5a57baf4fbe7fded"
+    },
+    {
+      "path": "apps/server/dist/client/assets/usePermissionStatus-Cr8qDH7A.js",
+      "count": 2,
+      "hash": "afb2c4cc3bb4c4a0d3a4fdd19a399985fe664e25573ad8333b527eed9fedc582"
+    },
+    {
+      "path": "apps/server/dist/client/assets/usePullRequestActions-BrdHk5U0.js",
+      "count": 18,
+      "hash": "d33148e00f60c588dcb19b780adf3158ff4404bb596b13e6bd0cc6f6893d8d1a"
+    },
+    {
+      "path": "apps/server/dist/client/assets/useSettings-DCDZCEIE.js",
+      "count": 5,
+      "hash": "f210b49cc873f7b4c3b45c116a1127c6f858853ad987367210f70b8c9c269135"
+    },
+    {
+      "path": "apps/server/dist/client/assets/useTimelineFollow-CaSvxrGP.js",
+      "count": 235,
+      "hash": "726604b8d2af5973ae3d85a1785c6799041379655eace088004b221ed5ff4b4f"
+    },
+    {
+      "path": "apps/server/dist/client/assets/utils-CE33Pid-.js",
+      "count": 65,
+      "hash": "23c342cb856a4867a6b0e34786282da071f45e2df44d695866e1db6fc95344e1"
+    },
+    {
+      "path": "apps/server/dist/client/assets/welcome-CmDdfWNr.js",
+      "count": 62,
+      "hash": "9eff3308ab468dec593311690ffe7828de83b5825aa5ee71ca903e48c0f39ef9"
+    },
+    {
+      "path": "apps/server/dist/client/assets/wizard-BvFGzBhz.js",
+      "count": 1,
+      "hash": "56061586e84ec995b63f7ac7299d6d471ead74efdc15935d0ef1aebf88124b12"
+    }
+  ]
+}

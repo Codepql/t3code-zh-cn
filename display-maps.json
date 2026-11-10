@@ -1,0 +1,640 @@
+{
+  "ConnectionDiagnosisDetails-IzYxMK3r.js": [
+    {
+      "start": 1424,
+      "entries": [
+        [
+          "ok",
+          ""
+        ],
+        [
+          "failed",
+          "Failed"
+        ],
+        [
+          "unchecked",
+          "Not checked"
+        ]
+      ]
+    }
+  ],
+  "IntegrationsSettings-C2aVvZqY.js": [
+    {
+      "start": 73240,
+      "entries": [
+        [
+          "system",
+          "System"
+        ],
+        [
+          "light",
+          "Light"
+        ],
+        [
+          "dark",
+          "Dark"
+        ]
+      ]
+    }
+  ],
+  "ScheduledTasksSettings-COC2D1rC.js": [
+    {
+      "start": 11554,
+      "entries": [
+        [
+          "worktree",
+          "Create a new worktree"
+        ],
+        [
+          "root",
+          "Use the project checkout"
+        ],
+        [
+          "existing_worktree",
+          "Use a specific checkout"
+        ]
+      ]
+    }
+  ],
+  "ServerUpdateAction-kBNmVU7w.js": [
+    {
+      "start": 2704,
+      "entries": [
+        [
+          "downloading",
+          "Downloading…"
+        ],
+        [
+          "installing",
+          "Downloading…"
+        ],
+        [
+          "resuming",
+          "Restarting…"
+        ]
+      ]
+    }
+  ],
+  "SettingsPanels-BNss_vkZ.js": [
+    {
+      "start": 9295,
+      "entries": [
+        [
+          "after",
+          "In"
+        ],
+        [
+          "today",
+          "Today"
+        ],
+        [
+          "tomorrow",
+          "Tomorrow"
+        ],
+        [
+          "monday",
+          "Monday"
+        ],
+        [
+          "tuesday",
+          "Tuesday"
+        ],
+        [
+          "wednesday",
+          "Wednesday"
+        ],
+        [
+          "thursday",
+          "Thursday"
+        ],
+        [
+          "friday",
+          "Friday"
+        ],
+        [
+          "saturday",
+          "Saturday"
+        ],
+        [
+          "sunday",
+          "Sunday"
+        ]
+      ]
+    },
+    {
+      "start": 24111,
+      "entries": [
+        [
+          "balanced",
+          "Balanced"
+        ],
+        [
+          "performance",
+          "Performance"
+        ],
+        [
+          "battery-saver",
+          "Battery saver"
+        ]
+      ]
+    },
+    {
+      "start": 24225,
+      "entries": [
+        [
+          "balanced",
+          "Pauses probes for idle clients, locked hosts, or low power mode."
+        ],
+        [
+          "performance",
+          "Allows scoped background probes while any subscribed client remains connected."
+        ],
+        [
+          "battery-saver",
+          "Also pauses background probes when the host or client is on battery."
+        ]
+      ]
+    },
+    {
+      "start": 41682,
+      "entries": [
+        [
+          "turn",
+          "Wait for the full response"
+        ],
+        [
+          "paragraph",
+          "Show finished paragraphs"
+        ]
+      ]
+    },
+    {
+      "start": 41758,
+      "entries": [
+        [
+          "turn",
+          "Text appears once the agent finishes its turn."
+        ],
+        [
+          "paragraph",
+          "Each paragraph or code block appears as soon as it is complete."
+        ]
+      ]
+    },
+    {
+      "start": 41893,
+      "entries": [
+        [
+          "updated_at",
+          "Last user message"
+        ],
+        [
+          "created_at",
+          "Created at"
+        ],
+        [
+          "manual",
+          "Manual"
+        ]
+      ]
+    },
+    {
+      "start": 42046,
+      "entries": [
+        [
+          "stacked",
+          "Stacked"
+        ],
+        [
+          "split",
+          "Split"
+        ]
+      ]
+    },
+    {
+      "start": 42083,
+      "entries": [
+        [
+          "direct",
+          "Direct"
+        ],
+        [
+          "hold",
+          "Hold"
+        ],
+        [
+          "double-click",
+          "Double press"
+        ]
+      ]
+    },
+    {
+      "start": 44002,
+      "entries": [
+        [
+          "download",
+          "Download"
+        ],
+        [
+          "install",
+          "Install"
+        ]
+      ]
+    },
+    {
+      "start": 75818,
+      "entries": [
+        [
+          "showAll",
+          "Show all"
+        ],
+        [
+          "hideSuccessful",
+          "Hide successful"
+        ],
+        [
+          "hideAll",
+          "Hide all"
+        ],
+        [
+          "zen",
+          "Zen"
+        ]
+      ]
+    }
+  ],
+  "StorageSettings-C9orZ1CW.js": [
+    {
+      "start": 8822,
+      "entries": [
+        [
+          "any-local-files",
+          "Any local files"
+        ],
+        [
+          "uncommitted-changes",
+          "Uncommitted changes"
+        ],
+        [
+          "tracked-changes",
+          "Edited tracked files"
+        ]
+      ]
+    }
+  ],
+  "_chat-DD0i9-XN.js": [
+    {
+      "start": 495335,
+      "entries": [
+        [
+          "app",
+          "App"
+        ],
+        [
+          "repo",
+          "Repo"
+        ],
+        [
+          "project",
+          "Project"
+        ],
+        [
+          "personal",
+          "Personal"
+        ],
+        [
+          "system",
+          "System"
+        ],
+        [
+          "other",
+          "Provider"
+        ]
+      ]
+    }
+  ],
+  "_chat.settings.appearance-HB2nsy-N.js": [
+    {
+      "start": 107610,
+      "entries": [
+        [
+          "comfortable",
+          "Comfortable"
+        ],
+        [
+          "wide",
+          "Wide"
+        ],
+        [
+          "full",
+          "Full"
+        ]
+      ]
+    },
+    {
+      "start": 107665,
+      "entries": [
+        [
+          "label",
+          "Word"
+        ],
+        [
+          "bars",
+          "Bars"
+        ]
+      ]
+    }
+  ],
+  "_chat.settings.diagnostics-6ZjJ_Vuv.js": [
+    {
+      "start": 40042,
+      "entries": [
+        [
+          "true",
+          "Enabled"
+        ],
+        [
+          "false",
+          "Disabled"
+        ]
+      ]
+    }
+  ],
+  "_chat.settings.open-source-licenses-BoL1cOQG.js": [
+    {
+      "start": 1993,
+      "entries": [
+        [
+          "android",
+          "Android"
+        ],
+        [
+          "assets",
+          "Assets"
+        ],
+        [
+          "desktop",
+          "Desktop"
+        ],
+        [
+          "device-tools",
+          "Device tools"
+        ],
+        [
+          "ios",
+          "iOS"
+        ],
+        [
+          "mobile",
+          "Mobile"
+        ],
+        [
+          "server",
+          "Server"
+        ],
+        [
+          "web",
+          "Web"
+        ]
+      ]
+    }
+  ],
+  "lazy-B5Y7Sho3.js": [
+    {
+      "start": 21571,
+      "entries": [
+        [
+          "zoomIn",
+          "Zoom in"
+        ],
+        [
+          "zoomOut",
+          "Zoom out"
+        ],
+        [
+          "reset",
+          "Reset zoom"
+        ]
+      ]
+    }
+  ],
+  "main-DSvHOVy-.js": [
+    {
+      "start": 169239,
+      "entries": [
+        [
+          "approval",
+          "Needs approval"
+        ],
+        [
+          "input",
+          "Needs your input"
+        ],
+        [
+          "done",
+          "Done"
+        ],
+        [
+          "failed",
+          "Failed"
+        ],
+        [
+          "stopped",
+          "Stopped"
+        ]
+      ]
+    },
+    {
+      "start": 197422,
+      "entries": [
+        [
+          "off",
+          "Off"
+        ],
+        [
+          "notifications",
+          "Notifications only"
+        ],
+        [
+          "sound",
+          "Sound only"
+        ],
+        [
+          "notifications-and-sound",
+          "Notifications with sound"
+        ]
+      ]
+    }
+  ],
+  "settingsLayout-CG1Z1AVR.js": [
+    {
+      "start": 15694,
+      "entries": [
+        [
+          "repo_conventions",
+          "Repository conventions"
+        ],
+        [
+          "conventional_commits",
+          "Conventional Commits"
+        ],
+        [
+          "custom",
+          "Custom instructions"
+        ]
+      ]
+    },
+    {
+      "start": 15814,
+      "entries": [
+        [
+          "balanced",
+          "Balanced"
+        ],
+        [
+          "performance",
+          "Performance"
+        ],
+        [
+          "battery-saver",
+          "Battery saver"
+        ],
+        [
+          "custom",
+          "Advanced"
+        ]
+      ]
+    }
+  ],
+  "settingsScope-Cg3z-_sy.js": [
+    {
+      "start": 918,
+      "entries": [
+        [
+          "recursive",
+          "Recursive"
+        ],
+        [
+          "top-level",
+          "Top level only"
+        ],
+        [
+          "none",
+          "Skip"
+        ]
+      ]
+    }
+  ],
+  "useTimelineFollow-CaSvxrGP.js": [
+    {
+      "start": 91804,
+      "entries": [
+        [
+          "completed",
+          "Finished"
+        ],
+        [
+          "failed",
+          "Failed"
+        ],
+        [
+          "cancelled",
+          "Stopped"
+        ],
+        [
+          "updated",
+          "Updated"
+        ],
+        [
+          "unknown",
+          "Finished"
+        ]
+      ]
+    }
+  ],
+  "utils-CE33Pid-.js": [
+    {
+      "start": 505051,
+      "entries": [
+        [
+          "approval-required",
+          "Supervised"
+        ],
+        [
+          "auto-accept-edits",
+          "Auto-accept edits"
+        ],
+        [
+          "auto",
+          "Auto"
+        ],
+        [
+          "full-access",
+          "Full access"
+        ]
+      ]
+    },
+    {
+      "start": 969017,
+      "entries": [
+        [
+          "idle",
+          "Idle"
+        ],
+        [
+          "pending",
+          "Working"
+        ],
+        [
+          "running",
+          "Working"
+        ],
+        [
+          "waiting",
+          "Waiting"
+        ],
+        [
+          "completed",
+          "Completed"
+        ],
+        [
+          "interrupted",
+          "Interrupted"
+        ],
+        [
+          "failed",
+          "Failed"
+        ],
+        [
+          "cancelled",
+          "Cancelled"
+        ],
+        [
+          "rolled_back",
+          "Cancelled"
+        ]
+      ]
+    },
+    {
+      "start": 1177991,
+      "entries": [
+        [
+          "agent",
+          "Agent"
+        ],
+        [
+          "effort",
+          "Effort"
+        ],
+        [
+          "reasoningEffort",
+          "Reasoning effort"
+        ],
+        [
+          "variant",
+          "Reasoning"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3019 @@
+Edit ${0}	编辑 ${0}
+Remove ${0}	移除 ${0}
+Read threads, status, checkpoints, and configuration.	读取会话、状态、检查点和配置。
+Start, update, and stop tasks.	启动、更新和停止任务。
+Edit environment preferences and keybindings.	编辑环境偏好设置和快捷键。
+Configure, install, sign in to, and update providers and usage sources.	配置、安装、登录和更新服务提供商及用量来源。
+Update the server and control environment processes.	更新服务器并控制环境进程。
+Open browser previews and host browser automation.	打开浏览器预览并运行浏览器自动化。
+Read process diagnostics, resource history, and usage totals.	读取进程诊断、资源历史和用量总计。
+Read existing terminal output and status.	读取现有终端的输出和状态。
+Create terminals and send input to running shells.	创建终端并向运行中的 Shell 发送输入。
+Commit, push, manage branches and repositories, and change pull requests.	提交、推送、管理分支和仓库，以及修改拉取请求。
+Browse host files, search workspaces, and inspect local changes.	浏览主机文件、搜索工作区并查看本地更改。
+Edit workspace files and save plans to disk.	编辑工作区文件并将计划保存到磁盘。
+Inspect pairing links and authorized clients.	查看配对链接和已授权客户端。
+Issue and revoke credentials for other clients.	为其他客户端签发或撤销凭据。
+View relay	查看中继
+Inspect managed relay connectivity.	查看托管中继连接状态。
+Manage relay	管理中继
+Change managed tunnel connectivity.	更改托管隧道连接。
+These permissions apply to your active route. Other routes may have different permissions.	这些权限适用于当前使用的路由。其他路由的权限可能不同。
+These permissions apply to this client’s current connection.	这些权限适用于此客户端的当前连接。
+Icon	图标
+detected	已检测到
+Could not load linked environments	无法加载已连接环境
+Link another machine running T3 Code, such as a VPS, so agents here can launch and drive threads there.	连接另一台运行 T3 Code 的主机（如 VPS），使此处的智能体能够启动和控制该主机上的会话。
+unlink environment	取消连接环境
+link environment	连接环境
+Linked ${0}	已连接 ${0}
+Agents here can then launch, message and wait on threads there. It appears in that environment's Connections, where it can be revoked.	此处的智能体随后可在该环境中启动会话、发送消息并等待结果。此连接会出现在该环境的连接设置中，可在那里撤销。
+Already linked. Linking again renews it with the access you pick.	已连接。再次连接将使用你选择的权限更新此连接。
+This app has no address for 	此应用没有以下环境的可访问地址：
+ that another machine can reach. Enter its https or Tailscale address.	，其他主机无法访问。请输入其 HTTPS 或 Tailscale 地址。
+From that environment's Connections, or t3 pair there	来自该环境的连接设置，或在该环境中运行 t3 pair
+Create a link on 	在以下环境中创建链接：
+: Settings → Connections → Create link, then paste its code here.	：设置 → 连接 → 创建链接，然后将配对码粘贴到此处。
+Prefer	优先
+Less often	降低频率
+Automatically balance load	自动均衡负载
+New threads in shared projects start on the machine with the most free CPU and memory, weighted by each machine's preference.	共享项目的新会话将优先在可用 CPU 和内存最多的主机上启动，并参考各主机的偏好权重。
+${0} load preference	${0} 负载偏好
+Read PRs	读取拉取请求
+Read and act	读取并操作
+Machines you trust here can read PR data through each other's source control access. Enable both machines. Read and act may use broader permissions than the machine that owns them. This applies only to this device.	受信任的主机可通过彼此的源代码管理访问权限读取拉取请求数据。需要在两台主机上均启用。“读取并操作”可能使用比资源所属主机更广的权限。此设置仅适用于本设备。
+Could not save pull request routing permission	无法保存拉取请求路由权限
+${0} pull request routing	${0} 拉取请求路由
+T3 Connect settings	T3 Connect 设置
+Remove 	移除 
+ from this device?	从此设备移除？
+This forgets its pairing, credentials, and cached threads here.	这将清除此处的配对、凭据和缓存会话。
+It stays on your T3 Connect account and keeps its host space. Deregister it in	它仍保留在你的 T3 Connect 账户中并占用主机名额。若要释放名额，请前往
+ to free it.	取消注册。
+This doesn't change your T3 Connect account. To deregister it there, use	这不会更改你的 T3 Connect 账户。若要取消注册，请使用
+Could not copy hosted app link	无法复制托管应用链接
+Could not copy pairing URL	无法复制配对 URL
+Could not copy pairing code	无法复制配对码
+Showing the full value instead.	已改为显示完整内容。
+Pairing link scopes	配对链接权限
+Copy the token and pair from another client using this backend's reachable host.	复制令牌，并在其他客户端中使用此后端的可访问主机地址进行配对。
+Create a new link to share from this client.	创建从此客户端分享的新链接。
+Pairing link. Scan to open on another device	配对链接。扫码以在其他设备上打开
+Endpoint the pairing QR code and URL use	配对二维码和 URL 使用的端点
+Reach this machine via	通过以下方式访问本机
+No QR for this endpoint. Another device scanning a loopback link would dial itself; copy the URL for use on this machine instead.	此端点不提供二维码。其他设备扫描回环链接会连接到自身；请复制 URL 并在本机上使用。
+Could not create pairing URL	无法创建配对 URL
+Use in another app (MCP)	在其他应用中使用（MCP）
+Generate a one-time link that another device can use to pair with this backend as an authorized client.	生成一次性链接，使其他设备可作为授权客户端与此后端配对。
+e.g. Living room iPad	例如：客厅 iPad
+This client can create or revoke access for other devices.	此客户端可创建或撤销其他设备的访问权限。
+Reachable at	可访问地址
+Hosted app link copied	托管应用链接已复制
+Open it in the browser on the device you want to connect.	在要连接的设备上的浏览器中打开此链接。
+Open it in the client you want to pair to this environment.	在要与此环境配对的客户端中打开此链接。
+Paste it into another client to finish pairing.	粘贴到其他客户端以完成配对。
+ · found automatically	 · 自动发现
+Remove ${0} route	移除 ${0} 路由
+Copy MCP URL	复制 MCP URL
+Could not copy MCP URL	无法复制 MCP URL
+MCP URL copied	MCP URL 已复制
+Add it to an agent, e.g. claude mcp add --transport http t3 ${0}	将其添加到智能体，例如 claude mcp add --transport http t3 ${0}
+Could not copy trace ID	无法复制跟踪 ID
+Get more tunnels	获取更多隧道
+Manage tunnels	管理隧道
+T3 Connect linked	已连接 T3 Connect
+T3 Connect tunnel disabled	T3 Connect 隧道已禁用
+T3 Connect unlinked	已断开 T3 Connect
+This environment is available through T3 Connect.	可通过 T3 Connect 访问此环境。
+The managed tunnel was removed. Agent activity publishing stays on.	托管隧道已移除。智能体活动发布仍保持开启。
+This environment is no longer available through T3 Connect.	无法再通过 T3 Connect 访问此环境。
+Agent activity enabled	智能体活动已启用
+Agent activity disabled	智能体活动已禁用
+This environment publishes agent activity to your mobile clients.	此环境会向你的移动客户端发布智能体活动。
+This environment will stop publishing agent activity.	此环境将停止发布智能体活动。
+Webhooks held while offline	离线时暂存 Webhook
+Webhooks no longer held	不再暂存 Webhook
+T3 Connect keeps webhook requests for up to 24 hours while this environment is offline.	此环境离线时，T3 Connect 最多保留 Webhook 请求 24 小时。
+Requests to an offline environment now fail. Anything already held is still delivered.	现在发送到离线环境的请求将失败。此前已暂存的请求仍会送达。
+Sign in to make this environment available to your other devices through T3 Connect.	登录后，可通过 T3 Connect 让其他设备访问此环境。
+This environment was removed from T3 Connect. Turn it on to link it again.	此环境已从 T3 Connect 移除。重新开启以再次连接。
+T3 Connect is on, but other devices cannot reach this environment.	T3 Connect 已开启，但其他设备无法访问此环境。
+This environment is available to your other devices through T3 Connect.	你的其他设备可通过 T3 Connect 访问此环境。
+T3 Connect is on. Reachability has not been checked yet.	T3 Connect 已开启。尚未检查可访问性。
+T3 Connect is out of sync. This environment is linked only to publish agent activity, so other devices cannot connect. Turn T3 Connect on to repair it.	T3 Connect 状态不同步。此环境当前仅连接用于发布智能体活动，其他设备无法连接。开启 T3 Connect 以修复。
+Make this environment available to your other devices through T3 Connect.	通过 T3 Connect 让你的其他设备访问此环境。
+This environment was removed from T3 Connect. Run `t3 connect link` on the host to link it again.	此环境已从 T3 Connect 移除。在主机上运行 `t3 connect link` 以重新连接。
+Run `t3 connect link` on the host, then restart T3 Code there.	在主机上运行 `t3 connect link`，然后重启该主机的 T3 Code。
+Sign in to send activity to mobile notifications and Live Activities.	登录以通过手机通知和实时活动接收动态。
+Send activity to mobile notifications and Live Activities without T3 Connect.	不通过 T3 Connect，直接将动态发送到手机通知和实时活动。
+Keep webhook requests for up to 24 hours while this environment is offline, then deliver them. Off: T3 Connect only forwards requests and stores nothing.	此环境离线时最多保留 Webhook 请求 24 小时，之后再送达。关闭时，T3 Connect 仅转发请求，不存储内容。
+To edit these settings, pair this connection with both View relay and Manage relay permissions.	若要编辑这些设置，请为此连接配对并授予“查看中继”和“管理中继”权限。
+Route added	路由已添加
+${0} can now be reached over SSH ${1}.	${0} 现在可通过 SSH ${1} 访问。
+${0} is ready over an SSH-managed tunnel.	${0} 已通过 SSH 托管隧道就绪。
+Could not add backend	无法添加后端
+${0} now has another way to connect.	${0} 现在多了一种连接方式。
+Paste a full pairing URL here to fill both fields automatically.	在此粘贴完整配对 URL，可自动填写两个字段。
+${0} falls back to T3 Connect when its other routes are unreachable.	当 ${0} 的其他路由不可访问时，将回退到 T3 Connect。
+This machine is on your T3 Connect account. Use it as a fallback route.	此主机已在你的 T3 Connect 账户中，可用作备用路由。
+No hosts match "	没有主机匹配“
+Showing access for	当前显示访问权限：
+Could not update network access	无法更新网络访问
+Could not set up Tailscale HTTPS	无法设置 Tailscale HTTPS
+Could not disable Tailscale HTTPS	无法禁用 Tailscale HTTPS
+Could not revoke pairing link	无法撤销配对链接
+Could not revoke client access	无法撤销客户端访问权限
+Revoked 1 other client	已撤销另一个客户端
+Revoked ${0} clients	已撤销 ${0} 个客户端
+Other paired clients will need a new pairing link before reconnecting.	其他已配对客户端需要新的配对链接才能重新连接。
+Could not revoke other clients	无法撤销其他客户端
+Could not switch backend ${0}	无法切换后端 ${0}
+Could not remove backend	无法移除后端
+Could not change WSL backend	无法更改 WSL 后端
+Couldn't load the WSL backend state.	无法加载 WSL 后端状态。
+WSL is unavailable, so Windows is running instead. Turn WSL off to clear this preference.	WSL 不可用，已改为运行 Windows 后端。关闭 WSL 可清除此偏好设置。
+Run the selected WSL distro alongside Windows. Projects remain on their current filesystem.	同时运行选定的 WSL 发行版和 Windows 后端。项目仍保留在当前文件系统中。
+WSL backend couldn't start: 	WSL 后端无法启动：
+Run only the WSL backend. T3 Code restarts when this changes.	仅运行 WSL 后端。更改此设置后 T3 Code 将重启。
+Use Tailscale Serve to expose this backend through a MagicDNS HTTPS URL.	使用 Tailscale Serve，通过 MagicDNS HTTPS URL 访问此后端。
+This connection cannot view or change network exposure.	此连接无法查看或更改网络暴露设置。
+Remote access is already configured. Change network exposure where the server starts.	远程访问已配置。请在启动服务器的位置更改网络暴露设置。
+Only this machine can connect. Restart with a non-loopback host for remote pairing.	仅本机可连接。使用非回环主机地址重启以允许远程配对。
+Network exposure changes restart the backend and must be controlled where the server process is launched.	更改网络暴露设置会重启后端，必须在启动服务器进程的位置操作。
+More actions for this machine	此主机的更多操作
+Update to ${0}	更新到 ${0}
+This connection can create access links but cannot view authorized clients.	此连接可以创建访问链接，但无法查看已授权客户端。
+Let your other devices connect to T3 Code over the network. Pair devices to give them access. T3 Code will restart.	允许其他设备通过网络连接 T3 Code。通过配对授予设备访问权限。T3 Code 将重启。
+Devices connected over your local network will disconnect. Existing tunnels, such as T3 Connect or Tailscale HTTPS, keep working. T3 Code will restart.	通过局域网连接的设备将断开。T3 Connect 或 Tailscale HTTPS 等现有隧道仍正常工作。T3 Code 将重启。
+Turn off WSL and switch back to Windows?	关闭 WSL 并切回 Windows？
+Re-enable the Windows backend?	重新启用 Windows 后端？
+T3 Code will restart on the Windows backend. Threads and projects opened against WSL stay safe inside the distro and become available again when you re-enable WSL.	T3 Code 将使用 Windows 后端重启。WSL 中的会话和项目仍安全保留在发行版内，重新启用 WSL 后即可访问。
+The WSL backend will stop. Threads and projects opened against WSL stay safe inside the distro, but they'll be unavailable in T3 Code until you re-enable WSL.	WSL 后端将停止。相关会话和项目仍安全保留在发行版内，但在重新启用 WSL 之前，无法在 T3 Code 中访问。
+T3 Code will restart the WSL backend on the new distro. Sessions still running on the current distro will be interrupted.	T3 Code 将在新发行版上重启 WSL 后端。当前发行版中仍在运行的会话将中断。
+Run the WSL backend alongside the Windows one, or stop the Windows backend and use only WSL? You can change this later from Settings.	要同时运行 WSL 和 Windows 后端，还是停止 Windows 后端仅使用 WSL？之后可在设置中更改。
+T3 Code will restart and start only the WSL backend. Your Windows-side projects won't be accessible until you turn this off again.	T3 Code 将重启并仅启动 WSL 后端。在关闭此设置前，无法访问 Windows 侧的项目。
+T3 Code will restart and bring the Windows backend back up alongside WSL.	T3 Code 将重启，恢复同时运行 Windows 和 WSL 后端。
+T3 Code will restart the local backend without Tailscale Serve.	T3 Code 将重启本地后端，并停用 Tailscale Serve。
+T3 Code will restart the local backend with Tailscale Serve enabled and ask Tailscale to proxy HTTPS traffic to this backend.	T3 Code 将重启本地后端，启用 Tailscale Serve，并请求 Tailscale 将 HTTPS 流量代理至此后端。
+Pending MagicDNS endpoint	待确定的 MagicDNS 端点
+ (default)	（默认）
+Not running	未运行
+Required	必填
+Installed	已安装
+Versions have not been checked.	尚未检查版本。
+Tools update automatically on this host when needed.	需要时，工具会在此主机上自动更新。
+available	可用
+unavailable	不可用
+iOS available	iOS 可用
+Android available	Android 可用
+Hosts on the same machine are skipped.	将跳过同一主机上的来源。
+SSH target	SSH 目标
+user@host or SSH alias	user@host 或 SSH 别名
+SSH options	SSH 选项
+Identity file	身份文件
+SSH config default	SSH 配置默认值
+Optional. Resolved separately on each environment.	可选。将在每个环境中分别解析。
+${0}. Per-machine results	${0}。各主机结果
+ Test connection	 测试连接
+ Checking…	 正在检查…
+ Already available locally	 本地已可用
+ Failed	 失败
+ Connected	 已连接
+Show error	显示错误
+ Save host	 保存主机
+The environment's server signs in to Expo and starts the sessions. Without a token here it uses EXPO_TOKEN, then its eas login.	环境中的服务器负责登录 Expo 并启动会话。此处未提供令牌时，将优先使用 EXPO_TOKEN，其次使用 eas 登录状态。
+Expo access token	Expo 访问令牌
+Optional	可选
+Clear access token	清除访问令牌
+ Check account	 检查账户
+EAS project	EAS 项目
+From the thread's project	使用会话项目
+Sessions bill the project's Expo account. "From the thread's project" reads extra.eas.projectId from the project's app config.	会话费用计入项目的 Expo 账户。“使用会话项目”将读取项目应用配置中的 extra.eas.projectId。
+Expo allows sessions of up to 40 minutes on free accounts and 115 on paid ones, and ends one after the idle minutes without activity, so idle minutes must be smaller than session minutes.	Expo 免费账户会话最长 40 分钟，付费账户最长 115 分钟。达到空闲时限后会话将结束，因此空闲分钟数必须小于会话分钟数。
+Gateway URL	网关 URL
+Agent token · ${0}	智能体令牌 · ${0}
+Agent token	智能体令牌
+Leases, drives, and streams devices. Create one	用于租用、控制和串流设备。创建方式：
+with 	使用 
+, or leave it blank to add it later. A blank token uses the machine's	，或留空稍后添加。令牌留空时将使用本机的
+ when its	，当其
+ is this gateway.	为此网关时。
+A lease ends after the lease minutes even while in use.	即使设备正在使用，租约也会在租用时限后结束。
+Checking…	正在检查…
+Using this machine's agent-device token (${0}).	使用本机的 agent-device 令牌（${0}）。
+Accepted as ${0}.	已接受，身份为 ${0}。
+Clear agent token	清除智能体令牌
+${0} list may be incomplete	${0} 列表可能不完整
+Starting	正在启动
+This connection cannot change settings on ${0}.	此连接无法更改 ${0} 上的设置。
+Device host not saved	设备主机未保存
+${0}: ${1} of ${2} environments failed	${0}：${1} / ${2} 个环境失败
+${0}: connection checks passed	${0}：连接检查通过
+Connected or already available locally on each selected environment.	每个选定环境均已连接或本地已可用。
+More	更多
+Simulators and emulators installed on each environment's own machine.	各环境所在主机上安装的模拟器。
+Simulators and emulators installed on this environment's machine.	此环境所在主机上安装的模拟器。
+Testing connection	正在测试连接
+Can't connect	无法连接
+Test connection	测试连接
+ Add source	 添加来源
+Machine over SSH	通过 SSH 连接的主机
+Simlock pool (alpha)	Simlock 设备池（预览版）
+Not available	不可用
+Not set up on this machine.	尚未在此主机上配置。
+Quit 	退出 
+ to import	以导入
+ is open, so its cookies can’t be read yet. Quit it, then continue.	正在运行，暂时无法读取其 Cookie。退出后继续。
+I’ve quit it	我已退出
+Let T3 Code read 	允许 T3 Code 读取 
+’s cookies	的 Cookie
+To import cookies from 	若要导入以下应用的 Cookie：
+, T3 Code needs Full Disk Access. Turn it on in System Settings, then come back to finish the import. You can revoke it again once the import is done.	，T3 Code 需要完全磁盘访问权限。请在系统设置中开启后返回完成导入。导入完成后可撤销该权限。
+Full Disk Access	完全磁盘访问权限
+Access is still required. Quit and reopen T3 Code if you just allowed it, then retry the import.	仍需要访问权限。若刚刚已授权，请退出并重新打开 T3 Code，再重试导入。
+If access doesn't update after you allow it, quit and reopen T3 Code, then retry the import.	若授权后访问状态未更新，请退出并重新打开 T3 Code，再重试导入。
+Import from 	导入来源：
+Choose which cookies to import for 	选择要导入 Cookie 的目标：
+From	来源
+Into	目标
+New profile	新建配置
+Importing cookies	正在导入 Cookie
+This may take a moment.	这可能需要一些时间。
+Importing…	正在导入…
+Checking 	正在检查 
+Skipped	已跳过
+Couldn’t import from 	无法导入，来源：
+default browser viewport	默认浏览器视口
+Fill panel	填满面板
+Responsive	响应式
+Default viewport width	默认视口宽度
+Default viewport height	默认视口高度
+Rotate to ${0}	旋转为 ${0}
+Rotate	旋转
+Tab size for you and agents. Fill fits the panel; other sizes show the device toolbar.	你和智能体使用的标签页大小。“填满面板”将适应面板大小；其他尺寸会显示设备工具栏。
+default browser zoom	默认浏览器缩放
+Page zoom applied to new browser tabs.	应用于新浏览器标签页的页面缩放。
+default browser appearance	默认浏览器外观
+The color scheme pages are told to prefer. System follows your OS setting.	向网页报告的首选配色模式。“跟随系统”遵循操作系统设置。
+Show pressed keys and shortcuts in new recordings. Password fields are excluded.	在新录制中显示按键和快捷键。密码字段除外。
+Highlight mouse presses and held buttons in new recordings.	在新录制中高亮鼠标点击和按住的按钮。
+browser recording frame rate	浏览器录制帧率
+ fps	 帧/秒
+Maximum recording rate. 30 fps saves CPU and storage; 60 fps is smoother.	最大录制帧率。30 帧/秒可节省 CPU 和存储空间；60 帧/秒更流畅。
+link target	链接打开方式
+Where links in the chat and terminal open. Hold ⌘ or Ctrl while clicking a link to open it in your default browser either way.	聊天和终端中链接的打开位置。无论此设置如何，按住 ⌘ 或 Ctrl 点击链接均可在默认浏览器中打开。
+search engine	搜索引擎
+What the address bar searches when you type something that isn't a URL.	在地址栏中输入非 URL 内容时使用的搜索方式。
+Custom search URL	自定义搜索 URL
+Use %s where the search terms go.	使用 %s 代表搜索关键词的位置。
+open pull requests in T3 Code	在 T3 Code 中打开拉取请求
+Clicking a pull request link opens it in T3 Code. Turn off to open pull request links like any other link, on your git host.	点击拉取请求链接时在 T3 Code 中打开。关闭后将像其他链接一样，在 Git 托管平台打开。
+Device settings not saved on all environments	设备设置未在所有环境中保存
+Could not update ${0}.	无法更新 ${0}。
+Updating…	正在更新…
+Check versions	检查版本
+Open simulators and emulators in the Device panel. Hub:	在设备面板中打开模拟器。设备中心：
+Device hub	设备中心
+Agent device access	智能体设备访问权限
+default browser access	默认浏览器访问权限
+auto-show floating preview	自动显示浮动预览
+Show the floating preview when an agent opens a browser or device unless the agent says otherwise.	智能体打开浏览器或设备时显示浮动预览，除非智能体另有要求。
+Cleared ${0}'s cookies and cache	已清除 ${0} 的 Cookie 和缓存
+Could not clear ${0}'s data	无法清除 ${0} 的数据
+You're not connected to a server yet.	你尚未连接到服务器。
+Add profile	添加配置
+Blank profile	空白配置
+You’ve reached the profile limit	已达到配置数量上限
+Import from	导入来源
+Looking for browsers…	正在查找浏览器…
+No supported browsers found	未找到受支持的浏览器
+Connect to an environment to import cookies	连接环境以导入 Cookie
+Remove “	移除“
+Its cookies and logins are deleted. Desktop tabs already open in this profile stay open until you close them; server browser tabs close now.	将删除其 Cookie 和登录状态。已使用此配置打开的桌面标签页会保留至你关闭；服务器浏览器标签页将立即关闭。
+Connect to an environment to remove this profile and its data.	连接环境以移除此配置及其数据。
+Clear “	清除“
+”’s cookies and cache?	”的 Cookie 和缓存？
+You are signed out of its sites. Server browser tabs open in this profile close now.	你将退出其中网站的登录。使用此配置打开的服务器浏览器标签页将立即关闭。
+Clear data	清除数据
+Rename ${0}	重命名 ${0}
+${0} options	${0} 选项
+Clear cookies and cache	清除 Cookie 和缓存
+Remove profile and data	移除配置和数据
+Connect to an environment to clear profile data	连接环境以清除配置数据
+Checking environments…	正在检查环境…
+Could not open System Settings	无法打开系统设置
+Open Privacy & Security → Full Disk Access manually.	请手动打开“隐私与安全性 → 完全磁盘访问权限”。
+Agent access	智能体访问权限
+Browsing	浏览
+Recordings	录制
+ of 	 / 
+Stop recording	停止录制
+Desktop	桌面
+Database	数据库
+Choose project icon	选择项目图标
+Refresh provider status	刷新服务提供商状态
+No refs found.	未找到引用。
+Start worktree from remote	从远程分支创建工作树
+Uses the latest commit of the base branch’s tracked remote branch, even if its name differs. Otherwise uses the same-named branch on origin. Uses your local branch if that remote branch is missing.	使用基础分支所跟踪远程分支的最新提交，即使名称不同。否则使用 origin 上的同名分支；若远程分支不存在，则使用本地分支。
+Filters	筛选条件
+Run only when every filter matches. Other requests are logged as filtered. Separate “is one of” values with commas; a value can't contain a comma.	仅在所有筛选条件都匹配时运行。其他请求将记录为已筛除。“属于其中之一”的多个值用逗号分隔，单个值不能含逗号。
+Add filter	添加筛选条件
+Filter ${0} path	筛选条件 ${0} 的路径
+Remove filter ${0}	移除筛选条件 ${0}
+Filter ${0} test	筛选条件 ${0} 的判断方式
+Filter ${0} value	筛选条件 ${0} 的值
+Unavailable selection	所选项不可用
+No environments available	没有可用环境
+Connect an environment to manage scheduled tasks.	连接环境以管理定时任务。
+Task unavailable	任务不可用
+This task was deleted or belongs to a different project. Check your project filter.	此任务已删除或属于其他项目。请检查项目筛选条件。
+No scheduled tasks	没有定时任务
+No tasks match this environment and project selection.	没有任务匹配所选环境和项目。
+Could not load scheduled tasks	无法加载定时任务
+Loading scheduled tasks…	正在加载定时任务…
+Environment disconnected	环境已断开
+Reconnect ${0} to view its scheduled tasks.	重新连接 ${0} 以查看定时任务。
+scheduled task enabled	定时任务启用状态
+scheduled task run now	立即运行定时任务
+scheduled task delete	删除定时任务
+Could not update scheduled task	无法更新定时任务
+Next run 	下次运行 
+Deliveries	请求投递
+Deliveries · 	请求投递 · 
+Recent requests to this task's webhook URL.	最近发送到此任务 Webhook URL 的请求。
+Loading delivery…	正在加载投递记录…
+Signature verified	签名已验证
+Scheduled run	计划运行
+Prompt sent to the agent	提示词已发送给智能体
+Run scheduled when the window closes; no run started yet.	将在合并窗口关闭时运行；尚未开始。
+No run was started for this request.	此请求未启动运行。
+Empty placeholders: 	空占位符：
+Headers	请求头
+Query	查询参数
+Body (truncated)	请求体（已截断）
+Body	请求体
+(empty)	（空）
+Loading deliveries…	正在加载投递记录…
+No requests yet.	尚无请求。
+ empty placeholder	 个空占位符
+scheduled task rotate webhook token	轮换定时任务 Webhook 令牌
+The URL appears after you save.	保存后显示 URL。
+Could not rotate webhook URL	无法轮换 Webhook URL
+Webhook URL	Webhook URL
+Change in Sharing & access	在“共享与访问”中更改
+Destination thread	目标会话
+Search all threads...	搜索所有会话…
+No threads found.	未找到会话。
+New thread each run	每次运行新建会话
+Deleting the thread also deletes this task.	删除此会话也会删除此任务。
+Destination	目标位置
+scheduled task upsert	保存定时任务
+Run a prompt automatically on an interval, at a fixed time, once at a set date, or when a webhook is called.	按间隔、固定时间、指定日期的一次性计划，或在收到 Webhook 调用时自动运行提示词。
+Reconnect this environment before saving.	保存前请重新连接此环境。
+Runs on	运行环境
+This scheduled task no longer exists.	此定时任务已不存在。
+e.g. Check for Sentry issues	例如：检查 Sentry 问题
+Create a new worktree	创建新的工作树
+Use the project checkout	使用项目检出目录
+Use a specific checkout	使用指定检出目录
+Base branch	基础分支
+Checkout path	检出路径
+What should the agent do each time this runs?	每次运行时，智能体应该做什么？
+This task uses a legacy interval below one minute. Saving updates it to at least one minute.	此任务使用旧版不足一分钟的间隔。保存时会将其更新为至少一分钟。
+At a time	固定时间
+Once	一次
+Every interval	按间隔
+On webhook	收到 Webhook 时
+Schedule type	计划类型
+${0} Switch this task to a time or an interval, or turn it off, to save it.	${0} 请将此任务改为固定时间或按间隔，或将其关闭后保存。
+Each request runs the prompt. Use {{body.path}}, {{headers.name}}, {{query.name}}, {{body}} or {{request}} in the prompt; only what it names reaches the agent.	每个请求都会运行提示词。可在提示词中使用 {{body.path}}、{{headers.name}}、{{query.name}}、{{body}} 或 {{request}}；只有引用的内容会传给智能体。
+Skip requests older than	跳过早于以下时限的请求
+Run every request	运行每个请求
+Duplicate request key	请求去重键
+Requests with the same key run only once within 7 days.	相同键的请求在 7 天内只运行一次。
+Coalesce key	合并键
+Coalesce window	合并窗口
+Coalescing runs the latest payload once when the window from the first delivery closes. Empty keys run normally.	从首次投递开始计时，窗口关闭时使用最新请求内容运行一次。键为空时正常运行。
+Require signature	要求签名
+Reject requests without a valid HMAC-SHA256 signature of the body.	拒绝请求体未通过有效 HMAC-SHA256 签名验证的请求。
+Header	请求头
+Prefix	前缀
+Encoding	编码
+Secret	密钥
+Unchanged	不变
+Shared secret	共享密钥
+Run at	运行时间
+Days to run	运行日期
+Run every	运行间隔
+minutes	分钟
+Disabled tasks stay saved but do not run.	禁用的任务仍会保留，但不会运行。
+Select a project	选择项目
+Copy version ${0}	复制版本 ${0}
+${0} link	${0} 链接
+Open 	打开 
+thread title instructions	会话标题指令
+snooze options	稍后提醒选项
+Snooze option ${0}	稍后提醒选项 ${0}
+Remove snooze option ${0}	移除稍后提醒选项 ${0}
+Up to 	最多 
+ options	 个选项
+seconds	秒
+provider health interval	服务提供商健康检查间隔
+active host power interval	活跃时主机电源检查间隔
+idle host power interval	空闲时主机电源检查间隔
+background activity	后台活动
+The update track did not change.	更新通道未改变。
+This app found no build of ${0} to install.	此应用未找到可安装的 ${0} 构建。
+This app found ${0}, which is older than ${1}. Try again in a few minutes.	此应用找到的 ${0} 比 ${1} 更旧。请几分钟后重试。
+Switch to 	切换到 
+Could not switch to ${0}	无法切换到 ${0}
+Install	安装
+1 machine still runs	仍有 1 台主机运行
+${0} machines still run	仍有 ${0} 台主机运行
+${0} Nightly builds are not available${1}	${0} 每日构建版不可用${1}
+project grouping	项目分组
+project order	项目排序
+working section	工作中分区
+unpin confirmation	取消置顶确认
+archive confirmation	归档确认
+delete confirmation	删除确认
+quit shortcut behavior	退出快捷键行为
+time format	时间格式
+${0} + Enter for multiline prompts	${0} + Enter 输入多行提示词
+${0} + Enter always	始终使用 ${0} + Enter
+rich text composer	富文本输入框
+send shortcut	发送快捷键
+skills in slash menu	斜杠菜单中的技能
+follow-up behavior	后续消息行为
+tool calls in chat	聊天中的工具调用
+diff colors	差异颜色
+diff layout	差异布局
+diff whitespace changes	差异空白字符更改
+default diff file state	差异文件默认状态
+proactive panels	主动打开面板
+compact idle threads	折叠空闲会话
+add project base directory	添加项目的基础目录
+clone into host folders	克隆到主机文件夹
+auto-settle on merge	合并时自动收起
+auto-settle	自动收起
+text generation model	文本生成模型
+response streaming	流式输出回复
+provider update checks	检查服务提供商更新
+continue threads after restarts	重启后继续会话
+This environment is managed by ${0}. Some settings and features follow its policy.	此环境由 ${0} 管理。部分设置和功能遵循其策略。
+Reclaim freed database space	回收已释放的数据库空间
+${0} on ${1}	${0}，位于 ${1}
+Reclaiming ${0} on ${1}	正在回收 ${0}，位于 ${1}
+T3 Code there restarts and is back in about ${0} min.	该主机上的 T3 Code 将重启，约 ${0} 分钟后恢复。
+Could not reclaim space on ${0}	无法回收 ${0} 上的空间
+Reclaim 	回收 
+ on 	，位于 
+T3 Code on 	T3 Code 所在主机 
+ stops, rebuilds its database, and starts again. It is offline for about 	将停止、重建数据库并重新启动。预计离线 
+ min. Running agents stop when it restarts.	分钟。重启时，运行中的智能体将停止。
+Restart and reclaim	重启并回收空间
+worktree location	工作树位置
+Folder where new worktrees are created, on any drive, such as D:\worktrees or ~/worktrees. Existing worktrees stay where they are. Leave empty to use the T3 home folder.	新工作树的创建目录，可位于任意磁盘，如 D:\worktrees 或 ~/worktrees。现有工作树保持原位置。留空时使用 T3 主目录。
+Decrease ${0}	减少 ${0}
+${0} in days	${0}（天）
+days	天
+Increase ${0}	增加 ${0}
+Folder	文件夹
+ more results.	 条更多结果。
+: Nothing needed cleanup.	：没有需要清理的内容。
+Last run ${0}. ${1} recovered.${2}	上次运行 ${0}。已回收 ${1}。${2}
+Could not load the last run.	无法加载上次运行记录。
+Loading last run…	正在加载上次运行记录…
+Cleanup hasn't run yet.	尚未运行清理。
+Cleanup failed on ${0}	${0} 上的清理失败
+Could not run cleanup on ${0}	无法在 ${0} 上运行清理
+Cleanup	清理
+Turn on a cleanup rule to use this.	启用清理规则后即可使用。
+Update the selected environments to use storage cleanup, or choose a machine that supports it.	更新所选环境以使用存储清理，或选择支持此功能的主机。
+Update the selected machines to configure project worktree cleanup.	更新所选主机以配置项目工作树清理。
+Automatic worktree cleanup	自动清理工作树
+Keep this project's worktrees until you delete them manually.	保留此项目的工作树，直到手动删除。
+Use these rules for this project.	对此项目使用以下规则。
+Use each machine's worktree cleanup settings.	使用各主机的工作树清理设置。
+Inherit	继承
+Delete worktrees with deleted threads	删除已删除会话的工作树
+Remove unused worktrees when active or archived threads are deleted. Worktrees with local changes are kept.	删除活跃或已归档会话时移除未使用的工作树。有本地更改的工作树将保留。
+Delete merged worktrees	删除已合并的工作树
+Remove worktrees whose pull request is merged and whose commits are included in the default branch.	移除拉取请求已合并、且提交已包含在默认分支中的工作树。
+Delete inactive worktrees	删除不活跃的工作树
+Remove worktrees after their threads have been inactive for this many days. Branches and thread history are kept.	会话闲置达到此天数后移除工作树。分支和会话历史保留。
+Delete settled worktrees	删除已收起会话的工作树
+Remove worktrees this many days after their thread settles. Set 0 days to remove them at the next cleanup. Branches and thread history are kept.	会话收起达到此天数后移除工作树。设为 0 天将在下次清理时移除。分支和会话历史保留。
+Delete unchanged worktrees	删除无更改的工作树
+Remove worktrees with no commits beyond the default branch.	移除没有超出默认分支提交的工作树。
+Includes ignored files, except node_modules.	包括被忽略的文件，但 node_modules 除外。
+Deletes untracked and ignored files, including .env.	删除未跟踪和被忽略的文件，包括 .env。
+Keeps edits and untracked files. Deletes ignored files, including .env.	保留修改和未跟踪的文件。删除被忽略的文件，包括 .env。
+Any local files	任何本地文件
+Uncommitted changes	未提交的更改
+Edited tracked files	修改过的已跟踪文件
+Delete old browser artifacts	删除旧浏览器产物
+Delete saved browser captures after this many days. Older capture links will no longer open.	达到此天数后删除已保存的浏览器捕获内容。旧的捕获链接将无法打开。
+Delete old rotated logs	删除旧轮换日志
+Delete inactive rotated log files after this many days. Current logs are kept.	达到此天数后删除不再活跃的轮换日志。保留当前日志。
+Input	输入
+Create theme	创建主题
+Use 	使用 
+Add action	添加操作
+Sort	排序
+Clear settings search	清除设置搜索
+No settings found	未找到设置
+Settings search results	设置搜索结果
+Reconnect 	重新连接 
+ to change its settings.	以更改其设置。
+Most downloaded	下载最多
+Best rated	评分最高
+Newest	最新
+Most relevant	最相关
+Search community themes	搜索社区主题
+Find open-source themes from Open VSX.	从 Open VSX 查找开源主题。
+Search Open VSX themes	搜索 Open VSX 主题
+Search themes...	搜索主题…
+Popular	热门
+Sort themes	主题排序
+ Searching themes...	 正在搜索主题…
+No supported open-source themes found	未找到受支持的开源主题
+downloads	次下载
+A community color theme for your editor.	适用于编辑器的社区配色主题。
+View source for ${0}	查看 ${0} 的源码
+Update “	更新“
+This replaces its installed variants, including any local edits. Variants no longer in the extension will be removed.	将替换已安装的主题变体，包括所有本地修改。扩展中已不存在的变体将被移除。
+Update theme	更新主题
+Theme JSON	主题 JSON
+Add a theme	添加主题
+or import a file	或导入文件
+Reading…	正在读取…
+Choose files	选择文件
+Already installed	已安装
+Update existing	更新现有主题
+Keep both	同时保留
+Theme file	主题文件
+Add theme	添加主题
+Light and dark theme variants	浅色与深色主题变体
+Choose ${0} variant, ${1} options, currently ${2}	选择 ${0} 变体，共 ${1} 个选项，当前为 ${2}
+Use ${0} variant, currently ${1}	使用 ${0} 变体，当前为 ${1}
+Use ${0} for ${1} mode	将 ${0} 用于 ${1} 模式
+Use ${0} for ${1} mode${2}	将 ${0} 用于 ${1} 模式${2}
+Duplicate ${0}	复制 ${0}
+Duplicate theme	复制主题
+Edit theme	编辑主题
+Export ${0}	导出 ${0}
+Export theme file	导出主题文件
+Remove themes from ${0}	移除来自 ${0} 的主题
+Remove themes	移除主题
+Remove theme	移除主题
+Appearance mode	外观模式
+Follow the system appearance	跟随系统外观
+Use ${0} mode	使用 ${0} 模式
+${0} themes ${1}	${0} 主题 ${1}
+${0} added	已添加 ${0}
+It’s now your ${0} theme.	现已设为你的 ${0} 主题。
+It’s now active.	现已启用。
+Couldn’t remove theme	无法移除主题
+Couldn’t save theme selection	无法保存主题选择
+Replay panel animation preview	重播面板动画预览
+Terminal font preview	终端字体预览
+"${0}" isn't monospace	“${0}”不是等宽字体
+Code and terminal need a fixed-width font, so the current font was kept.	代码和终端需要等宽字体，因此保留了当前字体。
+Search fonts…	搜索字体…
+No fonts found.	未找到字体。
+Interface font size	界面字号
+Everything outside code blocks and the terminal.	代码块和终端之外的所有内容。
+Prompt font size	提示词字号
+Only the box you write prompts in. Mono works well here.	仅用于编写提示词的输入框。等宽字体很适合此处。
+Code font size	代码字号
+Terminal font size	终端字号
+Terminal output, independent from code blocks and diffs.	终端输出，独立于代码块和差异。
+font smoothing	字体平滑
+Use thinner grayscale text smoothing instead of the macOS default.	使用更细的灰度文字平滑，替代 macOS 默认效果。
+word wrapping	自动换行
+Wrap code, diffs, and file previews by default	默认对代码、差异和文件预览自动换行
+Wrap long lines in code blocks, diffs, and file previews by default.	默认对代码块、差异和文件预览中的长行自动换行。
+Set the prompt, code, and terminal fonts separately instead of one monospace font.	分别设置提示词、代码和终端字体，而非统一使用一种等宽字体。
+Monospace font	等宽字体
+Code blocks, diffs, file previews, and the terminal.	代码块、差异、文件预览和终端。
+Typography	字体排版
+${0} family	${0} 字体族
+thread details	会话详情
+ on	 开启
+Choose what the thread details card shows. You can also right-click the card.	选择会话详情卡片显示的内容。也可右键点击卡片设置。
+Word	文字
+Colors & themes	颜色与主题
+contrast	对比度
+Adjust the contrast of colors and borders across the interface.	调整整个界面的颜色和边框对比度。
+glass opacity	玻璃效果不透明度
+Higher values make menus, dialogs, and the composer more solid.	数值越高，菜单、对话框和输入框越不透明。
+chat width	聊天宽度
+Comfortable (default)	舒适（默认）
+Wide	宽
+Full	全宽
+Set how wide messages and the composer can grow on large screens.	设置消息和输入框在大屏幕上的最大宽度。
+effort display	推理强度显示
+Word (default)	文字（默认）
+Bars	条形
+Show reasoning effort in the composer as its name, such as High, or as bars.	在输入框中以名称（如“高”）或条形显示推理强度。
+math rendering	数学公式渲染
+Typeset LaTeX math, such as $x^2$ or \\[x^2\\], in messages and Markdown previews. The composer keeps TeX source editable.	在消息和 Markdown 预览中排版 LaTeX 公式，如 $x^2$ 或 \\[x^2\\]。输入框中仍可编辑 TeX 源码。
+Panel animation duration	面板动画时长
+panel animations	面板动画
+Set how fast panels open and close.	设置面板打开和关闭的速度。
+environment identification	环境标识
+composer context	输入框上下文
+Keep composer context visible in active threads	在活跃会话中保持输入框上下文可见
+Keep branch and worktree controls below the composer after a thread starts.	会话开始后，仍在输入框下方保留分支和工作树控件。
+Interface	界面
+Loading archived threads	正在加载已归档会话
+Could not load archived threads	无法加载已归档会话
+No archived threads	没有已归档会话
+Checking connected environments.	正在检查已连接环境。
+Archived threads will appear here.	已归档会话将显示在此处。
+Archived 	已归档 
+ · Created 	 · 创建于 
+Send SIGINT	发送 SIGINT
+Send SIGKILL	发送 SIGKILL
+Waiting for sample	等待采样
+Updated 	更新于 
+Memory	内存
+Read	读取
+Desktop only	仅限桌面端
+Resource history period	资源历史时间范围
+ CPU average	 CPU 平均值
+ I/O reads	 I/O 读取
+ I/O writes	 I/O 写入
+CPU avg 	CPU 平均值 
+CPU peak 	CPU 峰值 
+Read 	读取 
+Write 	写入 
+Expand ${0}	展开 ${0}
+Collapse ${0}	折叠 ${0}
+Process	进程
+Category	分类
+CPU Time	CPU 时间
+Read/s	读取/秒
+Write/s	写入/秒
+Read Total	读取总量
+Write Total	写入总量
+Kill	终止
+Waiting for the native process monitor.	正在等待原生进程监控器。
+Peak CPU	CPU 峰值
+Peak Mem	内存峰值
+Samples	采样数
+No retained process samples in this window.	此时间范围内没有保留的进程采样。
+Component	组件
+Operation	操作
+Logical Read	逻辑读取
+Logical Write	逻辑写入
+Count	次数
+No instrumented application I/O has been recorded yet.	尚未记录应用埋点 I/O 数据。
+Could not confirm signal	无法确认信号
+Failed to send ${0}.	发送 ${0} 失败。
+Could not send ${0}	无法发送 ${0}
+Native	原生
+Refresh resource telemetry	刷新资源遥测
+Refresh telemetry snapshot	刷新遥测快照
+T3 system footprint	T3 系统资源占用
+Live native counters for the server, providers, terminals, desktop processes, and the monitor itself.	服务器、服务提供商、终端、桌面进程及监控器自身的实时原生计数。
+Sampling every 	采样间隔 
+Current CPU	当前 CPU
+Resident memory	常驻内存
+Process count	进程数
+Read throughput	读取吞吐量
+Write throughput	写入吞吐量
+Backend + agents	后端与智能体
+Monitor overhead	监控开销
+Retry monitor	重试监控器
+Host state	主机状态
+Power source	电源来源
+Low power mode	低电量模式
+Session	会话
+Thermal	温度状态
+Desktop host signals not connected	未连接桌面主机状态信号
+Power, idle, lock, and thermal state are supplied by the desktop host. Process telemetry remains fully active in this browser session.	电源、空闲、锁定和温度状态由桌面主机提供。此浏览器会话中的进程遥测仍完整运行。
+Collection health	采集健康状态
+Native process monitor	原生进程监控器
+Electron main process	Electron 主进程
+Collection time	采集时间
+Process scan	进程扫描
+Inaccessible	无法访问
+Sidecar	辅助进程
+Restarts	重启次数
+Waiting for collector health.	正在等待采集器健康状态。
+Host & collection	主机与采集
+Refresh resource history	刷新资源历史
+Resource timeline	资源时间线
+Identity: 	标识：
+PID + start time	进程 ID 与启动时间
+Live process tree	实时进程树
+Logical bytes by operation	按操作统计的逻辑字节数
+Native counters identify which process is reading or writing. These application-level counters identify known T3 operations so process spikes can be correlated with specific persistence and logging paths.	原生计数用于识别哪个进程正在读写。这些应用级计数可识别已知 T3 操作，将进程峰值与具体持久化和日志路径关联。
+Instrumented application I/O	应用埋点 I/O
+Could not restart resource monitor	无法重启资源监控器
+The resource monitor retry failed.	资源监控器重试失败。
+Traces	跟踪
+Metrics	指标
+Logs	日志
+Not checked	未检查
+Connected · ${0} ms	已连接 · ${0} 毫秒
+Rejected · HTTP ${0}	已拒绝 · HTTP ${0}
+Timed out	已超时
+Unreachable	无法访问
+Choose one environment to configure its telemetry exports.	选择一个环境以配置其遥测导出。
+Send traces, metrics, and logs to an OTLP HTTP receiver. Restart the server to apply. Environment variables override these settings.	将跟踪、指标和日志发送到 OTLP HTTP 接收器。重启服务器后生效。环境变量会覆盖这些设置。
+This connection lacks permission to change settings on	此连接无权更改以下环境的设置：
+the selected environment	所选环境
+ endpoint	 端点
+Enter an HTTP or HTTPS endpoint, or leave empty to disable export.	输入 HTTP 或 HTTPS 端点，或留空以禁用导出。
+Test	测试
+Running: 	运行中：
+from 	来自 
+Discard	放弃
+${0} details	${0} 详情
+Command	命令
+No live descendant processes found.	未找到正在运行的后代进程。
+Average CPU ${0}%, peak CPU ${1}%	CPU 平均值 ${0}%，CPU 峰值 ${1}%
+Avg 	平均 
+%, peak 	%，峰值 
+Process history period	进程历史时间范围
+Current	当前
+Average	平均
+Peak	峰值
+Max Mem	最大内存
+Checking	正在检查
+Checked unavailable	已检查，不可用
+Checked 	检查于 
+Process already exited	进程已退出
+The process is not a child of the T3 Server. It might already have exited.	此进程不是 T3 服务器的子进程，可能已经退出。
+Refresh process diagnostics	刷新进程诊断
+Child Processes	子进程
+Total CPU across live child processes of the current server process. The desktop shell and other parent processes are not included.	当前服务器进程所有运行中子进程的 CPU 总量。不包括桌面外壳及其他父进程。
+Total resident memory across live child processes of the current server process. The desktop shell and other parent processes are not included.	当前服务器进程所有运行中子进程的常驻内存总量。不包括桌面外壳及其他父进程。
+Server PID	服务器进程 ID
+Live Processes	运行中的进程
+Approximate active CPU time for the T3 server root process and its descendants during the selected window. It grows only while sampled processes use CPU and older samples leave as the window moves.	所选时间范围内 T3 服务器根进程及其后代进程的近似活跃 CPU 时间。仅在采样进程使用 CPU 时增长，旧采样会随窗口移动而移出。
+In-memory process samples retained by the server. The server samples only while diagnostics is open, and this resets when the server restarts.	服务器在内存中保留的进程采样。仅在诊断页面打开时采样，服务器重启后重置。
+Interval	间隔
+Processes	进程
+Resource History	资源历史
+Open logs folder	打开日志文件夹
+Refresh trace diagnostics	刷新跟踪诊断
+Spans	跟踪片段
+Failures	失败
+Slow Spans	缓慢跟踪片段
+Parse Errors	解析错误
+Some trace files could not be read, so diagnostics may be incomplete. ${0}	部分跟踪文件无法读取，诊断信息可能不完整。${0}
+Trace Diagnostics	跟踪诊断
+Latest Failures	最近失败
+Loading failures...	正在加载失败记录…
+No failed spans found.	未找到失败的跟踪片段。
+Most Common Failures	最常见失败
+Loading failure groups...	正在加载失败分组…
+No repeated failures found.	未找到重复失败。
+Slowest Spans	最慢的跟踪片段
+Loading slow spans...	正在加载缓慢跟踪片段…
+No spans found.	未找到跟踪片段。
+Span Logs	跟踪片段日志
+Level	级别
+Span	跟踪片段
+Message	消息
+Trace	跟踪
+Loading recent logs...	正在加载最近日志…
+No warnings or errors found.	未找到警告或错误。
+Top Span Names	常见跟踪片段名称
+Loading span names...	正在加载跟踪片段名称…
+Search keybindings	搜索快捷键
+T3 Code does not recognize this condition yet. It can still be saved, but it may not match unless the runtime provides it.	T3 Code 尚不识别此条件。仍可保存，但除非运行时提供此条件，否则可能无法匹配。
+ The most recent matching binding wins when both conditions can apply.	两个条件都适用时，最近设置的匹配快捷键优先。
+Condition	条件
+Not	非
+Negate group	对此组取反
+and	且
+or	或
+Group	分组
+Always	始终
+When expression	条件表达式
+Fix the expression above to continue editing visually.	修正上方表达式后可继续可视化编辑。
+Edit shortcut for ${0}: ${1}	编辑 ${0} 的快捷键：${1}
+Keybinding for ${0}	${0} 的快捷键
+Press shortcut	按下快捷键
+Unassigned	未分配
+Cancel new keybinding	取消新建快捷键
+New keybinding	新建快捷键
+The browser may claim some shortcuts first. The desktop app receives them all.	浏览器可能优先拦截部分快捷键。桌面应用可接收全部快捷键。
+Unable to open keybindings file	无法打开快捷键文件
+The keybindings file was not opened.	未能打开快捷键文件。
+Unable to save keybinding	无法保存快捷键
+The keybinding was not saved.	快捷键未保存。
+Unable to remove keybinding	无法移除快捷键
+The keybinding was not removed.	快捷键未移除。
+Add keybinding	添加快捷键
+Open keybindings.json	打开 keybindings.json
+Connect an environment to change keybindings.	连接环境以更改快捷键。
+This connection can view keybindings but cannot change them.	此连接可查看快捷键，但无法更改。
+No keybindings match your search.	没有快捷键匹配你的搜索。
+Beta	测试版
+Group sidebar threads into project folders. Pinned threads stay on top, and Snoozed and Settled stay below the folders.	将侧边栏会话归入项目文件夹。置顶会话保留在顶部，“稍后提醒”和“已收起”位于文件夹下方。
+Show folder threads on two lines: the title, then the branch, pull request, and agent.	以两行显示文件夹中的会话：第一行是标题，第二行是分支、拉取请求和智能体。
+Share a thread with a guest who watches it live in a browser and sends messages you approve. Sign in to T3 Connect to use guest links.	与访客分享会话。访客可在浏览器中实时查看，并发送需你批准的消息。登录 T3 Connect 以使用访客链接。
+Share a thread with a guest who watches it live in a browser and sends messages you approve. Needs T3 Connect: sign in and link this machine in	与访客分享会话，允许其在浏览器中实时查看并发送需你批准的消息。需要 T3 Connect：请登录并在以下位置连接本机：
+. Turning it off stops every guest link.	。关闭后将停止所有访客链接。
+Let agents here work on your other machines, and theirs here. Turn it on for each machine, then link them in	允许此处的智能体在其他主机上工作，也允许其他主机的智能体在此工作。请在各主机上开启，然后在以下位置连接：
+. While off, nothing new starts over a link; running tasks finish.	。关闭时不会通过链接启动新任务，正在运行的任务可继续完成。
+Show a predicted next message in the empty composer after a Claude or Codex turn. Tab uses it. Each is an extra cached request on your plan. Needs Codex 0.165+. Claude threads update on restart.	Claude 或 Codex 完成一轮后，在空输入框中显示预测的下一条消息，按 Tab 采用。每次预测会额外消耗一次缓存请求。需要 Codex 0.165+；Claude 会话重启后更新。
+Let the Device panel lease simulators and emulators from your own	允许设备面板从你自己的设备池中租用模拟器：
+pool, added in	设备池添加位置：
+. An alpha that may change or break. T3 Code never installs Simlock.	。此功能处于预览阶段，可能变化或失效。T3 Code 不会安装 Simlock。
+Simlock device hosts	Simlock 设备主机
+On a Mac, clone new worktrees from a checkout cached in the T3 home folder instead of writing every file. Uses Git’s normal checkout when it can’t. Turning it off deletes the cache.	在 Mac 上，从 T3 主目录中缓存的检出目录克隆新工作树，避免逐个写入文件。无法使用时回退到普通 Git 检出。关闭后会删除缓存。
+The license manifest request failed with status ${0}.	许可清单请求失败，状态码 ${0}。
+The license manifest could not load.	无法加载许可清单。
+The license manifest took too long to load.	许可清单加载超时。
+View project source for ${0}	查看 ${0} 的项目源码
+Project source	项目源码
+Search open-source licenses	搜索开源许可
+Search licenses	搜索许可
+Open-source notices are unavailable	开源声明不可用
+No licenses match that search.	没有许可匹配此搜索。
+Loading open-source notices…	正在加载开源声明…
+Open in ${0}	在 ${0} 中打开
+Search image files…	搜索图片文件…
+Could not open image picker	无法打开图片选择器
+No actions configured.	未配置操作。
+setup	设置
+on settle	收起时
+preview · desktop only	预览 · 仅桌面端
+Failed to save project actions	保存项目操作失败
+Actions not saved	操作未保存
+No available machine, or another action change is saving.	没有可用主机，或另一项操作更改正在保存。
+This connection cannot change environment settings.	此连接无法更改环境设置。
+Import scripts	导入脚本
+Import from t3.json	从 t3.json 导入
+Add actions declared by this checkout without editing them first.	直接添加此检出目录声明的操作，无需先编辑。
+Different actions across environments	各环境中的操作不同
+Choose one environment to edit its list. Adding an action here adds it on every selected environment.	选择一个环境以编辑其列表。此处添加的操作会添加到所有所选环境。
+t3.json is invalid	t3.json 无效
+A t3.json exists in this checkout but fails to parse, so every action and icon it declares is ignored. Check the JSON syntax and icon values.	此检出目录中存在 t3.json，但解析失败，因此其中声明的所有操作和图标均被忽略。请检查 JSON 语法和图标值。
+Use global default	使用全局默认值
+Could not save grouping rule	无法保存分组规则
+This checkout is no longer available in the selected project and environment.	此检出目录在所选项目和环境中已不可用。
+Project title cannot be empty	项目标题不能为空
+Remove checkout ${0}	移除检出目录 ${0}
+Grouping rule decides how each checkout joins project groups in the sidebar. Changing it can move a checkout to a different project.	分组规则决定各检出目录如何加入侧边栏项目组。更改规则可能将检出目录移到其他项目。
+Checkouts	检出目录
+Can't find a setting? Keep this project picked above and hop to any other settings page.	找不到设置？保持上方选中此项目，然后前往其他设置页面。
+Shared settings require permission to change every checkout in this group.	更改共享设置需要对组内每个检出目录都有修改权限。
+This connection cannot change this project.	此连接无法更改此项目。
+project name	项目名称
+The shared name for this project group in the sidebar and thread lists.	此项目组在侧边栏和会话列表中共用的名称。
+project icon	项目图标
+Choose a project icon	选择项目图标
+Choose icon	选择图标
+Choose a project icon file	选择项目图标文件
+Choose file	选择文件
+Project icon	项目图标
+Pinned projects come first in project pickers.	置顶项目优先显示在项目选择器中。
+Pin project	置顶项目
+Hidden from project pickers. Threads and files are kept.	从项目选择器中隐藏。会话和文件仍会保留。
+Hides the project from project pickers. Threads and files are kept.	在项目选择器中隐藏此项目。会话和文件仍会保留。
+Danger	危险操作
+Show all environments	显示所有环境
+Choose a project to manage its name, icon, checkouts and actions.	选择项目以管理其名称、图标、检出目录和操作。
+Add generator	添加生成器
+No text generators yet	尚无文本生成器
+Add a model API to write thread titles, commit messages, and other short text without starting a coding agent.	添加模型 API，无需启动编程智能体即可生成会话标题、提交说明和其他短文本。
+Off · 	关闭 · 
+More actions for ${0}	${0} 的更多操作
+Show models	显示模型
+Enable ${0}	启用 ${0}
+This deletes the API key stored on 	这将删除存储于以下环境的 API 密钥：
+. Anything set to use this generator falls back to the text generation model.	。使用此生成器的功能将回退到文本生成模型。
+Thread titles and other generated text	会话标题及其他生成文本
+Commit messages, pull requests, and branch names	提交说明、拉取请求和分支名称
+Voice transcript cleanup	语音转写润色
+Writes thread titles, commit messages, and other short text without starting a coding agent. Your API key is stored on this environment.	无需启动编程智能体即可生成会话标题、提交说明和其他短文本。API 密钥存储在此环境中。
+Service	服务
+Base URL	基础 URL
+API key	API 密钥
+API key (optional)	API 密钥（可选）
+Name (optional)	名称（可选）
+e.g. My local model	例如：我的本地模型
+ is connected and lists 	已连接，并列出了 
+model	模型
+models	模型
+. Switch any of these to it, or keep what they use now.	。可将以下功能切换到此模型，也可保留当前选择。
+Save and continue	保存并继续
+ answered. It works.	已回复，运行正常。
+Follows the text generation model	跟随文本生成模型
+Search models	搜索模型
+Couldn't load ${0} models	无法加载 ${0} 模型
+ models	 个模型
+Add a CLIProxyAPI hub	添加 CLIProxyAPI 中心
+Show the quota of every account the hub pools, next to the providers on	在以下环境的服务提供商旁显示中心汇集的每个账户的配额：
+. The key stays on that server.	。密钥保留在该服务器上。
+Hub URL	中心 URL
+Management key	管理密钥
+Label (optional)	名称（可选）
+Defaults to the hub's host name	默认为中心的主机名
+Add hub	添加中心
+No hubs configured.	未配置中心。
+ · Disabled	 · 已禁用
+The hub's management key is deleted from this server. Its accounts leave the Limits view; the hub itself is untouched. Add it again with the URL and key to bring them back.	将从此服务器删除中心的管理密钥，并从用量限制视图移除其账户；中心本身不受影响。使用 URL 和密钥重新添加即可恢复显示。
+Remove hub	移除中心
+Enable Antigravity	启用 Antigravity
+Device that runs this provider.	运行此服务提供商的设备。
+Setup unavailable	设置不可用
+Provider setup is read-only.	服务提供商设置为只读。
+Update required	需要更新
+Update this environment to manage Antigravity.	更新此环境以管理 Antigravity。
+Antigravity setup	Antigravity 设置
+Uses the custom binary path below. Installation keeps that path.	使用下方自定义可执行文件路径。安装时保留此路径。
+Automatic installation unavailable. Set a binary path or use another environment.	无法自动安装。请设置可执行文件路径或使用其他环境。
+Antigravity download	Antigravity 下载
+Cancel installation	取消安装
+Update Antigravity	更新 Antigravity
+Reinstall Antigravity	重新安装 Antigravity
+Retry installation	重试安装
+Install managed runtime	安装托管运行时
+Install Antigravity	安装 Antigravity
+Remove downloaded runtime	移除已下载的运行时
+Install and manage Antigravity.	安装和管理 Antigravity。
+Retry setup status	重新检查设置状态
+Device unavailable	设备不可用
+Reconnect this device to set up its provider, or select another device.	重新连接此设备以设置服务提供商，或选择其他设备。
+No connected devices	没有已连接设备
+Loading devices	正在加载设备
+Connect an execution environment before configuring providers.	配置服务提供商前，请先连接执行环境。
+Reading connected execution environments.	正在读取已连接的执行环境。
+Could not update ${0}	无法更新 ${0}
+The provider update command could not be started.	无法启动服务提供商更新命令。
+Could not update provider instance	无法更新服务提供商实例
+Could not delete provider instance	无法删除服务提供商实例
+Provider deleted, but managed files remain	服务提供商已删除，但托管文件仍保留
+Managed binary cleanup failed.	托管可执行文件清理失败。
+Could not reset provider instance	无法重置服务提供商实例
+Limited permissions	权限受限
+This session can view ${0}'s providers but can't change their settings.	此会话可查看 ${0} 的服务提供商，但无法更改设置。
+This provider instance is no longer available on this device.	此服务提供商实例在此设备上已不可用。
+No providers configured.	未配置服务提供商。
+This interval is configured here, then the shared Background activity policy decides whether provider probes may run when the timer fires. Custom intervals appear as Advanced in Maintenance settings.	在此配置间隔；到达时间后，由共享后台活动策略决定是否允许运行服务提供商检查。自定义间隔在维护设置中显示为“高级”。
+provider health check interval	服务提供商健康检查间隔
+Refresh provider status, versions, and models in the background. Set to 0 to disable.	在后台刷新服务提供商状态、版本和模型。设为 0 可禁用。
+Authentication request expired	验证请求已过期
+Refresh the provider and start the authentication flow again.	刷新服务提供商，然后重新开始验证流程。
+Could not continue authentication	无法继续验证
+The authentication request expired.	验证请求已过期。
+Cursor account	Cursor 账户
+Using CURSOR_API_KEY. Remove it from this provider's environment to use browser sign-in.	正在使用 CURSOR_API_KEY。若要使用浏览器登录，请从此服务提供商的环境中移除此变量。
+${0} provider settings	${0} 服务提供商设置
+Provider variables on 	服务提供商变量所在环境：
+ can read values from it by name. Values are read with the op CLI on that server when a provider starts.	可按名称从中读取值。服务提供商启动时，将通过该服务器上的 op CLI 读取。
+Personal	个人
+The account shorthand, sign-in address without https://, or ID that op account list shows.	账户简称、不含 https:// 的登录地址，或 op account list 显示的 ID。
+Voice · ${0}	语音 · ${0}
+Update T3 Code on 	更新以下环境上的 T3 Code：
+ to manage its secret providers.	以管理其密钥提供商。
+Connect an environment to manage the secret providers its provider variables read from.	连接环境，以管理服务提供商变量使用的密钥提供商。
+Environment-wide setting. Select an environment to change it.	环境级设置。选择一个环境以更改。
+No secret providers configured.	未配置密钥提供商。
+Add a 1Password account, then pick it as the source of a provider variable.	添加 1Password 账户，然后将其选为服务提供商变量的来源。
+Unsupported provider (${0})	不受支持的服务提供商（${0}）
+Remove provider	移除服务提供商
+Nothing reads from 	没有内容读取自 
+. The secrets themselves are untouched.	。密钥本身不受影响。
+These read from 	以下内容读取自 
+ and will be unset. The secrets themselves are untouched.	，将被取消设置。密钥本身不受影响。
+Couldn't prepare the changes. Check Advanced for help.	无法准备更改。请在高级设置中查看帮助。
+Shortcut saved	快捷键已保存
+Use ${0} from another app.	在其他应用中使用 ${0}。
+Couldn't save your shortcut. Review the changes and try again.	无法保存快捷键。请检查更改后重试。
+Shortcut	快捷键
+Press your shortcut. Esc cancels.	按下你的快捷键。按 Esc 取消。
+Saved, but the shortcut needs attention. Check Advanced for help.	已保存，但快捷键仍需处理。请在高级设置中查看帮助。
+Shortcut removed.	快捷键已移除。
+Use ${0} from another app to capture a window.	在其他应用中使用 ${0} 捕获窗口。
+Review the change below to remove your shortcut.	检查下方更改以移除快捷键。
+Review the change below, then save your shortcut.	检查下方更改，然后保存快捷键。
+There's no capture shortcut to remove.	没有可移除的捕获快捷键。
+This shortcut is already set up.	此快捷键已配置。
+Shortcut changes	快捷键更改
+Only these changes will be saved. We'll keep a backup.	仅保存这些更改，并保留备份。
+Save shortcut	保存快捷键
+Remove shortcut	移除快捷键
+Allow T3 Code to read your desktop settings. You'll review any changes here before saving.	允许 T3 Code 读取桌面设置。保存前，你可在此检查所有更改。
+Preparing changes…	正在准备更改…
+Review changes	检查更改
+Connecting to your desktop…	正在连接桌面…
+Restart T3 Code to finish connecting your shortcut.	重启 T3 Code 以完成快捷键连接。
+Troubleshooting	故障排查
+Settings file	设置文件
+T3 Code also reads any files included by this file.	T3 Code 也会读取此文件引入的其他文件。
+Linked to 	已关联至 
+. The link will be kept.	。关联将保留。
+Choose a different file…	选择其他文件…
+Remove shortcut…	移除快捷键…
+Use your desktop's shortcut settings file.	使用桌面的快捷键设置文件。
+Backup: 	备份：
+Manual setup	手动设置
+Change the keys if needed.	如有需要，可更改按键。
+Turn capture off in T3 Code to stop it. Remove the shortcut from 	在 T3 Code 中关闭捕获即可停用。若要释放按键，请从以下位置移除快捷键：
+ to free up the keys.	。
+I've added the shortcut	我已添加快捷键
+Access	访问权限
+Install the extension	安装扩展
+The T3 Code GNOME extension lets you capture other windows and bring them into your draft. Sign out once after installing.	T3 Code GNOME 扩展可捕获其他窗口并添加到草稿。安装后请退出登录一次。
+Extension installed	扩展已安装
+Save your work, then sign out and back in. Your setup will be waiting here.	保存工作，然后退出并重新登录。你的设置会保留在此处。
+Update the extension	更新扩展
+Install the update, then sign out and back in.	安装更新，然后退出并重新登录。
+Allow GNOME extensions	允许 GNOME 扩展
+Open GNOME Extensions and turn on extensions, then check again.	打开 GNOME 扩展应用并启用扩展，然后再次检查。
+Enable the extension	启用扩展
+Enable T3 Code SnapShots to start capturing windows.	启用 T3 Code SnapShots 以开始捕获窗口。
+Capture is ready	捕获已就绪
+Next, choose your shortcut.	接下来选择快捷键。
+Automatic capture isn't available	自动捕获不可用
+Use Take snapshot from the command palette to choose a window.	使用命令面板中的“截图”选择窗口。
+Couldn't set up the extension	无法设置扩展
+Check T3 Code SnapShots in GNOME Extensions, then try again.	在 GNOME 扩展中检查 T3 Code SnapShots，然后重试。
+Let's try that again	请再试一次
+Couldn't check snapshots. Try again to continue.	无法检查截图功能。请重试以继续。
+Check capture access	检查捕获权限
+The extension isn't ready yet. Try again in a moment.	扩展尚未就绪。请稍后重试。
+Let's fix capture access	修复捕获权限
+Try reinstalling the capture helper, then check again.	尝试重新安装捕获辅助程序，然后再次检查。
+Update the capture helper	更新捕获辅助程序
+Allow snapshots	允许截图
+T3 Code's capture helper lets you capture other apps and return to your draft. It's included with T3 Code.	T3 Code 的捕获辅助程序可捕获其他应用并返回草稿。它随 T3 Code 提供。
+Choose a window each time	每次选择窗口
+Your desktop doesn't support automatic capture. You'll choose the window to capture instead.	当前桌面不支持自动捕获。请改为选择要捕获的窗口。
+Your desktop may ask for permission when you first capture.	首次捕获时，桌面可能会请求权限。
+Test a snapshot of the current window. If macOS asks to bypass its window picker, choose Allow. The test image is discarded.	测试捕获当前窗口。如果 macOS 询问是否绕过窗口选择器，请选择允许。测试图片会丢弃。
+Allow each permission, then continue.	逐项授予权限后继续。
+Allow access when prompted to start capturing windows.	出现提示时允许访问，以开始捕获窗口。
+Screen Recording	屏幕录制
+Capture the window you're using.	捕获当前使用的窗口。
+Include text and controls from the captured app.	包含被捕获应用的文字和控件。
+Optional. Include text and controls from the captured app.	可选。包含被捕获应用的文字和控件。
+Reinstall helper	重新安装辅助程序
+Shortcut permissions	快捷键权限
+Capture needs attention. Go back to check access.	捕获功能需要处理。请返回检查权限。
+Couldn't finish this step. Try again or check Advanced for help.	无法完成此步骤。请重试或在高级设置中查看帮助。
+Included with T3 Code. No download needed.	随 T3 Code 提供，无需下载。
+Disable extension	禁用扩展
+Remove capture helper	移除捕获辅助程序
+Installing…	正在安装…
+Check again	再次检查
+Update helper	更新辅助程序
+Install helper	安装辅助程序
+Enabling…	正在启用…
+Working…	正在工作…
+Update extension	更新扩展
+Install extension	安装扩展
+Enable extension	启用扩展
+Test capture and continue	测试捕获并继续
+Allow capture	允许捕获
+Save and finish	保存并完成
+Could not check this shortcut.	无法检查此快捷键。
+Enable snapshots	启用截图
+Include text and controls when the app makes them available.	应用支持时，包含文字和控件。
+Include app text in snapshots	截图中包含应用文字
+Choose a window to capture from any app.	从任意应用中选择要捕获的窗口。
+Capture the window you're using without switching apps.	无需切换应用即可捕获当前使用的窗口。
+Change shortcut	更改快捷键
+Choose the sound played when capture starts.	选择开始捕获时播放的音效。
+Whoosh 	掠过声 
+(Default)	（默认）
+Click	点击声
+Play Whoosh	播放掠过声
+Play Click	播放点击声
+Show a gentle cue on the captured window.	在被捕获窗口上显示轻微提示。
+Flash captured window	闪烁被捕获窗口
+Animate captured windows into your draft.	通过动画将被捕获窗口移入草稿。
+Animate snapshots	截图动画
+SnapShots	截图
+Hidden account	隐藏账户
+Sign in with	登录方式
+ on the server host, then rescan to choose accounts here.	，在服务器主机上登录后重新扫描，即可在此选择账户。
+Choose which 	选择使用哪个 
+ login each 	 登录，各 
+ host uses, or turn a host off.	主机可分别设置，也可关闭某个主机。
+Use ${0} on ${1}	使用 ${0}，所在主机：${1}
+${0} account for ${1}	${0} 账户，用于 ${1}
+Active 	当前 
+ account	 账户
+Account ${0}	账户 ${0}
+The chosen login is no longer signed in, so the active 	所选账户已退出，因此使用当前 
+ login is used.	 登录账户。
+Use active login	使用当前登录账户
+can't be used: 	无法使用：
+${0} reports this login as invalid.	${0} 报告此登录无效。
+ is set on the server, so it overrides the account chosen here until it is unset.	已在服务器中设置，因此会覆盖此处选择的账户，直到取消设置。
+Copy code & open GitHub	复制配对码并打开 GitHub
+Waiting for approval · code expires at 	等待批准 · 配对码到期时间 
+Reaches repositories in accounts and organizations that installed the app.	可访问已安装此应用的账户和组织中的仓库。
+Install on an organization	在组织中安装
+Manage on GitHub	在 GitHub 中管理
+Create a token	创建令牌
+A token saved here is used before	此处保存的令牌优先于
+and the	和
+ login, so 	 登录，因此 
+ works without the 	 无需 
+. Give it	。请为其授予
+Token	令牌
+Repository conventions	仓库惯例
+In each project, matches recent change descriptions and change request titles.	在各项目中，遵循最近的更改说明和变更请求标题风格。
+Conventional Commits	约定式提交
+Use Conventional Commit prefixes and keep change request text concise.	使用约定式提交前缀，并保持变更请求文字简洁。
+Custom instructions	自定义指令
+Use your instructions for change descriptions and change requests in every project.	在每个项目的更改说明和变更请求中使用你的指令。
+source control writing style	源代码管理写作风格
+Custom source control instructions for all selected environments	所有所选环境的自定义源代码管理指令
+Write the instructions each selected environment should use.	编写每个所选环境应使用的指令。
+Apply instructions to all	将指令应用到全部
+Write custom instructions for all	为全部编写自定义指令
+Keep titles concise. Use short bullet points in descriptions.	标题保持简洁，说明使用简短要点。
+Custom source control writing instructions	自定义源代码管理写作指令
+Review guides	审查指南
+Add a Guide tab to pull requests. An agent explains the changes and points out decisions that need review.	在拉取请求中添加指南标签页，由智能体解释更改并指出需要审查的决策。
+Must be a coding agent: it reads the pull request over many steps. Off uses the writer model, or Codex or Claude if that model is a text generator.	必须使用编程智能体，因为它需要多步读取拉取请求。关闭时使用写作模型；若该模型为文本生成器，则使用 Codex 或 Claude。
+Review guide model not saved	审查指南模型未保存
+Use a separate review guide model	使用独立的审查指南模型
+Connect an environment to choose its review guide model.	连接环境以选择其审查指南模型。
+Your preferences for review guides: what to show first, dwell on, or skip. The guide's format and coverage stay the same.	设置审查指南偏好：先显示什么、重点解释什么、跳过什么。指南格式和覆盖范围不变。
+review guide instructions	审查指南指令
+Mixed. Enter instructions to apply to all selected targets.	值不一致。输入指令以应用到所有所选目标。
+Show service interfaces before implementations. Skip test files unless they change behavior. Keep summaries to two sentences.	先展示服务接口，再展示实现。除非测试文件影响行为，否则跳过。摘要限制为两句话。
+change request templates	变更请求模板
+Use the repository's template for change request descriptions when available.	有仓库模板时，使用模板编写变更请求说明。
+Model for source control text and branch or bookmark names. When disabled, use the text generation model configured for this environment.	用于源代码管理文本、分支或书签名称的模型。禁用时使用此环境配置的文本生成模型。
+Source control writer model not saved	源代码管理写作模型未保存
+Use a separate source control writer model	使用独立的源代码管理写作模型
+Connect an environment to choose its source control writer model.	连接环境以选择其源代码管理写作模型。
+Writing & review	写作与审查
+Authenticated	已验证
+Not authenticated	未验证
+Status unknown	状态未知
+Support for 	对以下服务的支持：
+ is coming soon.	即将推出。
+Not available on this server: 	此服务器不可用：
+Available. 	可用。
+Every ${0} host is turned off.	所有 ${0} 主机均已关闭。
+ is not authenticated on this server. Sign in or configure credentials using the 	尚未在此服务器上验证。请登录，或使用
+ tool on the server host to enable change request features.	工具在服务器主机上配置凭据，以启用变更请求功能。
+Could not verify 	无法验证 
+Coming Soon	即将推出
+Toggle ${0} details	切换 ${0} 详情
+${0} availability	${0} 可用性
+Scan	扫描
+Server environment	服务器环境
+Or use your own credentials	或使用自己的凭据
+Rescan server environment	重新扫描服务器环境
+Rescan Git and hosting integrations	重新扫描 Git 和托管平台集成
+Connect an environment to inspect its version control tools and hosting integrations.	连接环境以查看其版本控制工具和托管平台集成。
+Version Control${0}	版本控制${0}
+Source control providers	源代码管理服务提供商
+Source control providers${0}	源代码管理服务提供商${0}
+Cancel microphone test	取消麦克风测试
+Recording time	录音时长
+Microphone input level	麦克风输入电平
+Opening microphone…	正在打开麦克风…
+Recording playback position	录音播放位置
+Record again	重新录音
+Could not play this recording. Try recording again.	无法播放此录音。请尝试重新录音。
+OpenRouter model	OpenRouter 模型
+Search transcription models	搜索转写模型
+No transcription model matches.	没有匹配的转写模型。
+OpenRouter no longer lists 	OpenRouter 已不再提供 
+. Dictation stays off until you choose another model.	。选择其他模型前，听写将保持关闭。
+${0} API key	${0} API 密钥
+Enter API key	输入 API 密钥
+${0} API key reference	${0} API 密钥引用
+Retry loading API key	重试加载 API 密钥
+Update 	更新 
+ to use OpenRouter dictation.	以使用 OpenRouter 听写。
+Checking for an API key…	正在检查 API 密钥…
+Retry loading models	重试加载模型
+Loading transcription models…	正在加载转写模型…
+Uses the API key saved on 	使用存储于以下环境的 API 密钥：
+. This choice applies only to this device.	。此选择仅适用于本设备。
+Ask an administrator on 	请联系以下环境的管理员：
+ to add an API key.	，添加 API 密钥。
+This choice applies only to this device. Choose Off to stop sharing.	此选择仅适用于本设备。选择关闭以停止共享。
+Connect to 	连接到 
+ with dictation access to continue.	，并获得听写权限以继续。
+Remove key…	移除密钥…
+Remove key	移除密钥
+Save and enable	保存并启用
+Save key	保存密钥
+% error)	% 错误率）
+not benchmarked	未进行基准测试
+Speed:	速度：
+Recommended	推荐
+A good default pick for the languages it covers.	对于其支持的语言，是合适的默认选择。
+Live preview	实时预览
+Shows words in your draft as you speak, before the recording finishes.	在说话时即将文字显示到草稿中，无需等待录音结束。
+Translate	翻译
+Can write English text from speech in another language. Turn on Translate to English to use it.	可将其他语言的语音转换为英文。开启“翻译为英语”以使用。
+${0} download progress	${0} 下载进度
+Verifying download…	正在校验下载…
+${0}% downloaded	已下载 ${0}%
+Cancel ${0} download	取消下载 ${0}
+Selected	已选择
+Use model	使用模型
+Delete ${0}	删除 ${0}
+Add words or phrases, separated by commas or line breaks	添加词语或短语，以逗号或换行分隔
+${0} entries	${0} 个条目
+Alias for ${0}	${0} 的别名
+Misspelling	错误拼写
+Add an alias for ${0}	为 ${0} 添加别名
+Alias	别名
+Cleanup model not saved	润色模型未保存
+Model for transcript cleanup, such as a cheaper or faster one. When disabled, use the text generation model configured for this environment.	用于转写润色的模型，例如价格更低或速度更快的模型。禁用时使用此环境配置的文本生成模型。
+Connect an environment first.	请先连接环境。
+Use a separate cleanup model	使用独立的润色模型
+Could not load transcription models	无法加载转写模型
+Transcription hardware	转写硬件
+Auto	自动
+Hardware	硬件
+Auto uses the environment’s GPU when it has one.	自动模式会在环境有 GPU 时使用 GPU。
+Unload model	卸载模型
+Release the model’s memory on the environment after it sits idle.	模型空闲后释放其在环境中占用的内存。
+This environment can’t transcribe audio: 	此环境无法转写音频：
+Pick languages to see models that support all of them. Accuracy is word or character error rate: lower is better. Speed is the time to transcribe 30 seconds of audio on Handy’s benchmark 	选择语言以查看支持所有所选语言的模型。准确率以词或字符错误率表示，越低越好；速度是在 Handy 基准测试中转写 30 秒音频所需的时间：
+Languages	语言
+Browse models by language	按语言浏览模型
+All languages	所有语言
+No languages match.	没有匹配的语言。
+All models	所有模型
+Sort and filter models: ${0}${1}	模型排序与筛选：${0}${1}
+Sort by	排序方式
+Downloaded only	仅已下载
+Waiting for the environment to connect	等待环境连接
+Say a sentence in the language above. Cleanup is skipped, so you see exactly what the model heard. The transcript stays on this page.	使用上方语言说一句话。测试会跳过润色，直接显示模型识别的内容。转写结果仅保留在此页面。
+Close model test	关闭模型测试
+Test transcript	测试转写结果
+No speech recognized. Try again.	未识别到语音，请重试。
+Refresh microphones	刷新麦克风
+System default follows your operating system. Record a ten-second test and play it back here. Test audio stays on this device and is never transcribed.	系统默认值遵循操作系统设置。可录制十秒测试并在此播放。测试音频仅保留在本设备，不会进行转写。
+Dictation shortcut mode	听写快捷键模式
+How the dictation shortcut starts and stops recording.	听写快捷键开始和停止录音的方式。
+Use	使用
+ via 	，通过 
+unavailable environment	不可用环境
+On an environment	在环境中
+Chosen environment (unavailable)	所选环境（不可用）
+ can’t transcribe audio locally. Choose a different destination.	无法在本地转写音频。请选择其他目标。
+Language	语言
+The cloud provider can detect your language automatically.	云服务提供商可自动检测语言。
+Choose an environment above to see the languages its transcription model supports.	选择上方环境以查看其转写模型支持的语言。
+Translate to English	翻译为英语
+Speak any language and get English text.	说任意语言，生成英文文字。
+Remove filler words like “um” and “uh” from transcripts.	从转写结果中移除“嗯”“呃”等语气词。
+dictionary	词典
+Names and terms transcription should spell your way, saved on this device. Add an alias when it keeps hearing a term wrong. The name of the project you dictate in is also sent as a hint.	保存于本设备的专有名称和术语，用于指导转写拼写。反复识别错误时可添加别名。当前听写项目的名称也会作为提示发送。
+Transcription options	转写选项
+Fixes punctuation, numbers, and spoken corrections with the cleanup model on the draft’s environment. Sends the transcript and nearby draft text, never audio.	通过草稿所在环境的润色模型修正标点、数字和口头纠正。仅发送转写结果和附近草稿文字，不发送音频。
+Cleanup instructions	润色指令
+Use the built-in instructions or write your own.	使用内置指令或编写自定义指令。
+Built-in	内置
+Custom cleanup instructions	自定义润色指令
+The word or phrase you say to flag a correction, like “sorry” or “scratch that”. Cleanup applies the correction only where one is meant, and hears the cue as a hint.	用于标记纠正的词语或短语，如“抱歉”或“刚才那句作废”。润色仅在确实有纠正意图时修改，并将提示词作为线索。
+Cloud via 	云端，通过 
+${0} via ${1}	${0}，通过 ${1}
+branch naming	分支命名
+Choose how new worktree branches are named from your first message.	选择如何根据第一条消息为新工作树分支命名。
+Branch prefix	分支前缀
+For example, t3 or t3/ produces t3/add-search. Leave empty for no prefix.	例如，t3 或 t3/ 将生成 t3/add-search。留空表示不使用前缀。
+branch prefix	分支前缀
+No prefix	无前缀
+Branch naming instructions	分支命名指令
+Appended to the naming prompt. The model returns the complete branch name; no prefix or suffix is added.	附加到命名提示词后。模型返回完整分支名称，不再额外添加前缀或后缀。
+branch naming instructions	分支命名指令
+Use julius/ followed by the issue ID and a short description.	使用 julius/，后接问题 ID 和简短说明。
+new worktrees start from remote	新工作树从远程分支开始
+Start new worktrees from remote by default	默认从远程分支创建新工作树
+Creation	创建
+Branches	分支
+Play ${0}	播放 ${0}
+Preview ${0}	预览 ${0}
+Failed to copy ${0}	复制 ${0} 失败
+${0} copied	已复制 ${0}
+Navigation	导航
+Linked	已关联
+Pull request video	拉取请求视频
+Open attachment on 	打开附件于 
+The reaction could not be saved	无法保存回应
+Add a reaction	添加回应
+Pending. Sent when you submit the review	待发送。提交审查时一并发送
+Discard this comment	放弃此评论
+comment	评论
+comments	评论
+Preparing...	正在准备…
+Load more comments	加载更多评论
+Stack #	堆叠 #
+May be stale	可能已过时
+Merging stack...	正在合并堆叠…
+Rebasing stack...	正在变基堆叠…
+Could not merge the stack	无法合并堆叠
+Could not rebase the stack	无法变基堆叠
+Stack merge request completed	堆叠合并请求已完成
+Stack rebased	堆叠已变基
+${0} merged the stack or added it to its merge queue.	${0} 已合并堆叠或将其加入合并队列。
+View stack #	查看堆叠 #
+, layer 	，层级 
+Retry stack refresh	重试刷新堆叠
+Merge stack (	合并堆叠（
+Rebase stack	变基堆叠
+Every layer being merged must be open and ready for review.	要合并的每一层必须处于打开且可供审查的状态。
+Merge stack	合并堆叠
+Merge stack through #${0} into ${1} (${2} ${3})	将截至 #${0} 的堆叠合并到 ${1}（${2} ${3}）
+Loading breakdown	正在加载明细
+Could not unlink the ${0}	无法取消关联 ${0}
+Could not link the ${0}	无法关联 ${0}
+. Search in the command palette.	。请在命令面板中搜索。
+Link 	关联 
+ to a thread	到会话
+receives changes from	接收更改自
+Pull request tabs	拉取请求标签页
+Back to this thread's pull requests	返回此会话的拉取请求
+Open ${0} #${1} on host	在托管平台打开 ${0} #${1}
+Collapse ${0} panel	折叠 ${0} 面板
+updated 	更新于 
+Reviewers loading	正在加载审查者
+Labels loading	正在加载标签
+Loading people	正在加载人员
+Loading timeline	正在加载时间线
+Check out this 	检出此 
+Its own folder and thread. Nothing you have open moves.	使用独立的文件夹和会话。当前已打开的内容不会移动。
+Switches the branch you are working in.	切换当前工作的分支。
+: the host will merge this on its own once its requirements are met	：满足条件后，托管平台会自动合并
+Enabling...	正在启用…
+Approve workflows to run	批准运行工作流
+Confirm approve?	确认批准？
+Could not save maintainer access	无法保存维护者访问权限
+A walk through the diff and what to read closely.	逐步解读差异，并指出需要重点阅读的内容。
+Maintainers can push to this branch. If your fork has workflows, this can also give access to its secrets.	维护者可向此分支推送。如果你的派生仓库中有工作流，此权限也可能允许访问其密钥。
+Copy 	复制 
+ number	 编号
+Close ${0}	关闭 ${0}
+Reopen 	重新打开 
+Reconnect to delete this branch	重新连接以删除此分支
+Stacked pull request	堆叠式拉取请求
+Open ${0} repository	打开 ${0} 仓库
+The title could not be saved	无法保存标题
+Could not load 	无法加载 
+ activity	 活动
+ isn't installed on 	尚未安装于 
+, so requests here use your own GitHub login and its lower rate limit.	，因此此处请求使用你自己的 GitHub 登录及其较低的请求频率限制。
+Install on 	安装于 
+Could not post the comment	无法发表评论
+Close with comment	评论并关闭
+Reopen with comment	评论并重新打开
+The review could not be submitted	无法提交审查
+Review (${0})	审查（${0}）
+Review ${0}	审查 ${0}
+Comment on ${0}	评论 ${0}
+Discard pending line comments	放弃待发送的行内评论
+Close composer	关闭输入框
+Could not take ${0} off	无法移除 ${0}
+Could not put ${0} on	无法添加 ${0}
+Could not take back the review request to ${0}	无法撤回向 ${0} 发出的审查请求
+Could not ask ${0} for a review	无法请求 ${0} 审查
+Review request to ${0} taken back	已撤回向 ${0} 发出的审查请求
+Review requested from ${0}	已请求 ${0} 审查
+team	团队
+reply	回复
+replies	回复
+Show 	显示 
+ older conversation	 条更早的讨论
+ hidden)	 条已隐藏）
+Could not save the description	无法保存说明
+Could not save the comment	无法保存评论
+Review dismissed	审查已撤销
+${0} description	${0} 说明
+Describe this ${0}	描述此 ${0}
+Check details are out of date.	检查详情已过时。
+This conversation is only partially loaded. 	此讨论仅部分加载。
+ comment	 条评论
+ is	已
+s are	已
+ loaded; open it on the host to read the rest.	加载；请在托管平台中打开以阅读其余内容。
+The only comment is hidden by the filter.	唯一的评论被筛选条件隐藏。
+All ${0} comments are hidden by the filter.	全部 ${0} 条评论均被筛选条件隐藏。
+Show only 	仅显示 
+ recent conversations	 条最近讨论
+Unable to open check details	无法打开检查详情
+Open activity on host	在托管平台打开活动
+ghost	匿名用户
+${0} opened	${0} 已打开
+${0} merged	${0} 已合并
+${0} closed	${0} 已关闭
+, before the latest commits	，早于最新提交
+ checks	 项检查
+ failed	 失败
+Check details are out of date. Refresh the pull request to update them.	检查详情已过时。刷新拉取请求以更新。
+ read	 阅读
+Stop ${0}, read	第 ${0} 站，阅读
+Loading 	正在加载 
+ lines 	 行 
+ are not in the loaded diff.	不在已加载的差异中。
+Open in Code	在代码中打开
+Add a comment…	添加评论…
+Ask the agent about these lines…	就这些行询问智能体…
+removed code, 	已删除代码，
+showing 	显示 
+diff lines	差异行
+Open ${0} in Code	在代码中打开 ${0}
+Stop 	第 
+Also in this stop	本站还包括
+This file is not in the loaded diff.	此文件不在已加载的差异中。
+Ask an agent: 	询问智能体：
+Next: 	下一步：
+The diff could not be loaded, so excerpts are missing: 	无法加载差异，因此缺少摘录：
+This change has no files to tour.	此更改没有可导览的文件。
+Could not start a review guide	无法启动审查指南
+Reading the change...	正在阅读更改…
+Rewriting this guide. You will be told when the new one is ready.	正在重写此指南。新版就绪后会通知你。
+Written before the latest push.	编写于最近一次推送之前。
+Could not rewrite this guide. ${0}	无法重写此指南。${0}
+Could not copy checkout command	无法复制检出命令
+Revert ${0} opened	已打开 ${0} 的还原请求
+Added to the composer	已添加到输入框
+The question is in the composer. Read it over, then send.	问题已放入输入框。检查后再发送。
+The ${0} is in the composer. Type your question, then send.	${0} 已放入输入框。输入问题后再发送。
+Could not open a thread	无法打开会话
+Try again from the project, or open a thread first.	请从项目中重试，或先打开一个会话。
+Asked in a thread	已在会话中提问
+The task is in the composer. Read it over, then send.	任务已放入输入框。检查后再发送。
+Preparing the ${0} checkout...	正在准备 ${0} 的检出目录…
+Could not open a thread for the checkout	无法为检出目录打开会话
+Could not prepare the ${0} checkout	无法准备 ${0} 的检出目录
+This repository is on the ${0}'s branch, with a thread open on it.	此仓库位于 ${0} 的分支，且已在其上打开会话。
+The ${0} is in its own worktree, with a thread open on it.	${0} 位于独立工作树中，且已打开会话。
+Checked out, but the thread stayed where it was	已检出，但会话位置未改变
+The checkout is ready on `${0}`. Point a thread at it from the branch picker, then ask again.	检出目录已在 `${0}` 就绪。从分支选择器将会话指向它，然后再次提问。
+Retry stack lookup	重试查找堆叠
+${0} changed ${1}	${0} 已更改 ${1}
+Checks: ${0}	检查：${0}
+Comments unavailable	评论不可用
+Commits unavailable	提交不可用
+approval	批准
+approvals	批准
+${0} #${1} not found	未找到 ${0} #${1}
+Loading ${0} diff...	正在加载 ${0} 差异…
+Open this ${0} to merge its stack	打开此 ${0} 以合并其堆叠
+Close immediately, or drag across rows to close several	立即关闭，或拖过多行以批量关闭
+${0} immediately	立即 ${0}
+Watch an iOS Simulator or Android Emulator.	查看 iOS 或 Android 模拟器。
+Unmute ${0}	取消 ${0} 静音
+Mute ${0}	将 ${0} 静音
+Device tab name	设备标签页名称
+Toggle terminal drawer${0}	切换终端抽屉${0}
+Toggle right panel${0}	切换右侧面板${0}
+Zoom out	缩小
+Zoom in	放大
+Could not update annotation voice input	无法更新批注语音输入
+Forward	前进
+Search or enter URL	搜索或输入 URL
+Open in system browser	在系统浏览器中打开
+Cancel annotation	取消批注
+Annotate preview	为预览添加批注
+Cancel annotation (Esc)	取消批注（Esc）
+Annotate elements, regions, and drawings	为元素、区域和绘图添加批注
+Capture screenshot	截图
+Screenshot · Shift-click to record	截图 · 按住 Shift 点击以录制
+Float preview over chat	在聊天上方浮动显示预览
+No preview yet	尚无预览
+Type a URL above, or run a dev script. Local servers this thread starts will show up here automatically.	在上方输入 URL，或运行开发脚本。此会话启动的本地服务器会自动显示在此处。
+Recently used	最近使用
+Local servers	本地服务器
+Select a live local server to open it in this browser tab.	选择运行中的本地服务器，在此浏览器标签页中打开。
+Preview menu	预览菜单
+Hard reload	强制重新加载
+Open DevTools	打开开发者工具
+Close separate preview window	关闭独立预览窗口
+Open separate preview window	打开独立预览窗口
+Zoom	缩放
+Reset zoom	重置缩放
+Profile: 	配置：
+Clear cookies	清除 Cookie
+Clear cache	清除缓存
+This file can’t be shown here	此处无法显示此文件
+ from 	，来自 
+ was downloaded instead.	，已改为下载。
+Open in browser	在浏览器中打开
+This site can’t be reached	无法访问此网站
+Try:	尝试：
+Checking your connection	检查网络连接
+Confirming the dev server is running	确认开发服务器正在运行
+Opening it in the environment’s browser, which reaches its network	在环境中的浏览器打开，以访问其网络
+Checking the proxy and the firewall	检查代理和防火墙
+Reload	重新加载
+Could not open this address	无法打开此地址
+Enter an http or https URL.	请输入 HTTP 或 HTTPS URL。
+Unable to change the browser tab	无法更改浏览器标签页
+Unable to move the browser tab	无法移动浏览器标签页
+Could not capture the picked element	无法捕获所选元素
+The annotation was kept without the screenshot.	批注已保留，但不包含截图。
+This tab is open in the T3 Code desktop app.	此标签页已在 T3 Code 桌面应用中打开。
+Unable to capture screenshot	无法截图
+Copied!	已复制！
+Screenshot saved	截图已保存
+Unable to start recording	无法开始录制
+Unable to stop recording	无法停止录制
+Unable to copy recording path	无法复制录制路径
+Recording saved	录制已保存
+Unable to update popped-out preview	无法更新独立预览
+file	文件
+files	文件
+${0} updated	已更新 ${0}
+Could not load T3 Connect environments	无法加载 T3 Connect 环境
+Sign in to T3 Connect	登录 T3 Connect
+Screenshot unavailable	截图不可用
+This context is no longer available. Remove it or attach it again.	此上下文已不可用。请移除或重新添加。
+No matching languages.	没有匹配的语言。
+% left	% 剩余
+Step 1 of 2: open device	第 1/2 步：打开设备
+Step 2 of 2: connect video	第 2/2 步：连接视频
+Interactive 3D iPhone Duo. Drag the screen to interact. Drag outside it or swipe with two fingers to turn. Pinch over the device to open or close its hinge.	可交互的 3D iPhone Duo。拖动屏幕进行操作；在屏幕外拖动或双指滑动以旋转；在设备上捏合以开合铰链。
+Laptop stand	笔记本支架模式
+Tent stand	帐篷支架模式
+Device stance	设备姿态
+Fold command failed (${0}).	折叠命令失败（${0}）。
+Fold device	折叠设备
+Unfold device	展开设备
+Android fold controls	Android 折叠控制
+Interactive 3D device. Drag the screen to interact. Drag outside it or swipe with two fingers to turn.	可交互的 3D 设备。拖动屏幕进行操作；在屏幕外拖动或双指滑动以旋转。
+Show 3D phone	显示 3D 手机
+Flat	平面
+Input disconnected	输入已断开
+, reconnecting…	，正在重连…
+Waiting for device video…	等待设备视频…
+Stream failed.	串流失败。
+Connecting video…	正在连接视频…
+No SSH route to 	没有通往以下环境的 SSH 路由：
+Opens over SSH. Needs your key on 	通过 SSH 打开。需要将你的密钥放在 
+Open in…	打开方式…
+Open in 	打开方式：
+The page copied text	网页已复制文字
+Downloaded ${0}	已下载 ${0}
+Press Shift+Escape to leave the browser page.	按 Shift+Escape 离开浏览器页面。
+The page asks for 	网页请求 
+a file	一个文件
+Choose 	选择 
+Browser connection was refused.	浏览器连接被拒绝。
+Could not send the files to the page	无法向网页发送文件
+Approval needed from 	需要以下环境批准：
+Provider process is gone. Interrupt or restart the child thread to respond.	服务提供商进程已退出。中断或重启子会话后再回复。
+Checkout 	检出 
+Resolve a 	解析一个 
+, then create the draft thread in the main repo or in a dedicated worktree.	，然后在主仓库或专用工作树中创建草稿会话。
+Resolving 	正在解析 
+You have uncommitted changes. They'll carry over to the other branch, or block the switch if they conflict.	你有未提交的更改。它们将带到另一分支；若发生冲突，则会阻止切换。
+Switch branch	切换分支
+Edit from here?	从此处编辑？
+Rewind chat to before this message. Your prompt and attachments return to the composer. “Revert files too” also undoes your own edits.	将聊天回退到此消息之前。提示词和附件会回到输入框。“同时还原文件”也会撤销你自己的编辑。
+Revert files too	同时还原文件
+Revert and keep changes	回退并保留更改
+change model	更改模型
+Could not apply model selection	无法应用模型选择
+This model pick was not saved. ${0}	此模型选择未保存。${0}
+Could not start ${0}	无法启动 ${0}
+Failed to send message.	发送消息失败。
+Allow retry	允许重试
+${0} fork	${0} 分支会话
+Open approval	打开批准请求
+Open question	打开问题
+Agent not responding to Stop	智能体未响应停止请求
+Stopping	正在停止
+It may be short on memory. Force stop kills its processes.	可能是内存不足。强制停止会终止其进程。
+Force stopping...	正在强制停止…
+Force stop	强制停止
+Stopping...	正在停止…
+Branch changed from	分支已更改，原为
+This thread last ran on 	此会话上次运行于 
+. Sending will continue on	。发送后将继续于
+Restoring...	正在恢复…
+Restore branch	恢复分支
+Could not force stop the agent	无法强制停止智能体
+Turn stopped; the agent is still shutting down	本轮已停止；智能体仍在退出
+Turn stopped; the agent process kept running	本轮已停止；智能体进程仍在运行
+It is shared with ${0} working ${1}. Stop those to free it.	它与 ${0} 个正在工作的 ${1} 共享。停止它们以释放资源。
+Failed to un-settle thread	取消收起会话失败
+Failed to wake thread	唤醒会话失败
+Failed to switch checkout	切换检出目录失败
+Checkout switched, but the thread could not be updated	检出目录已切换，但会话无法更新
+This thread is no longer available	此会话已不可用
+Snoozed, ${0} left	稍后提醒，剩余 ${0}
+Snoozed	稍后提醒
+Settled ${0}	已收起 ${0}
+Un-settling...	正在取消收起…
+Failed to copy path	复制路径失败
+Could not open preview	无法打开预览
+An unexpected error occurred.	发生意外错误。
+Starring…	正在标星…
+Thanks for the star!	感谢你的星标！
+It really helps T3 Code grow.	这对 T3 Code 的发展很有帮助。
+Open GitHub	打开 GitHub
+Enjoying T3 Code?	喜欢 T3 Code 吗？
+Give us a star on GitHub to let us know!	在 GitHub 上为我们点个星标吧！
+Star on GitHub	在 GitHub 上标星
+check GitHub star	检查 GitHub 星标
+star on GitHub	在 GitHub 上标星
+Checking machine resources	正在检查主机资源
+Resource checks are still running. You can choose a machine in the composer.	资源检查仍在运行。你可以在输入框中选择主机。
+Choose a machine to continue	选择主机以继续
+No machine can read every attached thread. Choose a machine in the composer or remove the threads.	没有主机能读取全部附加会话。请在输入框中选择主机，或移除附加会话。
+No eligible machine has available resources. Choose a machine in the composer to override.	没有符合条件且资源可用的主机。可在输入框中手动选择以覆盖。
+Started ${0} ${1} in background	已在后台启动 ${0} ${1}
+A background prompt could not be sent	无法发送后台提示词
+Your newer draft is unchanged. Restore the failed prompt when this composer is empty.	较新的草稿未改变。输入框为空时可恢复发送失败的提示词。
+Restore prompt	恢复提示词
+Return to the original draft and send or clear its current prompt before restoring.	返回原草稿，发送或清除当前提示词后再恢复。
+Annotation attached to draft	批注已添加到草稿
+Sending is unavailable right now. Finish the current action, then send.	当前无法发送。请先完成当前操作，再发送。
+Not connected: message not sent	未连接：消息未发送
+Reconnecting to the environment. Try again once it is connected.	正在重新连接环境。连接成功后请重试。
+Side chat not started	侧边聊天未启动
+Side chats take text only	侧边聊天仅支持文字
+Remove the attachments and context, then send it again.	移除附件和上下文后再发送。
+Choose models and a base branch	选择模型和基础分支
+Multiple models need a new thread in a Git project. Each gets its own worktree.	使用多个模型需要在 Git 项目中新建会话。每个模型会获得独立工作树。
+Attached thread is on another machine	附加的会话位于另一台主机
+This machine's agent can't read "${0}". Remove it, or switch back to ${1} to send.	此主机的智能体无法读取“${0}”。请移除它，或切回 ${1} 后发送。
+Start a Codex thread first	请先启动 Codex 会话
+Send a message before you submit feedback.	提交反馈前请先发送一条消息。
+Choose a project first	请先选择项目
+This draft no longer points to an available project.	此草稿不再指向可用项目。
+Send again when it's ready.	就绪后请重新发送。
+Could not open a fresh composer	无法打开新的输入框
+Started in background	已在后台启动
+Background task failed	后台任务失败
+Could not start thread	无法启动会话
+Open draft	打开草稿
+Request copied	请求已复制
+Send it to your workspace admin.	请发送给工作区管理员。
+Could not copy the request	无法复制请求
+ChatGPT usage limit reached	已达到 ChatGPT 用量限制
+You've reached your workspace's limit for using your ChatGPT plan in other apps. Copy a request to ask your workspace admin for increased usage limits.	你在其他应用中使用 ChatGPT 套餐的用量已达到工作区限制。复制请求并向工作区管理员申请提高用量上限。
+Copy request for admin	复制发送给管理员的请求
+Dismiss error	关闭错误提示
+You've reached your workspace's limit for using your ChatGPT plan in other apps.	你在其他应用中使用 ChatGPT 套餐的用量已达到工作区限制。
+Could not snooze thread	无法设置会话稍后提醒
+The reset time has passed. Retry the thread manually.	重置时间已过，请手动重试会话。
+Could not change auto-resume	无法更改自动继续设置
+Queued message is no longer queued	排队消息已不在队列中
+Your unsaved edit${0} was kept in the composer.	未保存的编辑${0}已保留在输入框中。
+Your unsaved edit${0} was discarded.	未保存的编辑${0}已被放弃。
+This connection cannot change keyboard shortcuts.	此连接无法更改键盘快捷键。
+The script was deleted, but its keyboard shortcut could not be removed because permission changed.	脚本已删除，但权限已改变，无法移除其快捷键。
+The script was saved, but this connection can no longer change keyboard shortcuts.	脚本已保存，但此连接已无法更改键盘快捷键。
+Deleted action "${0}"	已删除操作“${0}”
+Could not delete action	无法删除操作
+Brought back	已带回主会话
+The main thread gets this side chat with your next message there.	你在主会话发送下一条消息时，此侧边聊天会一并带入。
+Could not bring back the side chat	无法带回侧边聊天
+Could not delete the side chat	无法删除侧边聊天
+Bring back	带回主会话
+Delete side chat	删除侧边聊天
+Close side chat	关闭侧边聊天
+This side chat was deleted.	此侧边聊天已删除。
+Waiting for host state	等待主机状态
+Watching	监控中
+Watching: the agent wakes when checks finish, someone comments, or the branch conflicts	监控中：检查完成、有人评论或分支冲突时，智能体将被唤醒
+${0} stack of ${1}: merging a layer lands the ones below it.	${0} 堆叠，共 ${1} 层：合并某层时也会合并其下方各层。
+${0} ${1} chained by base branch.	${0} 个 ${1} 按基础分支串联。
+Stop watching	停止监控
+Watch for changes	监控更改
+Linked pull requests unavailable	已关联的拉取请求不可用
+No linked pull requests	没有已关联的拉取请求
+Pull requests the agent opens from this thread land here. Link one yourself from a URL or a number.	智能体从此会话创建的拉取请求会显示在此处。也可通过 URL 或编号手动关联。
+Link pull request	关联拉取请求
+ · synced 	 · 同步于 
+ open · 	 个打开 · 
+ linked	 个关联
+Pull requests unavailable	拉取请求不可用
+Your typed text was set aside	输入的文字已暂存
+It will be back in the composer once the question is answered.	回答问题后，文字将回到输入框。
+Could not copy thread ID	无法复制会话 ID
+Copy ID	复制 ID
+Your next message starts a fresh session	下一条消息将启动全新会话
+The agent won't see earlier messages in this thread.	智能体不会看到此会话中更早的消息。
+Using ${0}	正在使用 ${0}
+${0} is out of usage${1}	${0} 的用量已耗尽${1}
+Usage limits are unavailable for this provider	此服务提供商的用量限制不可用
+Unable to pop out preview	无法弹出预览
+Close popped-out preview	关闭弹出预览
+Pop preview into separate window	将预览弹出到独立窗口
+Close separate window	关闭独立窗口
+Pop into separate window	弹出到独立窗口
+Reconnecting preview…	正在重新连接预览…
+Floating browser preview	浮动浏览器预览
+Floating device preview	浮动设备预览
+Recording preview	录制预览
+Open preview in right panel	在右侧面板打开预览
+Open in right panel	在右侧面板打开
+Merge conflicts with 	合并冲突，对比分支 
+Check the branch out and resolve the conflicts in a new thread	检出分支并在新会话中解决冲突
+Mark this ${0} as ready for review	将此 ${0} 标记为可供审查
+Fix	修复
+Fix the failing checks in a new thread	在新会话中修复失败的检查
+Merge this ${0} (${1})	合并此 ${0}（${1}）
+Stop watching #${0}	停止监控 #${0}
+Watching: the agent wakes when checks finish, someone comments, or the branch conflicts. Click to stop.	监控中：检查完成、有人评论或分支冲突时，智能体将被唤醒。点击停止。
+Merge 	合并 
+This merges #	这将合并 #
+ using 	，使用 
+Copy branch name	复制分支名称
+Action unavailable	操作不可用
+This connection cannot change the thread's branch.	此连接无法更改会话分支。
+Failed to switch ref.	切换引用失败。
+Failed to create and switch ref.	创建并切换引用失败。
+Create new ref "	创建新引用“
+Branch name copied	分支名称已复制
+Failed to copy branch name	复制分支名称失败
+Auto balance	自动均衡
+Add to another machine	添加到其他主机
+Previous worktree	上一个工作树
+Stop generation	停止生成
+Previous question	上一个问题
+Stash	暂存
+Close stash	关闭暂存区
+Nothing stashed yet.	尚无暂存内容。
+ Press ${0} with a prompt in the composer to stash it.	 输入框中有提示词时，按 ${0} 可将其暂存。
+Restore stashed prompt: ${0}	恢复暂存提示词：${0}
+saving 	正在保存 
+ image	 张图片
+ dropped	 个拖入内容
+Delete stashed prompt	删除暂存提示词
+Stashed prompts	暂存提示词
+Thread on ${0}	${0} 上的会话
+Switch response model for this thread	切换此会话的回复模型
+Ask a side question in a new side chat	在新的侧边聊天中另行提问
+Same as /side	与 /side 相同
+Start a fresh session; earlier messages stay visible	开始全新会话；更早的消息仍可见
+Run provider command	运行服务提供商命令
+${0} skill	${0} 技能
+Run provider skill	运行服务提供商技能
+Notice details	通知详情
+Dismiss warning	关闭警告
+Searching workspace skills...	正在搜索工作区技能…
+Finding pull request...	正在查找拉取请求…
+Searching workspace files...	正在搜索工作区文件…
+No skills found. Try / to browse provider commands.	未找到技能。尝试输入 / 浏览服务提供商命令。
+No matching files or folders.	没有匹配的文件或文件夹。
+No matching command.	没有匹配的命令。
+Draft attachment may not persist	草稿附件可能无法持久保存
+Draft attachment could not be saved locally and may be lost on navigation.	草稿附件无法保存到本地，切换页面时可能丢失。
+Retry upload for ${0}	重试上传 ${0}
+Attach again	重新添加附件
+Remove to send	移除后发送
+Show ${0} more image attachments	再显示 ${0} 个图片附件
+Dismiss question without answering	不回答并关闭问题
+Stashed files belong to another environment	暂存文件属于其他环境
+Restore this prompt in the environment that received its files.	请在接收文件的环境中恢复此提示词。
+Restored prompt may reappear in the stash	已恢复提示词可能再次出现在暂存区
+Browser storage rejected the update, so this entry could still be there after a reload.	浏览器存储拒绝更新，重新加载后此条目可能仍在暂存区。
+Some attachments were not restored	部分附件未恢复
+Stash entry may come back	暂存条目可能重新出现
+Browser storage rejected the delete, so this prompt could reappear after a reload.	浏览器存储拒绝删除，重新加载后此提示词可能重新出现。
+Still bringing attached context into this message.	仍在将附加上下文带入此消息。
+Stash again once its chip resolves.	上下文标签解析完成后再暂存。
+Attach dropped files again or remove them before stashing	暂存前，请重新添加拖入的文件或将其移除
+Wait for file uploads before stashing this prompt	请等待文件上传完成，再暂存此提示词
+Could not stash this prompt	无法暂存此提示词
+Browser storage rejected the write, so the composer was left as-is. Free up site data and try again.	浏览器存储拒绝写入，输入框保持原样。请释放站点存储空间后重试。
+Stashed prompt will not survive a reload	重新加载后暂存提示词将丢失
+Browser storage is unavailable, so this stash is kept in memory only for this session.	浏览器存储不可用，此暂存仅保存在本次会话的内存中。
+Oldest stashed prompt discarded	最早的暂存提示词已移除
+The stash holds 20 prompts; the oldest was removed to make room.	暂存区最多保留 20 条提示词，最早的一条已移除以腾出空间。
+Stashed images were not saved	暂存图片未保存
+The prompt was stashed, but browser storage rejected its images. They will be missing if you reload.	提示词已暂存，但浏览器存储拒绝保存图片。重新加载后图片将丢失。
+Stashed images did not attach	暂存图片未能添加
+That prompt was restored or deleted before ${0} image${1} finished saving. Re-attach ${2} if you still need ${3}.	该提示词在 ${0} 张图片${1}保存完成前已恢复或删除。如仍需要 ${2}，请重新添加 ${3}。
+Couldn't bring ${0} into this message	无法将 ${0} 带入此消息
+${0} Remove the chip or attach the file again.	${0} 请移除标签或重新添加文件。
+This question cannot accept attachments.	此问题不支持附件。
+Large paste attached as ${0}	大段粘贴内容已作为 ${0} 添加
+${0} · Use ${1} to keep a large paste inline.	${0} · 使用 ${1} 可将大段粘贴内容保留在输入框中。
+Pasted text is too large for this message	粘贴文字超出此消息的大小限制
+Remove some text or an attachment, then paste again.	移除部分文字或一个附件后再粘贴。
+Pasted text is too large to attach	粘贴文字过大，无法作为附件添加
+Reduce the clipboard contents or save a smaller excerpt as a file.	减少剪贴板内容，或将较短摘录保存为文件。
+More composer controls	更多输入框控件
+No effort levels	没有推理强度选项
+Open provider settings	打开服务提供商设置
+No provider available	没有可用的服务提供商
+Still compressing a pasted image.	仍在压缩粘贴的图片。
+Send again once its thumbnail appears.	缩略图出现后请重新发送。
+Send again once its chip resolves.	标签解析完成后请重新发送。
+Folders can only be referenced on a server running on this computer	只能引用在本机运行的服务器上的文件夹
+Couldn't get the path of "${0}"	无法获取“${0}”的路径
+Type the folder path with @ instead.	请改为通过 @ 输入文件夹路径。
+Unable to add folder	无法添加文件夹
+The composer is busy; try again once it is ready.	输入框正忙，请就绪后重试。
+Loading thread context…	正在加载会话上下文…
+Unable to read the dropped thread	无法读取拖入的会话
+This thread exceeds the attachment size limit. Try a shorter thread.	此会话超出附件大小限制。请尝试较短的会话。
+Check that its environment is connected and up to date, then try again.	请确认其环境已连接且为最新版本，然后重试。
+Unable to add thread	无法添加会话
+Expand composer	展开输入框
+Enable a provider in Settings	在设置中启用服务提供商
+Ask anything...	输入你的问题…
+Live transcription	实时转写
+What should we build	我们要编写什么
+ in	，项目：
+What went wrong?	遇到了什么问题？
+The agent reads T3 Code's logs and source here, and asks before it applies a fix or posts anything.	智能体将在此读取 T3 Code 的日志和源码，并在应用修复或发布任何内容前征求确认。
+Copy command, for a terminal	复制供终端使用的命令
+Search projects	搜索项目
+Search projects...	搜索项目…
+No matching projects.	没有匹配的项目。
+ to start	以开始
+Add a project to start	添加项目以开始
+Subagent work	子智能体工作
+Read only. These subagents cannot take messages.	只读。这些子智能体无法接收消息。
+The provider has no record of which subagents this call started.	服务提供商没有记录此次调用启动了哪些子智能体。
+Earlier steps are not shown.	更早的步骤未显示。
+No transcript yet.	尚无记录。
+Runs on its own	独立运行
+Open parent	打开父会话
+Project created	项目已创建
+Path unavailable	路径不可用
+This thread does not have a workspace path to copy.	此会话没有可复制的工作区路径。
+Thread ID copied	会话 ID 已复制
+Branch copied	分支已复制
+Thread title cannot be empty	会话标题不能为空
+New thread in ${0}	在 ${0} 中新建会话
+New thread in 	新建会话于 
+Open parent thread: ${0}	打开父会话：${0}
+Thread actions for ${0}	${0} 的会话操作
+Thread title	会话标题
+From 	来自 
+Started by an agent on 	由智能体启动于 
+ through a linked environment.	，通过已连接环境。
+Failed to rename thread	重命名会话失败
+Create ${0}	创建 ${0}
+Commit & push	提交并推送
+Commit, push & ${0}	提交、推送并创建 ${0}
+Sync ref	同步引用
+Push & create ${0}	推送并创建 ${0}
+Publish repository	发布仓库
+Commit & push to default ref?	提交并推送到默认引用？
+This action will commit and push changes${0}	此操作将提交并推送更改${0}
+Push to default ref?	推送到默认引用？
+This action will push local commits${0}	此操作将推送本地提交${0}
+Commit, push & create ${0} from default ref?	从默认引用提交、推送并创建 ${0}？
+This action will commit, push, and create a ${0}${1}	此操作将提交、推送并创建 ${0}${1}
+Push & create ${0} from default ref?	从默认引用推送并创建 ${0}？
+This action will push local commits and create a ${0}${1}	此操作将推送本地提交并创建 ${0}${1}
+Pick where to host it, then point us at a repo to push to.	选择托管平台，然后指定推送目标仓库。
+Setup Required	需要设置
+Open Settings -> Source control to configure this provider.	打开“设置 → 源代码管理”以配置此服务提供商。
+Repository	仓库
+Visibility	可见性
+Private	私有
+Only invited people	仅受邀人员
+Public	公开
+Anyone on the web	互联网上的任何人
+Protocol	协议
+Publishing repository to 	正在发布仓库到 
+Publish failed	发布失败
+Repository published	仓库已发布
+Repository created	仓库已创建
+${0} is now live on ${1}.	${0} 现已发布于 ${1}。
+Remote "${0}" is set up. Make a commit and push it to share your code.	远程“${0}”已设置。创建提交并推送以分享代码。
+Publish result unavailable.	发布结果不可用。
+Publishing...	正在发布…
+Publish	发布
+Action failed	操作失败
+Created ${0}	已创建 ${0}
+Pull failed	拉取失败
+Editor opening is unavailable.	无法打开编辑器。
+Git initialization failed	Git 初始化失败
+Publish repository...	发布仓库…
+Detached HEAD: create and check out a branch to enable push and	HEAD 处于游离状态：创建并检出分支以启用推送和
+ actions.	操作。
+Behind upstream. Pull/rebase first.	落后于上游分支。请先拉取或变基。
+Initializing...	正在初始化…
+Initialize Git	初始化 Git
+Default branch	默认分支
+Open ${0} in editor	在编辑器中打开 ${0}
+Excluded	已排除
+Commit message (optional)	提交说明（可选）
+Leave empty to auto-generate	留空以自动生成
+Commit on new branch	在新分支上提交
+Abort	中止
+Check out feature branch & continue	检出功能分支并继续
+From t3.json	来自 t3.json
+Run 	运行 
+Project actions	项目操作
+Add project action…	添加项目操作…
+Run ${0}	运行 ${0}
+Pair this client again with permission to run terminal commands.	重新配对此客户端，并授予运行终端命令的权限。
+Script actions	脚本操作
+Choose project action	选择项目操作
+ · next 	 · 下次 
+ · paused	 · 已暂停
+thread automation toggle	切换会话自动化
+thread automation run now	立即运行会话自动化
+Manage scheduled tasks	管理定时任务
+Edit automation	编辑自动化
+Run ${0} now	立即运行 ${0}
+Pause ${0}	暂停 ${0}
+Resume ${0}	继续 ${0}
+Could not load automations: 	无法加载自动化：
+Stop workflow ${0}	停止工作流 ${0}
+Stop entire workflow	停止整个工作流
+${0} ${1} phase, ${2}	${0}，${1} 阶段，${2}
+agent	智能体
+agents	智能体
+No agents yet	尚无智能体
+Related threads	相关会话
+ more	 个更多
+on 	于 
+Previous agents	之前的智能体
+Could not merge back	无法合并回原会话
+Could not disconnect agent session	无法断开智能体会话
+Could not stop subagent	无法停止子智能体
+Could not stop workflow	无法停止工作流
+Merge back to ${0}	合并回 ${0}
+Merge back to source conversation	合并回源会话
+Complete a run in this fork before merging it back	合并回原会话前，请先在此分支会话中完成一次运行
+Merge this conversation back into ${0}	将此会话合并回 ${0}
+Merge this conversation back into its source	将此会话合并回源会话
+Stop subagent ${0}	停止子智能体 ${0}
+Stop subagent	停止子智能体
+Lineage · ${0} running	会话谱系 · ${0} 个运行中
+More thread actions	更多会话操作
+Disconnect agent session	断开智能体会话
+Side chats · ${0} running	侧边聊天 · ${0} 个运行中
+thread server stop	停止会话服务器
+Open in the browser panel. 	在浏览器面板中打开。
+ for your browser.	可使用你的浏览器。
+Stop localhost:${0}	停止 localhost:${0}
+Stop server	停止服务器
+Show ${0} more	再显示 ${0} 个
+Limits	用量限制
+tokens	词元
+Resets in 	重置于 
+Choose what to show	选择显示内容
+No active thread	没有活跃会话
+Pick a thread to continue	选择会话以继续
+Select an existing thread or create a new one to get started.	选择已有会话或新建会话以开始。
+Queued message ${0} of ${1}, not sent	排队消息 ${0} / ${1}，尚未发送
+Send now	立即发送
+Editing in the composer	正在输入框中编辑
+Cancel editing queued message	取消编辑排队消息
+Edit queued message	编辑排队消息
+Edit in the composer${0}	在输入框中编辑${0}
+Remove queued message	移除排队消息
+Remove from queue	从队列移除
+${0} queued message${1}	${0} 条排队消息${1}
+ queued	 条排队中
+Show fewer	收起部分
+Show all ${0} queued	显示全部 ${0} 条排队消息
+Automation	自动化
+Sent by T3 Code	由 T3 Code 发送
+Open automation	打开自动化
+Unable to update the thread pull request	无法更新会话的拉取请求
+Keep attachments on this machine	将附件保留在此主机
+Remove attachments before choosing automatic routing, then attach them on the selected machine.	选择自动路由前请移除附件，然后在选定主机中重新添加。
+Update all	全部更新
+Update ${0} ${1}	更新 ${0} ${1}
+Ready to update to ${0}	已准备好更新到 ${0}
+Reconnect this machine to update	重新连接此主机以更新
+Manual update required	需要手动更新
+Could not reconnect environment	无法重新连接环境
+Failed to reconnect.	重新连接失败。
+Could not disconnect server	无法断开服务器
+Failed to disconnect.	断开连接失败。
+Hide this server's threads. Switch it on again in Environments.	隐藏此服务器的会话。可在环境设置中再次开启。
+Disconnect server	断开服务器
+load earlier thread history	加载更早的会话历史
+The composer is not ready	输入框尚未就绪
+Try citing the selection after the connection or pending input is resolved.	连接恢复或待处理输入解决后，再尝试引用选区。
+Parent thread	父会话
+The environment is not connected.	环境未连接。
+The attachment is unavailable.	附件不可用。
+Could not open the linked prompt	无法打开关联的提示词
+Clone failed	克隆失败
+Clone 	克隆 
+This prompt had hidden characters, it may be malicious	此提示词含有隐藏字符，可能存在恶意内容
+${0} froze for ${1}s	${0} 已无响应 ${1} 秒
+Its CPU is overloaded (load ${0} on ${1} cores).	其 CPU 已过载（负载 ${0}，核心数 ${1}）。
+T3 Code on ${0} was too busy to answer.	${0} 上的 T3 Code 过于繁忙，无法响应。
+Linked thread	关联会话
+Archived thread	已归档会话
+Suggestions	建议
+In messages	消息中
+Directories	目录
+Recent Threads	最近会话
+preview viewport resize	调整预览视口大小
+Unable to resize browser viewport	无法调整浏览器视口大小
+Add to review	添加到审查
+Search languages	搜索语言
+Repo	仓库
+Dimensions	尺寸
+Browser device preset	浏览器设备预设
+Viewport width	视口宽度
+Viewport height	视口高度
+Viewport dimensions	视口尺寸
+Rotate viewport	旋转视口
+Close device toolbar	关闭设备工具栏
+Browser device toolbar	浏览器设备工具栏
+Resize browser viewport from left edge	从左边缘调整浏览器视口大小
+Resize browser viewport from right edge	从右边缘调整浏览器视口大小
+Resize browser viewport from bottom edge	从底边缘调整浏览器视口大小
+Resize browser viewport from bottom-left corner	从左下角调整浏览器视口大小
+Resize browser viewport from bottom-right corner	从右下角调整浏览器视口大小
+Needs approval	需要批准
+Needs your input	需要你的输入
+SSH verification required	需要 SSH 验证
+Enter the password or verification code required by 	输入以下主机所需的密码或验证码：
+. T3 Code passes your response to the local SSH process and keeps it in memory to reuse for this host. T3 Code does not write it to disk.	。T3 Code 会将你的输入传给本地 SSH 进程，并保留在内存中供此主机复用，不会写入磁盘。
+Expired	已过期
+SSH keys may replace a password, but your server can still require a verification code.	SSH 密钥可代替密码，但服务器仍可能要求验证码。
+Unknown error opening file.	打开文件时发生未知错误。
+Keybindings updated	快捷键已更新
+Keybindings configuration reloaded successfully.	快捷键配置已成功重新加载。
+Invalid keybindings configuration	快捷键配置无效
+Restoring your threads…	正在恢复会话…
+Migrating ${0} ${1} from the previous version. You can keep working while this finishes.	正在从上一版本迁移 ${0} 个 ${1}。期间你可以继续工作。
+Permissions have changed for ${0}	${0} 的权限已更改
+This connection still uses the old permissions, so some actions may no longer be available. Pair again using a new link with the permissions you need.	此连接仍使用旧权限，部分操作可能已不可用。请使用包含所需权限的新链接重新配对。
+Open Sharing & access	打开共享与访问
+Restart in ${0}s	${0} 秒后重启
+${0} of ${1} updated	已更新 ${0} / ${1}
+Downloading${0}	正在下载${0}
+${0} failed	${0} 失败
+Updated ${0}	已更新 ${0}
+Update failed	更新失败
+Update did not apply	更新未生效
+T3 Code is still on ${0}. Install ${1} again from the update button.	T3 Code 仍为 ${0}。请通过更新按钮重新安装 ${1}。
+Started 	已启动 
+Some requests are slow	部分请求响应较慢
+Open guide	打开指南
+ChatGPT sign-in couldn't finish	无法完成 ChatGPT 登录
+Return to the provider and try again.	返回服务提供商页面后重试。
+Reconnect to the environment and try again.	重新连接环境后重试。
+Custom snooze	自定义稍后提醒
+Choose when snoozed threads return to your inbox.	选择稍后提醒的会话何时返回收件箱。
+Date and time	日期和时间
+Duration	时长
+Choose snooze date	选择稍后提醒日期
+Snooze for	稍后提醒时长
+Decrease duration	减少时长
+Increase duration	增加时长
+Minutes	分钟
+Hours	小时
+Days	天
+Edit snooze options	编辑稍后提醒选项
+Thread deleted, but navigation failed	会话已删除，但页面跳转失败
+This connection cannot change threads.	此连接无法更改会话。
+This connection can no longer remove worktrees.	此连接已无法移除工作树。
+Failed to delete worktree	删除工作树失败
+Worktree deleted, but Git status refresh failed	工作树已删除，但 Git 状态刷新失败
+Could not remove ${0}. ${1}	无法移除 ${0}。${1}
+this thread	此会话
+Path	路径
+Discard draft	放弃草稿
+Find in thread	在会话中查找
+New thread on ${0}	在 ${0} 上新建会话
+Un-settle thread	取消收起会话
+Settle thread	收起会话
+Wake thread	唤醒会话
+Regenerating…	正在重新生成…
+Regenerate title	重新生成标题
+Mark unread	标为未读
+Share with guest	与访客分享
+Show all projects	显示所有项目
+Filter by ${0}	按 ${0} 筛选
+Turn into project	转换为项目
+Auto-settle behavior	自动收起行为
+Follow settings	遵循设置
+Never	从不
+Thread ID	会话 ID
+That snooze time has passed. Choose another time.	稍后提醒时间已过，请选择其他时间。
+Provider updated	服务提供商已更新
+${0} providers updated	已更新 ${0} 个服务提供商
+${0} of ${1} provider updates failed	${0} / ${1} 个服务提供商更新失败
+Provider update failed	服务提供商更新失败
+Provider updates failed	服务提供商更新失败
+Updating ${0}	正在更新 ${0}
+Updating ${0} providers	正在更新 ${0} 个服务提供商
+${0} update in progress.	${0} 项更新正在进行。
+${0} updates are in progress.	${0} 项更新正在进行。
+${0} provider updates failed	${0} 个服务提供商更新失败
+${0} still needs an update	${0} 仍需要更新
+${0} providers still need updates	${0} 个服务提供商仍需要更新
+${0} ${1} outdated. Review provider settings for details.	${0} 个 ${1} 已过时。请查看服务提供商设置了解详情。
+Dismiss provider update notice	关闭服务提供商更新通知
+Dismiss until provider status changes	关闭，直到服务提供商状态更改
+Unable to open release notes	无法打开发行说明
+Read more	阅读更多
+Update downloaded	更新已下载
+Restart the app from the update button to install it.	通过更新按钮重启应用以安装更新。
+Update ready to download	更新已可下载
+What's changed	更新内容
+Changes in ${0}	${0} 的更改
+${0} older ${1} on GitHub	在 GitHub 查看更早的 ${0} 个 ${1}
+restarts last	最后重启
+ skipped	 已跳过
+${0} will be interrupted and can resume after the restart.	${0} 将中断，并可在重启后继续。
+${0} will be interrupted.	${0} 将中断。
+${0} will be interrupted. ${1} can resume after the restart.	${0} 将中断。${1} 可在重启后继续。
+ running	 正在运行
+Intel build on Apple Silicon	Apple 芯片上运行 Intel 构建
+Could not update everything	无法更新全部内容
+Update release notes	更新发行说明
+T3 Code home	T3 Code 首页
+Clear thread search	清除会话搜索
+New thread in current project: Shift+click	在当前项目中新建会话：Shift+点击
+Stack of ${0} ${1}, ${2}	包含 ${0} 个 ${1} 的堆叠，${2}
+${0}, and ${1} more linked; overall ${2}	${0}，另有 ${1} 个关联项；整体 ${2}
+stack	堆叠
+chain	链
+Terminal process running	终端进程正在运行
+${0} #${1}, status pending	${0} #${1}，状态待定
+You're currently checked out on another branch.	你当前检出的是另一分支。
+Handed off from 	交接自 
+Error occurred	发生错误
+Snooze thread	稍后提醒会话
+Wake	唤醒
+Setting up	正在设置
+Goal	目标
+Approval	批准
+Request	请求
+Limited	受限
+Woke	已唤醒
+Unsent draft	未发送草稿
+Pinned	已置顶
+Regenerating title	正在重新生成标题
+Dismiss Woke notification	关闭唤醒通知
+Wake thread now	立即唤醒会话
+Thread action unavailable	会话操作不可用
+This connection cannot change one or more selected threads.	此连接无法更改一个或多个所选会话。
+Unpin project	取消项目置顶
+Failed to settle thread	收起会话失败
+Failed to pin thread	置顶会话失败
+Failed to unpin thread	取消会话置顶失败
+Failed to snooze thread	设置会话稍后提醒失败
+Settle (${0})	收起（${0}）
+Snooze (${0})	稍后提醒（${0}）
+Mark unread (${0})	标为未读（${0}）
+Delete (${0})	删除（${0}）
+Failed to snooze ${0} thread${1}	设置 ${0} 条会话${1}的稍后提醒失败
+Failed to snooze threads	设置会话稍后提醒失败
+Failed to regenerate thread titles	重新生成会话标题失败
+Failed to delete threads	删除会话失败
+Could not create thread	无法创建会话
+Could not turn thread into a project	无法将会话转换为项目
+Failed to update auto-settle	更新自动收起设置失败
+Failed to regenerate thread title	重新生成会话标题失败
+Thread archived, but navigation failed	会话已归档，但页面跳转失败
+Failed to archive thread	归档会话失败
+Failed to delete thread	删除会话失败
+Thread search results	会话搜索结果
+Searching thread messages…	正在搜索会话消息…
+No threads found	未找到会话
+Active	活跃
+Could not load older threads. Retry	无法加载更早的会话。重试
+No projects yet	尚无项目
+No threads in these projects yet	这些项目中尚无会话
+No threads in ${0} yet	${0} 中尚无会话
+No threads yet	尚无会话
+Project settings for ${0}	${0} 的项目设置
+Failed to copy thread ID	复制会话 ID 失败
+Failed to copy branch	复制分支失败
+Prompt link copied	提示词链接已复制
+Could not copy the prompt link	无法复制提示词链接
+Could not copy. Type ${0} instead.	无法复制。请改为输入 ${0}。
+Starting triage…	正在开始问题排查…
+Could not start triage	无法开始问题排查
+${0} Run ${1} in a terminal on that machine instead.	${0} 请改为在该主机的终端中运行 ${1}。
+check app access	检查应用访问权限
+Give ${0} access to ${1}	授予 ${0} 访问 ${1} 的权限
+It isn't installed there, so GitHub requests for ${0} use your own login and its lower rate limit.	该处尚未安装此应用，因此 ${0} 的 GitHub 请求使用你自己的登录及较低的请求频率限制。
+Could not create the ${0} repository	无法创建 ${0} 仓库
+${0} Use Publish Repository in the Git menu to try again.	${0} 请使用 Git 菜单中的“发布仓库”重试。
+Published to ${0}	已发布到 ${0}
+Could not create the project	无法创建项目
+Created ${0} without a first commit	已创建 ${0}，但没有首次提交
+${0} The project is in ${1}.	${0} 项目位于 ${1}。
+Failed to open project	打开项目失败
+${0} It will appear in the sidebar once this client catches up.	${0} 此客户端同步完成后，它将显示在侧边栏中。
+Navigate	导航
+${0} (Local)	${0}（本地）
+Current thread	当前会话
+Host for the new repository	新仓库的托管平台
+Use ${0} ${1} mode	使用 ${0} ${1} 模式
+Use for light mode only	仅用于浅色模式
+Use for dark mode only	仅用于深色模式
+Couldn't save theme selection	无法保存主题选择
+For ${0} mode	用于 ${0} 模式
+Change theme	更改主题
+Change appearance	更改外观
+Toggle theme editor	切换主题编辑器
+Search files…	搜索文件…
+File picker	文件选择器
+Open a project to search its files.	打开项目以搜索其文件。
+Attach a pull request to this thread by its URL, or by its number for this thread's repository.	通过 URL 将拉取请求附加到此会话，也可使用此会话仓库中的请求编号。
+Pull request URL or #42	拉取请求 URL 或 #42
+Could not update T3 Connect	无法更新 T3 Connect
+Supervised	监督模式
+Ask before commands and file changes.	运行命令和修改文件前询问。
+Auto-accept edits	自动接受编辑
+Auto-approve edits, ask before other actions.	自动批准编辑，其他操作前询问。
+Supported providers approve routine actions; others still ask.	支持此功能的服务提供商会批准常规操作，其他服务提供商仍会询问。
+Allow commands and edits without prompts.	允许执行命令和编辑，无需询问。
+Read projects and threads. Cannot start, message or change anything.	读取项目和会话。无法启动、发送消息或更改任何内容。
+Checking the sign-in request	正在检查登录请求
+One moment while this environment verifies the agent's request.	此环境正在验证智能体请求，请稍候。
+This sign-in cannot continue	此登录无法继续
+Close this page and start the sign-in again from your agent.	关闭此页面，并从智能体重新发起登录。
+This agent wants to use the threads in every project on	此智能体希望使用以下主机上所有项目中的会话：
+· name set by the app	· 名称由应用设置
+Access goes to	访问权限授予
+on the computer that opened this page	在打开此页面的计算机上
+Only approve a sign-in you just started.	仅批准你刚刚发起的登录。
+Sign-in code	登录配对码
+Paste a code	粘贴配对码
+Get one from Use T3 Code in another app (MCP), Settings → Sharing & access, or	可从“在其他应用中使用 T3 Code（MCP）”、“设置 → 共享与访问”，或运行以下命令获取：
+ on this machine.	，在本机上运行。
+What it may do	它可以做什么
+Beyond read only, it can start, message and stop threads, and none of them can run with more than the mode you pick.	除只读权限外，它可启动、发送消息和停止会话；所有会话的运行权限均不会超出所选模式。
+Could not reach T3 Connect.	无法访问 T3 Connect。
+Copy URL and open ${0}	复制 URL 并打开 ${0}
+Copy message and open ${0}	复制消息并打开 ${0}
+Message copied	消息已复制
+Connect to an environment first.	请先连接环境。
+T3 Connect is not available in this build.	此构建不支持 T3 Connect。
+What can 	以下应用可以做什么：
+ do?	？
+What can ${0} do?	${0} 可以做什么？
+Runs commands and edits files without asking	执行命令和编辑文件，无需询问
+Checking T3 Connect…	正在检查 T3 Connect…
+Connect to ${0} first.	请先连接 ${0}。
+${0}'s T3 Connect is offline	${0} 的 T3 Connect 已离线
+Can't check T3 Connect on ${0}	无法检查 ${0} 上的 T3 Connect
+Turn on	开启
+Your T3 Connect account is out of tunnels.	你的 T3 Connect 账户隧道数量已耗尽。
+Restart T3 Code on 	重启以下主机上的 T3 Code：
+Which app?	哪个应用？
+Something else…	其他应用…
+Apps that require their own client ID cannot connect.	要求专用客户端 ID 的应用无法连接。
+ help	 帮助
+Back to commands	返回命令
+Back to one click	返回一键连接
+Set up another way	使用其他方式设置
+Run these where 	运行这些命令的位置：
+ runs.	 所在主机。
+Could not copy	无法复制
+Use Set up another way.	请使用“使用其他方式设置”。
+Open ${0}	打开 ${0}
+Code to approve 	用于批准的配对码：
+Getting code…	正在获取配对码…
+Get code	获取配对码
+New code	新配对码
+Expires 	到期时间 
+ · one use	 · 仅限一次
+The code expired.	配对码已过期。
+Search project contents…	搜索项目内容…
+Search project contents	搜索项目内容
+Match case	区分大小写
+Match whole word	匹配完整单词
+Use regular expression	使用正则表达式
+ Searching…	 正在搜索…
+Invalid regular expression	正则表达式无效
+${0}${1} results in ${2} files	${0}${1} 个结果，分布在 ${2} 个文件中
+Search file contents in ${0}	在 ${0} 中搜索文件内容
+Checking file access…	正在检查文件访问权限…
+No results found.	未找到结果。
+Type to search across your project.	输入内容以搜索整个项目。
+project unarchive	取消项目归档
+No project	无项目
+Local folder	本地文件夹
+Browse a folder on disk	浏览磁盘中的文件夹
+Start a new Git repository from a name	输入名称以新建 Git 仓库
+Sources	来源
+Environment unavailable	环境不可用
+${0} is not connected.	${0} 未连接。
+Connect an environment	连接环境
+No connected environment can add a project	没有已连接环境可以添加项目
+New thread in...	新建会话于…
+New thread without a project	新建无项目会话
+Triage an issue	排查问题
+An agent investigates a T3 Code problem and helps file an issue	由智能体调查 T3 Code 问题并帮助提交问题报告
+Find in current thread	在当前会话中查找
+Copy prompt link	复制提示词链接
+Copy prompt link with repo and model	复制包含仓库和模型的提示词链接
+Copy PR link	复制拉取请求链接
+Copy thread	复制会话
+Link pull request to thread	将拉取请求关联到会话
+Show linked pull requests	显示已关联的拉取请求
+Agent session will restart	智能体会话将重启
+Your next message starts a fresh session.	下一条消息将开始全新会话。
+Restart agent session	重启智能体会话
+Go to file	转到文件
+Open WSL folder	打开 WSL 文件夹
+Open pull requests	打开拉取请求
+Use T3 Code in another app (MCP)	在其他应用中使用 T3 Code（MCP）
+Open usage	打开用量
+Open settings	打开设置
+Settings · ${0}	设置 · ${0}
+Failed to add project	添加项目失败
+Windows-style paths are only supported on Windows.	仅在 Windows 上支持 Windows 风格路径。
+Relative paths require an active project.	使用相对路径需要活跃项目。
+Cannot add project	无法添加项目
+This connection cannot add projects.	此连接无法添加项目。
+Repository name incomplete	仓库名称不完整
+Repository lookup failed	查找仓库失败
+Clone unavailable	克隆不可用
+This connection needs permission to write source control and add projects.	此连接需要源代码管理写入权限和添加项目权限。
+Add existing project	添加现有项目
+Open a folder or clone a repository	打开文件夹或克隆仓库
+Create private repository	创建私有仓库
+Create private repository on ${0}	在 ${0} 上创建私有仓库
+Finished	已完成
+Updated	已更新
+Interrupted	已中断
+Cancelled	已取消
+Reasoning effort	推理强度
+Assets	资源
+Mobile	移动端
+Server	服务器
+Web	网页端
+Comfortable	舒适
+Today	今天
+Tomorrow	明天
+In	再过
+Your ${0} account	你的 ${0} 账户
+Thread search is unavailable on this server.	此服务器不支持会话搜索。
+Update the server to enable it.	更新服务器以启用此功能。
+Could not add WSL project	无法添加 WSL 项目
+Start the matching WSL backend, then choose the folder again.	启动对应的 WSL 后端，然后重新选择文件夹。
+Cloning	正在克隆
+Creating	正在创建
+Create (${0})	创建（${0}）
+Searching messages…	正在搜索消息…
+Loading folders...	正在加载文件夹…
+Command palette	命令面板
+Unable to run command	无法运行命令
+Select where to clone	选择克隆位置
+ (guest)	（访客）
+Could not create a guest link.	无法创建访客链接。
+The guest sees the thread as you do, including command output and the agent's reasoning. Each message they send waits for you.	访客看到的会话与你相同，包括命令输出和智能体推理。访客发送的每条消息都需要等待你处理。
+Guest link	访客链接
+The link works once and expires in 24 hours.	此链接仅可使用一次，24 小时后过期。
+A new link ends the current one.	创建新链接将使当前链接失效。
+Creating...	正在创建…
+stop guest share	停止访客共享
+Stop sharing	停止共享
+Guest link expired	访客链接已过期
+resolve guest message	处理访客消息
+Dismiss message from ${0}	忽略来自 ${0} 的消息
+Send message from ${0}	发送来自 ${0} 的消息
+Read file to copy	读取待复制文件
+Add project to machine	将项目添加到主机
+Copy file to machine	将文件复制到主机
+Could not copy ${0} ${1} to ${2}	无法将 ${0} ${1} 复制到 ${2}
+ and bring the local files git does not track.	，并带上 Git 未跟踪的本地文件。
+Machine to add the project to	要添加项目的目标主机
+No machine available	没有可用主机
+Clone over	克隆方式
+Clone protocol	克隆协议
+Folder on 	文件夹所在主机 
+Copy ignored files	复制被忽略的文件
+No ignored files to copy.	没有可复制的被忽略文件。
+Finding ignored files…	正在查找被忽略文件…
+Showing the first 	显示前 
+ files.	 个文件。
+Files are copied after the clone finishes. Folders git ignores whole, like node_modules, are left out.	文件将在克隆完成后复制。Git 整体忽略的目录（如 node_modules）不包含在内。
+Confirm action	确认操作
+This action requires your confirmation.	此操作需要你确认。
+Reconnecting…	正在重新连接…
+Client not supported	不支持此客户端
+Connection failed	连接失败
+Not connected	未连接
+T3 Connect route added	T3 Connect 路由已添加
+Environment added	环境已添加
+Connecting to ${0} through T3 Connect.	正在通过 T3 Connect 连接 ${0}。
+Could not connect environment	无法连接环境
+T3 Connect enabled	T3 Connect 已启用
+Mesh your devices together. Publish this environment and connect the rest, all in one place.	将设备连接成网。在一个位置发布此环境并连接其他环境。
+Set up T3 Connect	设置 T3 Connect
+Don't show this again	不再显示
+Not now	暂不
+Publish this environment	发布此环境
+Send activity from this environment to your mobile clients for push notifications and Live Activities.	将此环境的活动发送到移动客户端，用于推送通知和实时活动。
+No other environments are published to your account yet. Publish one from another device and it will show up here.	你的账户尚未发布其他环境。在另一设备上发布环境后，它将显示在此处。
+Checking current installation	正在检查当前安装
+Waiting for installer	等待安装程序
+Downloading relay client	正在下载中继客户端
+Verifying download	正在校验下载
+Installing relay client	正在安装中继客户端
+Validating executable	正在验证可执行文件
+Activating installation	正在激活安装
+Relay client installation progress	中继客户端安装进度
+Keep T3 Code open while the relay client is installed.	安装中继客户端期间请保持 T3 Code 打开。
+Managed relay client	托管中继客户端
+T3 Code will download and install version	T3 Code 将下载并安装版本
+ locally.	到本地。
+Download and install	下载并安装
+Snapshot taken, but no project is available	已截图，但没有可用项目
+Add a project, then capture the window again.	添加项目后重新捕获窗口。
+Snapshot failed	截图失败
+Capture ${0}: ${1}	捕获 ${0}：${1}
+Try the capture again.	请重试捕获。
+Failed to add backend.	添加后端失败。
+Could not reopen view	无法重新打开视图
+Failed to remove project	移除项目失败
+Cloning ${0}	正在克隆 ${0}
+Cloned ${0}	已克隆 ${0}
+Cancelled cloning ${0}	已取消克隆 ${0}
+Failed to clone ${0}	克隆 ${0} 失败
+The clone failed.	克隆失败。
+Your ChatGPT plan is connected	你的 ChatGPT 套餐已连接
+Eligible usage in T3 Code uses your ChatGPT plan. Manage your shared usage and any credit settings in ChatGPT.	T3 Code 中符合条件的用量使用你的 ChatGPT 套餐。请在 ChatGPT 中管理共享用量和额度设置。
+Its ${0} palette was added.	其 ${0} 调色板已添加。
+Could not save your theme	无法保存主题
+Browser storage is unavailable, so the change was not kept.	浏览器存储不可用，更改未保留。
+${0} saved	${0} 已保存
+Your changes are now active.	你的更改现已生效。
+Your changes are saved.	你的更改已保存。
+${0} created	${0} 已创建
+Open this prompt	打开此提示词
+It opens as a draft. Nothing runs until you press Send.	将以草稿打开。按下发送前不会运行任何内容。
+Open this thread	打开此会话
+It opens in T3 Code if you're connected to the machine it runs on.	连接到运行该会话的主机后，可在 T3 Code 中打开。
+T3 Code removed 	T3 Code 已移除 
+ hidden character	 个隐藏字符
+. Read the prompt before you send it.	。发送前请阅读提示词。
+Open in app	在应用中打开
+Open in desktop app	在桌面应用中打开
+Continue here	在此继续
+Get T3 Code	获取 T3 Code
+Remember my choice	记住我的选择
+Page not found	未找到页面
+This link doesn't point to a page in 	此链接未指向以下应用中的页面：
+. Go home to choose a project or start a thread.	。返回首页以选择项目或开始会话。
+Go home	返回首页
+Reload app	重新加载应用
+Error report	错误报告
+Pairing with this environment	正在与此环境配对
+Validating the pairing link and preparing your session.	正在验证配对链接并准备会话。
+Pair with this environment	与此环境配对
+Pairing token	配对令牌
+Paste a one-time token or pairing secret	粘贴一次性令牌或配对密钥
+Host: 	主机：
+Verify the backend is reachable from this browser, supports CORS for hosted clients, and is served over HTTPS when opening this page from HTTPS.	请确认此浏览器可访问后端、后端支持托管客户端的 CORS，且从 HTTPS 打开此页面时后端也使用 HTTPS。
+Pairing...	正在配对…
+Open app	打开应用
+Reviewing	审查中
+Authored	我创建的
+Closed	已关闭
+Merged	已合并
+Merge readiness	合并就绪状态
+Blocked on me	等待我处理
+Recently updated	最近更新
+Newest shown	显示最新
+Oldest shown	显示最早
+Largest shown	显示最大
+Minimize	最小化
+Maximize	最大化
+Restore	还原
+Toggle fullscreen	切换全屏
+Notifications only	仅通知
+Sound only	仅声音
+Notifications with sound	通知与声音
+Map to	映射到
+Add model price	添加模型价格
+Some environment prices are unavailable.	部分环境的价格不可用。
+No custom prices or mappings. Add a row to set one.	没有自定义价格或映射。添加一行以设置。
+New model ID	新模型 ID
+Automatic pricing after saving	保存后自动定价
+Map ${0} to model	将 ${0} 映射到模型
+${0} price for ${1}	${0} 价格，用于 ${1}
+Counted as 	计为 
+Undo reset for ${0}	撤销 ${0} 的重置
+Remove new model	移除新模型
+Reset price for ${0} to automatic	将 ${0} 的价格恢复为自动
+Undo reset	撤销重置
+Remove row	移除行
+Reset to automatic	恢复为自动
+Blank cache rates use the input price. Enter 0 for free tokens. A mapped model’s usage counts as the model it maps to.	缓存费率留空时使用输入价格。免费词元请输入 0。映射模型的用量计入目标模型。
+ Mixed cells keep each environment’s rate until you edit them.	 值不一致的单元格在编辑前保留各环境自己的费率。
+Not saved · ${0}	未保存 · ${0}
+Saved	已保存
+Discard pending changes	放弃待保存的更改
+Discard changes	放弃更改
+Ultrafast	超快
+Cost	费用
+Tokens	词元
+Per 1M tokens	每百万词元
+Cache hit	缓存命中
+Cost by type	按类型统计费用
+Tokens by type	按类型统计词元
+Cost by speed	按速度统计费用
+ tokens have no known price	 个词元没有已知价格
+Set price	设置价格
+Premium 	高级 
+Usage period	用量时间范围
+Usage metric	用量指标
+Connect an environment to see ${0}.	连接环境以查看 ${0}。
+Select an environment to see ${0}.	选择环境以查看 ${0}。
+ sessions	 个会话
+Unpriced usage details	未定价用量详情
+API estimate excludes 	API 费用估算不包含 
+ unpriced records.	 条未定价记录。
+ChatGPT shared usage	ChatGPT 共享用量
+${0} of cost · ${1} tokens	费用占比 ${0} · ${1} 个词元
+${0} of tokens · ${1}	词元占比 ${0} · ${1}
+Totals	总计
+Processed tokens	已处理词元
+Cached input	缓存输入
+Uncached input	未缓存输入
+Cache savings	缓存节省
+Breakdown	明细
+Usage breakdown	用量明细
+No activity in this window.	此时间范围内没有活动。
+Unpriced	未定价
+Usage breakdown by time	按时间统计用量明细
+Hour	小时
+Day	天
+Counted once across environments sharing a transcript directory:	共享同一对话记录目录的环境仅计数一次：
+Some environments could not report usage	部分环境无法报告用量
+No environments connected.	没有已连接环境。
+Totals are partial while selected environments scan.	所选环境扫描期间，总计尚不完整。
+Model prices	模型价格
+All providers	所有服务提供商
+Play	播放
+Lint	代码检查
+Configure	配置
+Debug	调试
+Delete action "	删除操作“
+This action cannot be undone.	此操作无法撤销。
+Delete action	删除操作
+Actions are project-scoped commands you can run from the top bar or keybindings.	操作是项目级命令，可从顶部工具栏或通过快捷键运行。
+Keybinding	快捷键
+Press a shortcut. Use 	按下快捷键。使用 
+ to clear. Shortcuts are environment-wide. Projects using the same action share its shortcut.	清除。快捷键在整个环境中生效，使用相同操作的项目共享其快捷键。
+Preview URL (optional)	预览 URL（可选）
+Open this URL in the in-app preview when this action runs.	运行此操作时在应用内预览中打开此 URL。
+Run automatically on worktree creation	创建工作树时自动运行
+Wait for it to finish before the agent starts	完成后再启动智能体
+Run in the thread's worktree when the thread settles	会话收起时，在其工作树中运行
+Stop this action when the thread settles	会话收起时停止此操作
+Open preview automatically when this action runs	运行此操作时自动打开预览
+Could not open in ${0}	无法在 ${0} 中打开
+${0} won't be sent	${0} 将不会发送
+Remove ${0} or re-add ${1} to include terminal output.	移除 ${0} 或重新添加 ${1} 以包含终端输出。
+${0} omitted from message	消息中已省略 ${0}
+Re-add ${0} if you want that terminal output included.	若要包含终端输出，请重新添加 ${0}。
+Start a new chat to switch providers	新建聊天以切换服务提供商
+This thread does not support switching providers after it has started.	此会话开始后不支持切换服务提供商。
+Could not load the cited response	无法加载被引用的回复
+Load earlier turns, then click the citation to try again. Your saved quote is unchanged.	加载更早的轮次，然后点击引用重试。已保存的引用保持不变。
+The cited response is unavailable	被引用的回复不可用
+It may have been removed. The selected text is still saved in your citation.	回复可能已移除。所选文字仍保存在引用中。
+The citation does not refer to an assistant response	此引用未指向助手回复
+The selected text is still saved in your citation.	所选文字仍保存在引用中。
+load cited thread history	加载被引用会话的历史
+File change	文件更改
+File to read	要读取的文件
+Permission request	权限请求
+App access request	应用访问请求
+Provider process is gone. Interrupt or restart the run to respond.	服务提供商进程已退出。中断或重启运行后再回复。
+Continued	已继续
+Continued for ${0}	已继续 ${0}
+Superseded attempt	已被后续尝试替代
+Base	基准
+Work locally	在本地工作
+Couldn't load output: 	无法加载输出：
+exit 	退出码 
+Working for 	已工作 
+Compacting for 	已压缩 
+${0} phase	${0} 阶段
+This context is no longer available.	此上下文已不可用。
+Download ${0}	下载 ${0}
+Download 	下载 
+${0} (guest)	${0}（访客）
+This thread does not have a workspace path to save into.	此会话没有可保存到的工作区路径。
+Enter a path relative to 	输入相对于以下目录的路径：
+Unable to load 	无法加载 
+T3 could not ask for approval here.	T3 无法在此请求批准。
+This app cannot call that tool.	此应用无法调用该工具。
+Declined by the user.	用户已拒绝。
+Links open only from a click in the app.	链接仅能通过应用内点击打开。
+Messages are not available here.	此处不支持消息。
+${0} has no contents.	${0} 没有内容。
+${0} is too large to save.	${0} 过大，无法保存。
+The 	此 
+ app was closed	 应用已关闭
+Show app	显示应用
+ app left its page and was stopped	 应用已离开其页面并停止
+Unable to load the 	无法加载此 
+ app	 应用
+${0} app	${0} 应用
+ changed file	 个更改文件
+ more file	 个更多文件
+ in the full diff	，位于完整差异中
+decline link request	拒绝连接请求
+Choose machine…	选择主机…
+Review link…	检查连接…
+Only a session that manages access here can answer this.	只有在此管理访问权限的会话才能回应。
+answer link request	回应连接请求
+Agents here can then launch, message and wait on threads there. Revoke it in that machine's Connections.	此处的智能体随后可在该主机启动会话、发送消息并等待结果。可在该主机的连接设置中撤销。
+This environment is already linked to 	此环境已连接到 
+. The agent can use that link as it is; change its access in Settings → Connections.	。智能体可直接使用现有连接；可在“设置 → 连接”中更改权限。
+answer secret request	回应密钥请求
+Paste the secret	粘贴密钥
+Save securely	安全保存
+Open parent thread	打开父会话
+ tokens	 个词元
+Loading work history	正在加载工作历史
+Cut off by a steer	被引导消息中断
+Some history was not imported	部分历史未导入
+Imported ${0} ${1}	已导入 ${0} 个 ${1}
+Setting up 	正在设置 
+Could not turn on ${0}	无法开启 ${0}
+Turn on: ${0}	开启：${0}
+Set up: ${0}	设置：${0}
+Looking for projects in your 	正在查找项目，来源为你的 
+ history…	 历史…
+Could not check projects. 	无法检查项目。
+From your 	来自你的 
+ history	 历史
+Review all ${0}	查看全部 ${0} 项
+ selected	 个已选择
+Could not check projects again. 	无法重新检查项目。
+T3 Code app for iPhone and Android	适用于 iPhone 和 Android 的 T3 Code 应用
+Could not check T3 Connect.	无法检查 T3 Connect。
+Your phone can reach this computer. Sign in to the app with the same account.	你的手机可访问此计算机。请在手机应用中使用同一账户登录。
+T3 Connect is on for this computer. Sign in to the app with the same account.	此计算机已开启 T3 Connect。请在手机应用中使用同一账户登录。
+Sign in to T3 Connect here, then in the app with the same account.	先在此登录 T3 Connect，然后在手机应用中使用同一账户登录。
+Could not save Codex setup	无法保存 Codex 设置
+ in this terminal.	，在此终端中。
+folder	文件夹
+folders	文件夹
+Added to 	已添加到 
+. Open a new terminal to use 	。打开新终端后即可使用 
+ from any terminal. Adds one line to	，在任意终端中可用。将向以下文件添加一行：
+Focus Next Workspace Area	聚焦下一个工作区区域
+Focus Previous Workspace Area	聚焦上一个工作区区域
+Composer: Opposite Queue or Steer Action	输入框：执行相反的排队或引导操作
+Composer: Start in Background	输入框：在后台启动
+Composer: Send and Start New Thread	输入框：发送并新建会话
+Composer: Start or Finish Dictation	输入框：开始或结束听写
+Queue: Send First Queued Message	队列：发送第一条排队消息
+Queue: Edit Last Queued Message	队列：编辑最后一条排队消息
+Pull Request: Copy Link or Thread	拉取请求：复制链接或会话
+Reopen Closed Tab	重新打开已关闭的标签页
+Preview: Focus URL	预览：聚焦 URL
+Applying settings for	应用设置，目标：
+across	范围：
+All environments	所有环境
+No environments	没有环境
+Unavailable environment	环境不可用
+Environment scope	环境范围
+Preview & diff	预览与差异
+Clear all conditions	清除所有条件
+Remove condition	移除条件
+Remove group and its conditions	移除分组及其条件
+Use variables with !, &&, ||, and parentheses.	请结合变量与 !、&&、|| 和括号编写条件。
+Red & green	红色与绿色
+About ${0}	关于 ${0}
+If the final localhost page does not load, paste its full URL here.	如果最后的 localhost 页面无法加载，请将其完整 URL 粘贴到此处。
+No in-app sign-in advertised. Follow the provider's docs to finish setup.	服务提供商未提供应用内登录。请按其文档完成设置。
+On OpenAI, sign in with the account you choose here.	请在 OpenAI 中登录你在此选择的账户。
+We do not recommend managing multiple 	不建议在 T3 Code 中管理多个 
+ accounts in T3 Code.	 账户。
+Each account has its own Codex instance and sign-in. Choose the other account on the sign-in page.	每个账户拥有独立的 Codex 实例和登录状态。请在登录页面选择另一个账户。
+Adding account…	正在添加账户…
+Waiting for the server to report installation and authentication details.	等待服务器报告安装和验证详情。
+This provider is installed but disabled for new sessions in T3 Code.	此服务提供商已安装，但未对 T3 Code 中的新会话启用。
+CLI not detected on PATH.	未在 PATH 中检测到 CLI。
+The provider is installed, but the server could not fully verify it.	服务提供商已安装，但服务器无法完整验证。
+The provider failed its startup checks.	服务提供商未通过启动检查。
+Use ${0} for full support.	使用 ${0} 以获得完整支持。
+Update for full support.	更新以获得完整支持。
+${0}: install ${1}.	${0}：安装 ${1}。
+${0}: install the latest provider version.	${0}：安装最新的服务提供商版本。
+If sign-in doesn't return to T3 Code, paste the URL from the final localhost page.	如果登录后未返回 T3 Code，请粘贴最后的 localhost 页面 URL。
+ChatGPT sign-in redirect URL	ChatGPT 登录重定向 URL
+Paste the URL from the sign-in tab	粘贴登录标签页中的 URL
+Try sign-in in your browser	尝试在浏览器中登录
+Use T3 desktop for automatic return	使用 T3 桌面端以自动返回
+Could not read Codex setup status. Reconnect and try again.	无法读取 Codex 设置状态。请重新连接后重试。
+CODEX_HOME path	CODEX_HOME 路径
+Option 	选项 
+Remove option ${0}	移除选项 ${0}
+ model	 模型
+Move ${0} up	将 ${0} 上移
+Move ${0} down	将 ${0} 下移
+The ACP operation failed.	ACP 操作失败。
+ACP session imported	ACP 会话已导入
+ACP session already imported	ACP 会话已导入过
+ACP session deleted	ACP 会话已删除
+Invalid provider headers	服务提供商请求头无效
+ACP provider configured	ACP 服务提供商已配置
+ACP provider disabled	ACP 服务提供商已禁用
+Logged out of ACP agent	已退出 ACP 智能体登录
+Project for ACP sessions	ACP 会话的项目
+Configure non-secret routing. Headers are write-only.	配置非敏感路由。请求头仅可写入。
+Project for ACP providers	ACP 服务提供商的项目
+ · Required	 · 必填
+${0} protocol	${0} 协议
+${0} base URL	${0} 基础 URL
+${0} write-only headers JSON	${0} 只写请求头 JSON
+Write-only headers JSON, e.g. {"Authorization":"Bearer …"}	只写请求头 JSON，例如 {"Authorization":"Bearer …"}
+Clear ${0}	清除 ${0}
+Environment variable name ${0}	环境变量名称 ${0}
+Remove environment variable ${0}	移除环境变量 ${0}
+Mark environment variable ${0} as sensitive	将环境变量 ${0} 标记为敏感信息
+Environment variable value ${0}	环境变量值 ${0}
+Sensitive values are stored separately and never returned to the app.	敏感值单独存储，永远不会返回到应用中。
+ Enter a new value to rename a saved one or make it plain text.	 输入新值以重命名已保存的值，或将其改为纯文本。
+Authenticated as	验证身份
+${0}, view details	${0}，查看详情
+Install ${0}	安装 ${0}
+or, update manually using	或使用以下命令手动更新
+${0} enablement	${0} 启用状态
+Delete instance ${0}	删除实例 ${0}
+This instance uses 	此实例使用 
+, which is not available in this build. Its configuration is preserved.	，此构建不支持它。其配置已保留。
+Model preferences and custom models are saved on the selected environment and shared across connected devices.	模型偏好和自定义模型保存在所选环境中，并在已连接设备之间共享。
+Could not copy ${0} update command	无法复制 ${0} 更新命令
+${0} update command copied	${0} 更新命令已复制
+Run it in a terminal when you are ready to update.	准备更新时，请在终端运行此命令。
+Could not add provider instance	无法添加服务提供商实例
+Provider instance added	服务提供商实例已添加
+${0} instance '${1}' was added.	已添加 ${0} 实例“${1}”。
+Run an installed ACP executable on ${0}.	在 ${0} 上运行已安装的 ACP 可执行文件。
+Enter an official registry ID and any local executable or auth override.	输入官方注册表 ID，以及本地可执行文件或验证覆盖设置。
+Open documentation for ${0} (${1})	打开 ${0} 的文档（${1}）
+Docs	文档
+Open source for ${0} (${1})	打开 ${0} 的源码（${1}）
+Source	来源
+Letters, digits, '-', or '_'.	字母、数字、连字符或下划线。
+Optional marker shown in the picker.	在选择器中显示的可选标识。
+This driver has no required configuration. You can add the instance now.	此驱动没有必填配置。现在即可添加实例。
+Local ACP	本地 ACP
+Save ${0}	保存 ${0}
+Preparing ${0} download…	正在准备下载 ${0}…
+The media action failed.	媒体操作失败。
+opened 	已打开 
+Enter to save the citation comment; Command/Ctrl+Enter to save and send; Shift+Enter for a new line.	按 Enter 保存引用评论；Command/Ctrl+Enter 保存并发送；Shift+Enter 换行。
+Comments can contain up to 	评论最多可包含 
+characters.	个字符。
+Could not open the cited response	无法打开被引用的回复
+Click the citation to try again.	点击引用以重试。
+The quoted text has changed	被引用的文字已更改
+Showing the source response. The saved quote is unchanged.	正在显示源回复。已保存的引用保持不变。
+Structured accessibility elements were included, but they have no readable names or values.	已包含结构化辅助功能元素，但没有可读取的名称或值。
+The app or capture backend did not provide verified accessibility data.	应用或捕获后端未提供经过验证的辅助功能数据。
+Click to zoom in or return to fit. Scroll to zoom, drag to pan. Use Enter to toggle zoom, plus or minus to zoom, and 0 to fit.	点击以放大或恢复适应大小。滚动缩放，拖动平移。Enter 切换缩放，加减号缩放，0 适应大小。
+% zoom	% 缩放
+Expanded 	已展开 
+ preview	 预览
+The diagram renderer failed to load.	图表渲染器加载失败。
+Unable to render diagram: 	无法渲染图表：
+File options for ${0}	${0} 的文件选项
+Preview access is unavailable for this client.	此客户端没有预览访问权限。
+Toggle task	切换任务状态
+Unable to link pull request	无法关联拉取请求
+Unable to unlink pull request	无法取消关联拉取请求
+Recorded content before	记录的更改前内容
+Recorded content after	记录的更改后内容
+Turn 	轮次 
+Open commit ${0}	打开提交 ${0}
+Showing latest ${0} commits	显示最近 ${0} 个提交
+Checking file access...	正在检查文件访问权限…
+This connection cannot read local diffs.	此连接无法读取本地差异。
+Show ${0} hidden test ${1}	显示 ${0} 个隐藏的测试 ${1}
+Diff scope: ${0}	差异范围：${0}
+Comparing ${0} against ${1}	比较 ${0} 与 ${1}
+Change comparison target. Currently ${0}	更改比较目标。当前为 ${0}
+Use remote version of ${0}	使用 ${0} 的远程版本
+Turn diffs are unavailable because this project is not a git repository.	此项目不是 Git 仓库，因此无法查看轮次差异。
+Showing tracked changes. Untracked changes could not be loaded. Refresh to retry.	正在显示已跟踪的更改。无法加载未跟踪的更改，请刷新重试。
+Showing tracked changes. Checking untracked files...	正在显示已跟踪的更改，并检查未跟踪文件…
+This preview exceeds the size limit. Changes shown are incomplete.	此预览超出大小限制，显示的更改不完整。
+ Totals include all changes.	 总计包含全部更改。
+This tool call changed 	此次工具调用更改了 
+ files. The recorded patch omits	 个文件。记录的补丁省略了其中
+ of them.	个。
+The provider recorded file content without a diff.	服务提供商记录了文件内容，但未提供差异。
+Empty content.	内容为空。
+Loading tool call diff...	正在加载工具调用差异…
+Loading checkpoint diff...	正在加载检查点差异…
+Failed to copy mention	复制引用失败
+The chat isn't ready to accept input right now.	聊天当前尚未准备好接收输入。
+ Click to retry.	 点击重试。
+More matches available. Refine your search.	还有更多匹配项。请缩小搜索范围。
+${0} files	${0} 个文件
+Back to 	返回 
+Retry loading folder	重试加载文件夹
+No entries from this folder are available in the partial workspace index.	部分工作区索引中没有此文件夹的可用条目。
+Refresh failed. Retry	刷新失败，重试
+Some workspace entries are not shown.	部分工作区条目未显示。
+Unable to load workspace image.	无法加载工作区图片。
+Unable to load file preview.	无法加载文件预览。
+Unable to load audio.	无法加载音频。
+Read-only connection. Unsaved edits are kept until write access returns.	只读连接。未保存的编辑会保留，直到写入权限恢复。
+Preview limited to the first 1 MB of a 	预览仅显示前 1 MB，文件大小为 
+ byte file.	 字节。
+Attempted path	尝试的路径
+Workspace folder:	工作区文件夹：
+. Check the link's path or locate the file in Files.	。请检查链接路径，或在文件浏览器中查找文件。
+Other	其他
+Another address…	其他地址…
+Push notifications	推送通知
+Live Activities	实时活动
+Loading mobile clients	正在加载移动客户端
+No mobile clients	没有移动客户端
+Install T3 Code on your phone and sign in to T3 Connect to get push notifications and Live Activities.	在手机上安装 T3 Code 并登录 T3 Connect，以接收推送通知和实时活动。
+Could not load mobile clients	无法加载移动客户端
+Mobile clients	移动客户端
+Mobile devices that get notifications from your environments.	接收环境通知的移动设备。
+ tunnels in use	 个隧道使用中
+T3 Connect tunnels in use	T3 Connect 隧道使用情况
+Link T3 Chat	关联 T3 Chat
+Upgrade on T3 Chat	在 T3 Chat 上升级
+You're out of tunnels (they cost us money).	隧道数量已耗尽（隧道会产生运行成本）。
+Pro · up to 	Pro · 最多 
+ tunnels. 	 个隧道。
+ to Premier for	 升级到 Premier 可获得
+ for more tunnels	 以获取更多隧道
+Could not load T3 Chat link	无法加载 T3 Chat 关联
+Not linked	未关联
+Confirm on	确认位置
+, then select Refresh.	，然后点击刷新。
+You confirm the link on t3.chat.	请在 t3.chat 上确认关联。
+Unlinking…	正在取消关联…
+Unlink	取消关联
+Opening…	正在打开…
+This T3 Connect server does not support T3 Chat linking.	此 T3 Connect 服务器不支持关联 T3 Chat。
+Link a paid T3 Chat account for more T3 Connect tunnels: up to ${0} with Pro, ${1} with Premier.	关联付费 T3 Chat 账户可获得更多 T3 Connect 隧道：Pro 最多 ${0} 个，Premier 最多 ${1} 个。
+Deregister	取消注册
+Deregister server	取消注册服务器
+” will be removed from this account.	”将从此账户移除。
+T3 Connect access will be revoked, any managed tunnel will be removed, and a host space will become available. Local connections on your devices are not changed.	将撤销 T3 Connect 访问权限，移除托管隧道并释放一个主机名额。设备上的本地连接不变。
+Server deregistered	服务器已取消注册
+T3 Connect access was revoked and a host space is now available.	T3 Connect 访问权限已撤销，已释放一个主机名额。
+Could not deregister server	无法取消注册服务器
+Loading environments…	正在加载环境…
+No T3 Connect environments	没有 T3 Connect 环境
+Link an environment from its local Settings to make it available through T3 Connect.	从环境的本地设置中连接，以通过 T3 Connect 访问。
+Environments registered to your account. Connections on this device are managed in Settings.	注册到你账户的环境。此设备的连接可在设置中管理。
+Choose a color	选择颜色
+Foundation	基础
+Background	背景
+Surface	表面
+Raised surface	凸起表面
+Overlay	叠加层
+Text	文字
+Muted text	次要文字
+Border	边框
+Brand & content	品牌与内容
+Subtle surface	次级表面
+Highlight surface	高亮表面
+Accent	强调色
+Action	操作
+Message surface	消息表面
+Code surface	代码表面
+Search matches	搜索匹配
+Current match	当前匹配
+Sidebar background	侧边栏背景
+Sidebar controls	侧边栏控件
+Sidebar selection	侧边栏选中项
+Terminal background	终端背景
+Error	错误
+Theme name	主题名称
+e.g. Aurora	例如：极光
+Theme appearance	主题外观
+Colors	颜色
+Two colors, rest derived	设置两种颜色，其余自动生成
+Filter colors	筛选颜色
+Use advanced theme colors	使用高级主题颜色
+No matches.	没有匹配项。
+Select an element · Esc to cancel	选择元素 · 按 Esc 取消
+Select a color below	选择下方颜色
+Close the theme editor	关闭主题编辑器
+Merge into “${0}”	合并到“${0}”
+Add ${0} palette	添加 ${0} 调色板
+Signed in	已登录
+Via	通过
+Left	剩余
+Resets	重置
+Even pace	均匀消耗
+% left by now	% 当前应剩余
+Restores	恢复
+% of pool	% 配额池
+Using…	正在使用…
+Use reset	使用重置
+Using reset credit…	正在使用重置额度…
+Segment 	分段 
+ reset 	 重置 
+credit	额度
+credits	额度
+ banked	 已积攒
+left	剩余
+No provider on the selected environments reports subscription limits.	所选环境中没有服务提供商报告订阅用量限制。
+View usage in ChatGPT with your connected account.	使用已连接账户在 ChatGPT 中查看用量。
+Ahead of pace: spending faster than the window elapses	消耗过快：用量消耗速度超过时间窗口进度
+On pace with the window	消耗速度与时间窗口进度一致
+Under pace: headroom left for the rest of the window	消耗较慢：剩余时间仍有充足用量
+The line is where even spending would be.	此线表示均匀消耗用量时的预期位置。
+Resets 	重置于 
+Use a reset credit?	使用一次重置额度？
+This redeems one credit on your account and clears the current rate-limit windows. It cannot be undone.	这将使用账户的一次额度，并清除当前频率限制窗口。此操作无法撤销。
+Use credit	使用额度
+Then	然后
+Skip the install if you already have 	如果已经安装，可跳过安装：
+. If	。如果
+ is not found after installing, add the folder the installer names to your PATH.	在安装后仍找不到，请将安装程序提示的文件夹添加到 PATH。
+This computer is off	此计算机已关机
+No computer connected	没有已连接的计算机
+Turn it back on, or connect a different computer.	请重新开机，或连接其他计算机。
+Your agents run on your computer.	智能体在你的计算机上运行。
+Your agents run on your computer. Start T3 Code there first.	智能体在你的计算机上运行。请先在该计算机上启动 T3 Code。
+Open Environments	打开环境设置
+Waiting for your computer…	等待你的计算机…
+Add pairing link	添加配对链接
+Run on your computer:	在你的计算机上运行：
+Or download the desktop app	或下载桌面应用
+Couldn’t start a new thread	无法启动新会话
+The project is still available. Try opening the draft again.	项目仍可用。请尝试重新打开草稿。
+Search pull requests, or label:bug	搜索拉取请求，或输入 label:bug
+Search pull requests	搜索拉取请求
+Drafts only	仅草稿
+Hide drafts	隐藏草稿
+Approved	已批准
+Changes requested	已请求修改
+Review required	需要审查
+No reviews	无审查
+Passing	通过
+Failing	失败
+· Unavailable	· 不可用
+Search authors	搜索作者
+Anyone	任何人
+No authors found	未找到作者
+Couldn't search authors on the host	无法在托管平台搜索作者
+ merges loaded	 个合并记录已加载
+Author	作者
+Search labels	搜索标签
+No labels found	未找到标签
+Couldn't search labels on the host	无法在托管平台搜索标签
+State	状态
+Involvement	参与情况
+Draft	草稿
+Filter by state	按状态筛选
+Filter by involvement	按参与情况筛选
+Filter by host	按托管平台筛选
+Filter by provider	按服务提供商筛选
+Refresh pull requests	刷新拉取请求
+matched in the description	匹配于说明
+Matched in the description	匹配于说明
+No projects in this workspace	此工作区中没有项目
+Add a project, and the pull requests from its repository appear here.	添加项目后，其仓库中的拉取请求将显示在此处。
+Nothing matches “	没有内容匹配“
+The hosts were searched for it. Try fewer words, or search by number, author or branch.	已在托管平台搜索。请减少关键词，或按编号、作者或分支搜索。
+Clear search	清除搜索
+Load more pull requests	加载更多拉取请求
+ Showing the last pull requests loaded.	 正在显示上次加载的拉取请求。
+Updating pull requests	正在更新拉取请求
+Loading more	正在加载更多
+Narrow your search to find more pull requests.	缩小搜索范围以查找更多拉取请求。
+All servers	所有服务器
+Sort pull requests	拉取请求排序
+${0} link copied	${0} 链接已复制
+Failed to copy ${0} link	复制 ${0} 链接失败
+Output	输出
+Cache read	缓存读取
+Cache write	缓存写入
+Input rate	输入费率
+Custom model prices	自定义模型价格
+Prices and mappings apply to all past and future usage on the environments you select.	价格和映射将应用于所选环境中过去及未来的全部用量。
+Apply to	应用到
+USD / million tokens	美元 / 百万词元
+Connect an environment to set model prices.	连接环境以设置模型价格。
+Select an environment to see and change its model prices.	选择环境以查看和更改其模型价格。
+Model ID	模型 ID
+Created for these cookies	为这些 Cookie 创建
+Existing profile	现有配置文件
+opened, reopened	已打开、已重新打开
+opened	已打开
+Typeset LaTeX math, such as $x^2$ or \[x^2\], in messages and Markdown previews. The composer keeps TeX source editable.	在消息和 Markdown 预览中排版 LaTeX 数学公式，例如 $x^2$ 或 \[x^2\]。输入框会保留可编辑的 TeX 源码。
+CLI Proxy	CLI 代理
+sorry	抱歉
+Smallest shown	显示最小值
+Preview is desktop-only	预览仅支持桌面端
+Open T3 Code in the desktop app to use the in-app preview.	请在桌面应用中打开 T3 Code，以使用应用内预览。
+Appearance: ${0}	外观：${0}
+${0} (Enter)	${0}（Enter）

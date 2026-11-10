@@ -1,0 +1,7 @@
+backups/
+state.json
+*.cmd
+run.ps1
+run.sh
+zh-CN.tsv
+zh-CN-extra.tsv
