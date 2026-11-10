@@ -11,7 +11,7 @@ if (process.versions.electron) process.noAsar = true;
 const home = path.dirname(fileURLToPath(import.meta.url));
 let mode = process.argv[2] || 'status';
 const installDir = detectInstallDir(process.argv[3]);
-if (!installDir) throw Error('未找到 T3 Code 安装目录，请通过第 3 个参数指定，或设置 T3ZH_INSTALL_DIR。');
+if (!installDir) throw Error('未找到 T3 Code 安装目录，请使用 --install-dir <安装目录>（直接运行 patch.mjs 时传入第 3 个参数），或设置 T3ZH_INSTALL_DIR。');
 const resources = resourcesDir(installDir);
 const target = path.join(resources, 'server.asar');
 const dataRoot = path.resolve(process.env.T3ZH_DATA_DIR || home);
@@ -31,12 +31,13 @@ const atomicJson = (file, value) => {
   fs.writeFileSync(file + '.tmp', JSON.stringify(value, null, 2) + '\n', { flag: 'w' });
   fs.renameSync(file + '.tmp', file);
 };
-function checkStateTarget(state) {
+function checkStateTarget(state, requireCompatible = true) {
   if (path.resolve(state.target).toLowerCase() !== target.toLowerCase()) throw Error('备份对应其他安装位置，已停止。');
-  if (state.originalSha256 !== compat.serverSha256) throw Error('备份版本与此补丁不匹配，已停止。');
+  if (requireCompatible && state.originalSha256 !== compat.serverSha256) throw Error('备份版本与此补丁不匹配，已停止。');
 }
-function backupPath() {
-  return path.join(dataRoot, 'backups', compat.serverSha256 + '.server.asar');
+function backupPath(hash = compat.serverSha256) {
+  if (!/^[a-f0-9]{64}$/.test(hash)) throw Error('备份哈希格式无效，已停止。');
+  return path.join(dataRoot, 'backups', hash + '.server.asar');
 }
 function swap(buffer, expectedCurrentHash) {
   // Same-directory rename replaces the archive without an interval where it is absent.
@@ -72,16 +73,16 @@ try {
   }
   if (mode === 'status') {
     const status = state && currentHash === state.patchedSha256 ? '已安装中文补丁' : currentHash === compat.serverSha256 ? '原始英文资源，可安装补丁' : '资源已更新或被其他工具修改，此补丁不兼容';
-    console.log(status + '\n资源：' + target + '\nSHA256：' + currentHash);
+    console.log(status + '\n资源：' + target + '\n备份和状态目录：' + dataRoot + '\nSHA256：' + currentHash);
   } else if (mode === 'restore') {
     if (!state) throw Error('没有安装记录，未执行恢复。');
-    checkStateTarget(state);
+    checkStateTarget(state, false);
     if (currentHash === state.originalSha256) {
       console.log('已经是原始英文资源，无需恢复。');
     } else {
       if (currentHash !== state.patchedSha256) throw Error('资源已更新或被修改。为避免旧备份覆盖新版，未执行恢复。');
       ensureClosed(installDir);
-      const backup = fs.readFileSync(backupPath());
+      const backup = fs.readFileSync(backupPath(state.originalSha256));
       if (sha(backup) !== state.originalSha256) throw Error('备份校验失败，未执行恢复。');
       swap(backup, currentHash);
       atomicJson(stateFile, { ...state, status: 'restored', restoredAt: new Date().toISOString() });
@@ -134,7 +135,10 @@ try {
         atomicJson(stateFile, record);
         swap(patched, currentHash);
         atomicJson(stateFile, { ...record, status: 'applied', appliedAt: new Date().toISOString() });
-        console.log('中文补丁已安装。现在可以从原来的快捷方式正常启动 T3 Code。\n恢复入口：' + path.join(home, '恢复英文.cmd'));
+        console.log('中文补丁已安装。现在可以从原来的快捷方式正常启动 T3 Code。\n备份和状态目录：' + dataRoot);
+        console.log(process.env.T3ZH_CLI === '1'
+          ? '恢复命令：t3code-zh-cn restore --install-dir ' + JSON.stringify(installDir) + ' --data-dir ' + JSON.stringify(dataRoot) + '\n未全局安装时：npx t3code-zh-cn@latest restore（使用相同的 --install-dir 和 --data-dir）。'
+          : '恢复入口：' + path.join(home, '恢复英文.cmd'));
       } else {
         console.log('只读检查完成，未修改安装资源。\n补丁后 SHA256：' + patchedSha256);
       }

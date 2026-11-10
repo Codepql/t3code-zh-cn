@@ -5,6 +5,9 @@ node_modules/
 .DS_Store
 .git/
 work/
+.npm-cache/
+*.tmp
+npm-debug.log*
 *.cmd
 run.ps1
 run.sh

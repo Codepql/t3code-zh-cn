@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "description": "T3 Code 简体中文本地化补丁与命令行工具",
   "type": "module",
-  "bin": { "t3code-zh-CN": "bin/t3code-zh-CN.mjs" },
+  "bin": { "t3code-zh-cn": "bin/t3code-zh-CN.mjs" },
   "scripts": {
     "check": "node --check patch.mjs && node --check lib.mjs && node --check platform.mjs && node --check bin/t3code-zh-CN.mjs",
-    "pack:check": "npm pack --dry-run"
+    "test": "node --test",
+    "pack:check": "npm pack --dry-run",
+    "prepublishOnly": "npm run check && npm test"
   },
   "files": [
     "bin/",

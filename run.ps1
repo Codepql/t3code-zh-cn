@@ -1,10 +1,13 @@
 param(
-  [ValidateSet('status', 'check', 'apply', 'restore')]
+  [ValidateSet('status', 'check', 'apply', 'restore', 'upgrade')]
   [string]$Mode = 'status',
   [string]$InstallDir = ''
 )
 $ErrorActionPreference = 'Stop'
 [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding
+if (-not $InstallDir) {
+  $InstallDir = $env:T3ZH_INSTALL_DIR
+}
 if (-not $InstallDir) {
   $InstallDir = Join-Path $env:LOCALAPPDATA 'Programs\t3code'
   if (-not (Test-Path -LiteralPath (Join-Path $InstallDir 'resources\server.asar'))) {
