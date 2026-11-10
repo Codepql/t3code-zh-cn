@@ -1,5 +1,10 @@
 backups/
 state.json
+*.tgz
+node_modules/
+.DS_Store
+.git/
+work/
 *.cmd
 run.ps1
 run.sh
