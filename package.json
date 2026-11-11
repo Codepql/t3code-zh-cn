@@ -2,6 +2,14 @@
   "name": "t3code-zh-cn",
   "version": "0.0.1",
   "description": "T3 Code 简体中文本地化补丁与命令行工具",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codepql/t3code-zh-cn.git"
+  },
+  "homepage": "https://github.com/Codepql/t3code-zh-cn#readme",
+  "bugs": {
+    "url": "https://github.com/Codepql/t3code-zh-cn/issues"
+  },
   "type": "module",
   "bin": { "t3code-zh-cn": "bin/t3code-zh-CN.mjs" },
   "scripts": {
@@ -28,6 +36,9 @@
   ],
   "engines": { "node": ">=18" },
   "license": "MIT",
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": ["t3-code", "localization", "中文", "i18n"]
 }
