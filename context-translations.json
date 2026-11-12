@@ -1,4 +1,8 @@
 {
-  "_chat.settings.keybindings-Dftd8-cX.js": { "When": "条件" },
-  "settingsSearch-Dsdib0zA.js": { "Code": "代码" }
+  "_chat.settings.keybindings": {
+    "When": "条件"
+  },
+  "settingsSearch": {
+    "Code": "代码"
+  }
 }

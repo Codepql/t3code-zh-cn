@@ -66,15 +66,11 @@ test('npm CLI lifecycle keeps backups outside tool files and restores across too
     export const ensureClosed = () => {};
     export const signatureWarning = () => null;
   `);
+  const assets = 'apps/server/dist/client/assets/';
   const source = 'const ui = {title: "Hello"};';
-  const original = asar({ 'ui.js': source, 'untouched.txt': 'keep me' });
+  const original = asar({ [assets + 'ui-AbCd1234.js']: source, 'untouched.txt': 'keep me' });
   const target = path.join(install, 'resources', 'server.asar');
-  const compatibility = {
-    version: '0.1.8', commit: 'fixture', serverSha256: sha(original),
-    files: [{ path: 'ui.js', hash: sha(Buffer.from(source)) }]
-  };
   const json = (name, value) => fs.writeFileSync(path.join(tool, name), JSON.stringify(value));
-  json('compatibility.json', compatibility);
   json('zh-CN.json', { Hello: '你好' });
   for (const file of ['context-translations.json', 'literal-overrides.json', 'display-maps.json', 'formatter-labels.json']) json(file, {});
   fs.writeFileSync(target, original);
@@ -100,12 +96,9 @@ test('npm CLI lifecycle keeps backups outside tool files and restores across too
   assert.equal(invoke('apply').status, 1);
   success('upgrade');
   assert.notDeepEqual(fs.readFileSync(target), patched);
-  // Installing a newer npm tool must not prevent recovery of the previous build.
-  json('compatibility.json', { ...compatibility, serverSha256: 'a'.repeat(64) });
   success('restore');
   assert.deepEqual(fs.readFileSync(target), original);
   success('restore');
-  json('compatibility.json', compatibility);
   success('apply');
   fs.writeFileSync(target, 'updated by app installer');
   assert.equal(invoke('restore').status, 1);
@@ -119,3 +112,63 @@ test('npm CLI lifecycle keeps backups outside tool files and restores across too
   assert.equal(invoke('restore').status, 1);
   assert.deepEqual(fs.readFileSync(target), patched);
 });
+
+test('any T3 Code build is localized: known text translated, unknown text kept in English', t => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), 't3zh-test-'));
+  t.after(() => fs.rmSync(temp, { recursive: true, force: true }));
+  const tool = path.join(temp, 'tool'), install = path.join(temp, 'app'), data = path.join(temp, 'data');
+  fs.mkdirSync(path.join(tool, 'vendor'), { recursive: true });
+  fs.mkdirSync(path.join(install, 'resources'), { recursive: true });
+  for (const file of ['patch.mjs', 'lib.mjs', 'vendor/babel-parser.cjs']) fs.copyFileSync(path.join(root, file), path.join(tool, file));
+  fs.writeFileSync(path.join(tool, 'platform.mjs'), `
+    import path from 'node:path';
+    export const detectInstallDir = value => value;
+    export const resourcesDir = value => path.join(value, 'resources');
+    export const ensureClosed = () => {};
+    export const signatureWarning = () => null;
+  `);
+  const json = (name, value) => fs.writeFileSync(path.join(tool, name), JSON.stringify(value));
+  json('zh-CN.json', { Hello: '你好', Light: '浅色' });
+  json('display-maps.json', { theme: [[['light', 'Light']]] });
+  for (const file of ['context-translations.json', 'literal-overrides.json', 'formatter-labels.json']) json(file, {});
+  const assets = 'apps/server/dist/client/assets/';
+  const target = path.join(install, 'resources', 'server.asar');
+  const install_ = (version, files) => {
+    fs.writeFileSync(target, asar(files));
+    fs.writeFileSync(path.join(install, 'resources', 'app.asar'), asar({ 'package.json': JSON.stringify({ version, t3codeCommitHash: 'c' + version }) }));
+  };
+  const env = { T3ZH_HOME: tool, T3ZH_DATA_DIR: data };
+  const success = command => {
+    const result = run([command, '--install-dir', install], env);
+    assert.equal(result.status, 0, result.stderr);
+    return result.stdout;
+  };
+  const chunk = () => archiveText(fs.readFileSync(target));
+  install_('1.0.0', { [assets + 'theme-AAAAAAAA.js']: 'const m = {light: "Light"}; const u = {title: "Hello"};' });
+  success('apply');
+  assert.match(chunk(), /light: "浅色"/);
+  // The app updater replaces the archive with an unseen build; chunk hashes and text changed.
+  install_('2.0.0', {
+    [assets + 'theme-BBBBBBBB.js']: 'const x = 1; const m = {light: "Light"};',
+    [assets + 'new-CCCCCCCC.js']: 'const u = {title: "Hello"}; const v = {title: "Brand new feature"};',
+    [assets + 'broken-DDDDDDDD.js']: 'this is not javascript {'
+  });
+  const updated = fs.readFileSync(target);
+  assert.match(success('status'), /英文资源（T3 Code 2\.0\.0）/);
+  assert.match(success('apply'), /1 个文件无法处理/);
+  const text = chunk();
+  assert.match(text, /light: "浅色"/);
+  assert.match(text, /title: "你好"/);
+  assert.match(text, /Brand new feature/);
+  assert.match(text, /this is not javascript \{/);
+  success('restore');
+  assert.deepEqual(fs.readFileSync(target), updated);
+  // An archive that already carries the patch but has no install record is never backed up as original.
+  fs.rmSync(data, { recursive: true });
+  install_('3.0.0', { [assets + 'x-EEEEEEEE.js']: 'const __t3zhCommandLabels = {}; const u = {title: "Hello"};' });
+  assert.equal(run(['apply', '--install-dir', install], env).status, 1);
+});
+
+function archiveText(buffer) {
+  return buffer.subarray(16 + buffer.readUInt32LE(12)).toString('utf8');
+}

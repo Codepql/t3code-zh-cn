@@ -1,7 +1,6 @@
 {
-  "KeybindingsSettings.logic-D98fwNBL.js": {
-    "functionName": "R",
-    "argument": "e",
+  "KeybindingsSettings.logic": {
+    "marker": "workspace.focusNext",
     "labels": {
       "sidebar.toggle": "侧边栏：显示或隐藏",
       "rightPanel.toggle": "右侧面板：显示或隐藏",

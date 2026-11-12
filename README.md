@@ -2,7 +2,7 @@
 
 给已安装的 T3 Code 桌面端一键汉化、一键恢复英文、一键更新汉化。自动探测安装目录，修改前备份原始资源，不修改聊天记录。
 
-**当前仅支持 T3 Code `0.1.8 `。** 同一版本号的其他构建也可能不兼容，工具会检查版本、构建和资源哈希，不匹配时停止。
+**不限定 T3 Code 版本。** 工具会直接扫描当前安装的界面资源：词典里有的文字翻译成中文，新版本新增或无法识别的文字保留英文，不会因为版本号变化而拒绝汉化。已在 0.1.8、0.1.9（Windows）上验证。
 
 > 以下在线命令需维护者先将本仓库脚本推送到 GitHub `main`；npm 方式还需发布 `t3code-zh-cn`。本地验证方法见文末。
 
@@ -49,7 +49,7 @@ t3code-zh-cn upgrade
 | `apply` | 备份原资源并应用中文补丁；相同补丁无需重复安装 |
 | `restore` | 校验备份并恢复原始英文资源 |
 | `upgrade` | 已汉化时先恢复，再应用当前工具中的补丁；未汉化时尝试安装 |
-| `check` | 只读校验版本、资源和翻译结果，不修改应用 |
+| `check` | 只读扫描当前版本，显示可翻译的文件和替换数量，不修改应用 |
 | `status` | 查看当前状态和备份目录；不指定命令时的默认动作 |
 | `--help` | 显示帮助 |
 
@@ -78,7 +78,7 @@ t3code-zh-cn upgrade
 & ([scriptblock]::Create((irm 'https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.ps1'))) -Mode upgrade
 ```
 
-将 `-Mode` 改为 `check` 可只读检查兼容性，改为 `status` 可查看当前状态。命令需要联网下载本仓库文件；执行过程中不会自动结束应用进程。
+将 `-Mode` 改为 `check` 可只读检查翻译结果，改为 `status` 可查看当前状态。命令需要联网下载本仓库文件；执行过程中不会自动结束应用进程。
 
 默认探测 `%LOCALAPPDATA%\Programs\t3code`。自定义安装位置时，在命令末尾加上 `-InstallDir 'D:\Apps\t3code'`：
 
@@ -107,13 +107,13 @@ curl -fsSL https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.s
 curl -fsSL https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.sh | sh -s -- check '/Applications/T3 Code.app/Contents'
 ```
 
-macOS 入口尝试使用应用内的 `Contents/MacOS/T3 Code` 运行时；找不到时回退到系统 Node.js 18+。修改应用包可能触发代码签名或 Gatekeeper 校验，当前应先在副本上测试并准备重新签名。
+macOS 入口尝试使用应用内的 `Contents/MacOS/T3 Code` 运行时；找不到时回退到系统 Node.js 18+。修改应用包可能触发代码签名或 Gatekeeper 校验，当前应先在副本上测试并准备重新签名。注意：macOS 版从 0.1.9 起不再包含 `server.asar`，暂不支持汉化。
 
 ## 成功后怎么使用
 
 看到 `中文补丁已安装。` 后，从原来的快捷方式或应用图标正常启动 T3 Code，无需另找语言切换开关。恢复成功会提示 `已恢复原始英文资源`。
 
-只读检查成功会提示 `校验通过` 和 `只读检查完成`；检查不会安装补丁。当前词典不保证覆盖所有文案，反馈遗漏时请提供应用版本、原始英文、所在界面和截图。
+只读检查成功会提示 `扫描完成` 和 `只读检查完成`；检查不会安装补丁。当前词典不保证覆盖所有文案，新版本新增的界面文字在词典更新前显示英文，反馈遗漏时请提供应用版本、原始英文、所在界面和截图。
 
 ## 备份与更新说明
 
@@ -126,14 +126,15 @@ macOS 入口尝试使用应用内的 `Contents/MacOS/T3 Code` 运行时；找不
 
 PowerShell 在线脚本可通过 `-DataDir` 自定义此目录；npm 入口使用 `--data-dir`。所有入口也支持环境变量 `T3ZH_DATA_DIR`。不同命令必须使用同一个数据目录才能找到原安装记录。
 
-**更新汉化和更新 T3 Code 是两回事。** 建议先恢复英文，再升级 T3 Code；升级后运行 `check`，只有受支持的构建才能重新汉化。`upgrade` 不会升级桌面应用，也不会使未知构建自动变得兼容。恢复时如果发现资源已被应用更新器或其他工具改动，会停止，避免旧备份覆盖新版应用。
+**更新汉化和更新 T3 Code 是两回事。** T3 Code 自动更新后，新版本会覆盖中文补丁、恢复为英文；此时直接运行 `apply`（或 `npx t3code-zh-cn@latest upgrade` 获取最新词典）重新汉化即可，无需先恢复。`upgrade` 不会升级桌面应用。恢复时如果发现资源已被应用更新器或其他工具改动，会停止，避免旧备份覆盖新版应用。
 
 ## 常见问题
 
 | 提示 | 处理方法 |
 | --- | --- |
 | 未找到安装目录 / 资源 | 确认已安装桌面端，使用上面的自定义安装路径参数。 |
-| 当前资源不匹配 / 版本或构建不匹配 | 当前构建暂不受支持或资源已被修改，需要对应构建的补丁。 |
+| 部分文字仍是英文 | 新版本新增的文字尚未收录，属正常现象；可反馈遗漏或等待词典更新后运行 `upgrade`。 |
+| 资源已含有中文补丁，但没有匹配的安装记录 | 数据目录不一致或记录丢失；为避免把已汉化文件当作原始备份，请重新安装 T3 Code 后再汉化。 |
 | 请先完全退出 T3 Code | 保存工作，退出窗口、托盘及 `t3` CLI 后重试。 |
 | 词典或翻译规则已更改 | 使用 `upgrade`，或先 `restore` 再 `apply`。 |
 | 没有安装记录 | 检查数据目录是否一致，是否删除或移动了 `state.json` 和 `backups/`。 |
@@ -177,5 +178,7 @@ sh ./run.sh check
 ```sh
 npm publish --access public
 ```
+
+维护词典：编辑 `zh-CN.tsv` 或 `zh-CN-extra.tsv` 后运行 `node tools/build-dict.mjs` 生成 `zh-CN.json`。T3 Code 发布新版本后，可运行 `node tools/build-dict.mjs <server.asar> --untranslated 未翻译.txt` 查看新版本的覆盖情况和尚未翻译的文字（只读，不修改该文件）。
 
 `prepublishOnly` 会自动运行代码语法检查和测试。后续发布必须先提升 `package.json` 中的版本号；真实 Windows/macOS 应用验证不能由单元测试替代。

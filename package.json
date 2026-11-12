@@ -1,6 +1,6 @@
 {
   "name": "t3code-zh-cn",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "T3 Code 简体中文本地化补丁与命令行工具",
   "repository": {
     "type": "git",
@@ -11,9 +11,11 @@
     "url": "https://github.com/Codepql/t3code-zh-cn/issues"
   },
   "type": "module",
-  "bin": { "t3code-zh-cn": "bin/t3code-zh-CN.mjs" },
+  "bin": {
+    "t3code-zh-cn": "bin/t3code-zh-CN.mjs"
+  },
   "scripts": {
-    "check": "node --check patch.mjs && node --check lib.mjs && node --check platform.mjs && node --check bin/t3code-zh-CN.mjs",
+    "check": "node --check patch.mjs && node --check lib.mjs && node --check platform.mjs && node --check bin/t3code-zh-CN.mjs && node --check tools/build-dict.mjs",
     "test": "node --test",
     "pack:check": "npm pack --dry-run",
     "prepublishOnly": "npm run check && npm test"
@@ -24,7 +26,6 @@
     "patch.mjs",
     "lib.mjs",
     "platform.mjs",
-    "compatibility.json",
     "context-translations.json",
     "display-maps.json",
     "formatter-labels.json",
@@ -34,11 +35,18 @@
     "NOTICE.md",
     "README.md"
   ],
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "license": "MIT",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "keywords": ["t3-code", "localization", "中文", "i18n"]
+  "keywords": [
+    "t3-code",
+    "localization",
+    "中文",
+    "i18n"
+  ]
 }

@@ -55,14 +55,17 @@ export function candidates(source, literalAllowList = [], displayMaps = []) {
   const ast = parser.parse(source, { sourceType: 'module' });
   const result = [];
   const approved = new Set(literalAllowList);
-  const approvedMaps = new Map(displayMaps.map(m => [m.start, m.entries]));
+  // Display maps are matched by exact content so they survive bundle offsets changing between versions.
+  const approvedMaps = new Set(displayMaps.map(entries => JSON.stringify(entries)));
+  const mapSizes = new Set(displayMaps.map(entries => entries.length));
   function visit(node, eligible = false) {
     if (!node || typeof node !== 'object') return;
-    if (node.type === 'ObjectExpression' && approvedMaps.has(node.start)) {
+    if (node.type === 'ObjectExpression' && mapSizes.has(node.properties.length)) {
       const strings = node.properties.map(p => [p.key?.name ?? p.key?.value, p.value?.type === 'StringLiteral' ? p.value.value : p.value?.type === 'TemplateLiteral' && !p.value.expressions.length ? p.value.quasis[0].value.cooked : null]);
-      if (JSON.stringify(strings) !== JSON.stringify(approvedMaps.get(node.start))) throw Error('显示选项表与适配记录不一致：' + node.start);
-      for (const p of node.properties) visit(p.value, true);
-      return;
+      if (approvedMaps.has(JSON.stringify(strings))) {
+        for (const p of node.properties) visit(p.value, true);
+        return;
+      }
     }
     if (node.type === 'StringLiteral' || node.type === 'TemplateLiteral') {
       const dynamic = node.type === 'TemplateLiteral' && node.expressions.length > 0;
@@ -97,6 +100,8 @@ export function candidates(source, literalAllowList = [], displayMaps = []) {
   visit(ast);
   return result;
 }
+// Chunk file names carry a content hash (e.g. "SettingsPanels-BNss_vkZ.js"); rules are keyed by the stable part.
+export const chunkBase = file => file.split('/').pop().replace(/-[A-Za-z0-9_-]{8}\.js$/, '');
 export function translate(source, dictionary, literalAllowList = [], displayMaps = [], formatter = null) {
   const edits = candidates(source, literalAllowList, displayMaps).filter(e => Object.hasOwn(dictionary, e.value));
   if (formatter) {
@@ -104,7 +109,7 @@ export function translate(source, dictionary, literalAllowList = [], displayMaps
     const targets = ast.program.body.filter(n => n.type === 'FunctionDeclaration' && n.id?.name === formatter.functionName);
     if (targets.length !== 1 || targets[0].params.length !== 1 || targets[0].params[0].name !== formatter.argument) throw Error('显示名称函数不匹配');
     const pos = targets[0].body.start + 1;
-    const prefix = 'const __t3zhCommandLabels=' + JSON.stringify(formatter.labels) + ';if(Object.prototype.hasOwnProperty.call(__t3zhCommandLabels,' + formatter.argument + '))return __t3zhCommandLabels[' + formatter.argument + '];';
+    const prefix = 'const ' + PATCH_MARKER + '=' + JSON.stringify(formatter.labels) + ';if(Object.prototype.hasOwnProperty.call(' + PATCH_MARKER + ',' + formatter.argument + '))return ' + PATCH_MARKER + '[' + formatter.argument + '];';
     edits.push({ start: pos, end: pos, replacement: prefix });
   }
   let output = source;
@@ -121,3 +126,47 @@ export function translate(source, dictionary, literalAllowList = [], displayMaps
   if (edits.length) parser.parse(output, { sourceType: 'module' });
   return { output, edits };
 }
+
+// Locate the command-label function by its content instead of its minified name.
+export function findFormatter(source, marker) {
+  const ast = parser.parse(source, { sourceType: 'module' });
+  const found = ast.program.body.filter(n => n.type === 'FunctionDeclaration' && n.params.length === 1 && n.params[0].type === 'Identifier'
+    && source.slice(n.start, n.end).includes(n.params[0].name + '===`' + marker + '`'));
+  return found.length === 1 ? { functionName: found[0].id.name, argument: found[0].params[0].name } : null;
+}
+
+export const isClientAsset = ({ path, entry }) => path.startsWith('apps/server/dist/client/assets/') && path.endsWith('.js') && !entry.unpacked && !entry.link;
+
+// Translate every frontend chunk of any T3 Code build. Unknown text stays English;
+// a chunk that cannot be processed is left untouched and reported in `skipped`.
+export function localizeArchive(buffer, rules) {
+  const { dict, literalOverrides, displayMaps, formatters, contextTranslations } = rules;
+  const a = archive(buffer), replacements = new Map(), skipped = [];
+  let count = 0;
+  for (const item of a.entries.filter(isClientAsset)) {
+    const base = chunkBase(item.path);
+    try {
+      const source = a.read(item.path).toString('utf8');
+      const marker = formatters[base]?.marker;
+      const located = marker && source.includes('`' + marker + '`') ? findFormatter(source, marker) : null;
+      const t = translate(source, { ...dict, ...contextTranslations[base] }, literalOverrides[base] || [], displayMaps[base] || [], located && { ...located, labels: formatters[base].labels });
+      if (t.edits.length) {
+        replacements.set(item.path, Buffer.from(t.output));
+        count += t.edits.length;
+      }
+    } catch (error) {
+      skipped.push({ path: item.path, reason: error.message });
+    }
+  }
+  if (!replacements.size) return { patched: null, fileCount: 0, count, skipped };
+  const patched = rebuild(buffer, replacements), verified = archive(patched);
+  // Every other packed resource must be byte-for-byte identical.
+  for (const { path, entry } of a.entries) {
+    if (entry.unpacked || entry.link) continue;
+    const expected = replacements.get(path) ?? a.read(path);
+    if (!verified.read(path).equals(expected)) throw Error('重建资源校验失败：' + path);
+  }
+  return { patched, fileCount: replacements.size, count, skipped };
+}
+
+export const PATCH_MARKER = '__t3zhCommandLabels';

@@ -1,5 +1,5 @@
 {
-  "SettingsPanels-BNss_vkZ.js": [
+  "SettingsPanels": [
     "Monday",
     "Tuesday",
     "Wednesday",
@@ -49,7 +49,7 @@
     "Nightly",
     "Latest"
   ],
-  "settingsScope-Cg3z-_sy.js": [
+  "settingsScope": [
     "New worktree",
     "Current checkout",
     "Recursive",
@@ -59,13 +59,13 @@
     "Worktree",
     "Local checkout"
   ],
-  "_chat-DD0i9-XN.js": [
+  "_chat": [
     "Ask anything. @ files, $ skills, / commands",
     "Choose a project above to start a thread",
     "Enable a provider in Settings to send a message",
     "Type your own answer, or leave this blank to use the selected option"
   ],
-  "KeybindingsSettings.logic-D98fwNBL.js": [
+  "KeybindingsSettings.logic": [
     "Focus Next Workspace Area",
     "Focus Previous Workspace Area",
     "Composer: Opposite Queue or Steer Action",
@@ -81,13 +81,13 @@
     "Remove condition",
     "Remove group and its conditions"
   ],
-  "settingsLayout-CG1Z1AVR.js": [
+  "settingsLayout": [
     "All environments",
     "No environments",
     "Unavailable environment",
     "Environment scope"
   ],
-  "_chat.settings.keybindings-Dftd8-cX.js": [
+  "_chat.settings.keybindings": [
     "Always"
   ]
 }
