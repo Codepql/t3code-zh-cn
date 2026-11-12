@@ -179,6 +179,8 @@ sh ./run.sh check
 npm publish --access public
 ```
 
+仓库中的 GitHub Actions 发布工作流需要一个名为 `NPM_TOKEN` 的 Actions secret。请在 npm 创建具有该包发布权限的 granular access token（如果账号启用了双因素认证，确保 token 允许发布），然后在 GitHub 仓库的 **Settings → Secrets and variables → Actions** 中保存为 `NPM_TOKEN`。工作流会将它作为 `NODE_AUTH_TOKEN` 传给 `npm publish`；不要把 token 写入仓库文件。首次发布完成后，也可以在 npm 包设置中配置 GitHub Actions trusted publisher，随后移除该 secret 并改用 OIDC 发布。
+
 维护词典：编辑 `zh-CN.tsv` 或 `zh-CN-extra.tsv` 后运行 `node tools/build-dict.mjs` 生成 `zh-CN.json`。T3 Code 发布新版本后，可运行 `node tools/build-dict.mjs <server.asar> --untranslated 未翻译.txt` 查看新版本的覆盖情况和尚未翻译的文字（只读，不修改该文件）。
 
 `prepublishOnly` 会自动运行代码语法检查和测试。后续发布必须先提升 `package.json` 中的版本号；真实 Windows/macOS 应用验证不能由单元测试替代。

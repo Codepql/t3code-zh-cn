@@ -52,8 +52,21 @@ jobs:
             echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Verify npm credentials
+        if: steps.version.outputs.exists == 'false'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if [[ -z "${NODE_AUTH_TOKEN:-}" ]]; then
+            echo "::error::The NPM_TOKEN repository secret is missing or unavailable to this workflow."
+            exit 1
+          fi
+          npm whoami --registry=https://registry.npmjs.org/
+
       - name: Publish to npm
         if: steps.version.outputs.exists == 'false'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --access public
 
       - name: Write summary
