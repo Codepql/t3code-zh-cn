@@ -1,6 +1,6 @@
 {
   "name": "t3code-zh-cn",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "description": "T3 Code 简体中文本地化补丁与命令行工具",
   "repository": {
     "type": "git",
