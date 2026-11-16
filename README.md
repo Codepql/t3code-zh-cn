@@ -23,6 +23,18 @@ npx t3code-zh-cn@latest restore
 npx t3code-zh-cn@latest upgrade
 ```
 
+指定汉化工具版本（以 `0.0.3` 为例，兼容 Windows 版 T3 Code `0.1.8`、`0.1.9`，最新持续更新中，更早版本暂不支持）：
+
+```sh
+# 一键汉化：使用指定版本并自动备份原始资源
+npx t3code-zh-cn@0.0.3 apply
+
+# 已汉化时：切换到指定版本的补丁
+npx t3code-zh-cn@0.0.3 upgrade
+```
+
+这里指定的是汉化工具版本，不会安装或降级 T3 Code 桌面应用。选择其他已发布的汉化工具版本时，请确认其对应的 T3 Code 兼容范围。
+
 也可以全局安装，获得固定命令：
 
 ```sh
