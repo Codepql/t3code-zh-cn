@@ -37,12 +37,13 @@ for (const item of a.entries.filter(isClientAsset)) {
   const base = chunkBase(item.path), source = a.read(item.path).toString('utf8');
   bases.add(base);
   try {
-    for (const c of candidates(source, rules.literalOverrides[base] || [], rules.displayMaps[base] || [])) {
+    for (const c of candidates(source, rules.literalOverrides[base] || [], rules.displayMaps[base] || [], { localeCatalog: base === 'en' })) {
       if (!Object.hasOwn(dict, c.value) && !Object.hasOwn(rules.contextTranslations[base] || {}, c.value)) missing.set(c.value, base);
     }
   } catch { /* already reported above */ }
 }
-const unusedRules = Object.keys({ ...rules.literalOverrides, ...rules.displayMaps, ...rules.formatters, ...rules.contextTranslations }).filter(b => !bases.has(b));
-if (unusedRules.length) console.log('以下规则对应的文件在此版本中不存在（相关文字会保留英文）：' + unusedRules.join('、'));
+// Formatter rules are discovered by content and need not share a chunk name.
+const unusedRules = Object.keys({ ...rules.literalOverrides, ...rules.displayMaps, ...rules.contextTranslations }).filter(b => !bases.has(b));
+if (unusedRules.length) console.log('以下按文件名匹配的规则在此版本中未命中（文案仍可能由通用词典或按内容定位的规则翻译）：' + unusedRules.join('、'));
 console.log('未翻译的候选文字：' + missing.size + (outFile ? '，已写入 ' + outFile : ''));
 if (outFile) fs.writeFileSync(outFile, [...missing].map(([s, b]) => JSON.stringify(s) + '\t' + b).join('\n') + '\n');

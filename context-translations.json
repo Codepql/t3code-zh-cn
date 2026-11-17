@@ -4,5 +4,14 @@
   },
   "settingsSearch": {
     "Code": "代码"
+  },
+  "en": {
+    "Code": "代码"
+  },
+  "SettingsPanels": {
+    "Code": "代码"
+  },
+  "_chat.settings": {
+    "Code": "代码"
   }
 }

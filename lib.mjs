@@ -51,10 +51,40 @@ export function rebuild(original, replacements) {
 }
 
 const uiKeys = new Set(['children', 'title', 'description', 'placeholder', 'label', 'tooltip', 'aria-label', 'aria-description', 'emptyMessage', 'loadingText', 'message', 'detail', 'heading', 'actionLabel', 'confirmLabel', 'triggerLabel', 'detailLabel', 'subtitle', 'buttonLabel', 'cancelLabel', 'submitLabel', 'emptyText', 'errorMessage', 'successMessage']);
-export function candidates(source, literalAllowList = [], displayMaps = []) {
+export function candidates(source, literalAllowList = [], displayMaps = [], { localeCatalog = false } = {}) {
   const ast = parser.parse(source, { sourceType: 'module' });
   const result = [];
   const approved = new Set(literalAllowList);
+  const catalogStrings = new Set();
+  if (localeCatalog) {
+    // 0.1.10 stores localized settings text under stable message hashes. Follow
+    // only the default-exported catalog and its plain, top-level string aliases.
+    const bindings = new Map();
+    for (const statement of ast.program.body) {
+      if (statement.type === 'VariableDeclaration') {
+        for (const declaration of statement.declarations) {
+          if (declaration.id.type === 'Identifier') bindings.set(declaration.id.name, declaration.init);
+        }
+      }
+    }
+    let catalog;
+    for (const statement of ast.program.body) {
+      if (statement.type === 'ExportDefaultDeclaration') catalog = statement.declaration;
+      if (statement.type === 'ExportNamedDeclaration') {
+        for (const specifier of statement.specifiers) {
+          if ((specifier.exported?.name ?? specifier.exported?.value) === 'default') catalog = bindings.get(specifier.local.name);
+        }
+      }
+    }
+    if (catalog?.type === 'Identifier') catalog = bindings.get(catalog.name);
+    if (catalog?.type === 'ObjectExpression' && catalog.properties.length && catalog.properties.every(p =>
+      p.type === 'ObjectProperty' && !p.computed && /^[a-f0-9]{16}$/.test(p.key.name ?? p.key.value))) {
+      for (const property of catalog.properties) {
+        const value = property.value.type === 'Identifier' ? bindings.get(property.value.name) : property.value;
+        if (value?.type === 'StringLiteral' || value?.type === 'TemplateLiteral' && value.expressions.length === 0) catalogStrings.add(value);
+      }
+    }
+  }
   // Display maps are matched by exact content so they survive bundle offsets changing between versions.
   const approvedMaps = new Set(displayMaps.map(entries => JSON.stringify(entries)));
   const mapSizes = new Set(displayMaps.map(entries => entries.length));
@@ -70,7 +100,7 @@ export function candidates(source, literalAllowList = [], displayMaps = []) {
     if (node.type === 'StringLiteral' || node.type === 'TemplateLiteral') {
       const dynamic = node.type === 'TemplateLiteral' && node.expressions.length > 0;
       const value = node.type === 'StringLiteral' ? node.value : node.quasis.map((q, i) => (q.value.cooked ?? q.value.raw) + (i < node.expressions.length ? '${' + i + '}' : '')).join('');
-      if ((eligible || approved.has(value)) && value && /[A-Za-z]/.test(value)) {
+      if ((eligible || approved.has(value) || catalogStrings.has(node)) && value && /[A-Za-z]/.test(value)) {
         result.push({ start: node.start, end: node.end, value, ...(dynamic ? { expressions: node.expressions.map(e => source.slice(e.start, e.end)) } : {}) });
       }
       return;
@@ -102,8 +132,8 @@ export function candidates(source, literalAllowList = [], displayMaps = []) {
 }
 // Chunk file names carry a content hash (e.g. "SettingsPanels-BNss_vkZ.js"); rules are keyed by the stable part.
 export const chunkBase = file => file.split('/').pop().replace(/-[A-Za-z0-9_-]{8}\.js$/, '');
-export function translate(source, dictionary, literalAllowList = [], displayMaps = [], formatter = null) {
-  const edits = candidates(source, literalAllowList, displayMaps).filter(e => Object.hasOwn(dictionary, e.value));
+export function translate(source, dictionary, literalAllowList = [], displayMaps = [], formatter = null, options = {}) {
+  const edits = candidates(source, literalAllowList, displayMaps, options).filter(e => Object.hasOwn(dictionary, e.value));
   if (formatter) {
     const ast = parser.parse(source, { sourceType: 'module' });
     const targets = ast.program.body.filter(n => n.type === 'FunctionDeclaration' && n.id?.name === formatter.functionName);
@@ -147,9 +177,15 @@ export function localizeArchive(buffer, rules) {
     const base = chunkBase(item.path);
     try {
       const source = a.read(item.path).toString('utf8');
-      const marker = formatters[base]?.marker;
-      const located = marker && source.includes('`' + marker + '`') ? findFormatter(source, marker) : null;
-      const t = translate(source, { ...dict, ...contextTranslations[base] }, literalOverrides[base] || [], displayMaps[base] || [], located && { ...located, labels: formatters[base].labels });
+      // Command helpers moved from KeybindingsSettings.logic to settingsSearch
+      // in 0.1.10. Require a unique content match rather than a chunk name.
+      const matches = Object.values(formatters).flatMap(spec => {
+        if (!source.includes('`' + spec.marker + '`')) return [];
+        const located = findFormatter(source, spec.marker);
+        return located ? [{ ...located, labels: spec.labels }] : [];
+      });
+      if (matches.length > 1) throw Error('显示名称函数存在多个匹配规则');
+      const t = translate(source, { ...dict, ...contextTranslations[base] }, literalOverrides[base] || [], displayMaps[base] || [], matches[0] || null, { localeCatalog: base === 'en' });
       if (t.edits.length) {
         replacements.set(item.path, Buffer.from(t.output));
         count += t.edits.length;

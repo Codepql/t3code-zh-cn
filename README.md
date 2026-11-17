@@ -2,7 +2,20 @@
 
 给已安装的 T3 Code 桌面端一键汉化、一键恢复英文、一键更新汉化。自动探测安装目录，修改前备份原始资源，不修改聊天记录。
 
-**不限定 T3 Code 版本。** 工具会直接扫描当前安装的界面资源：词典里有的文字翻译成中文，新版本新增或无法识别的文字保留英文，不会因为版本号变化而拒绝汉化。已在 0.1.8、0.1.9（Windows）上验证。
+工具会直接扫描当前安装的界面资源：词典里有的文字翻译成中文，新版本新增或无法识别的文字保留英文。选择汉化工具版本时，请参考下方的版本适配表。
+
+## 版本适配表
+
+以下适配范围针对 Windows 版 T3 Code：
+
+| 汉化工具版本 | T3 Code 版本 | 适配状态 |
+| --- | --- | --- |
+| `0.0.3` | `0.1.8`、`0.1.9` | 已验证 |
+| `0.0.4` | `0.1.10` | 已通过资源扫描及安装、更新、恢复副本验证 |
+
+更早的 T3 Code 版本暂不支持。表中的汉化工具版本与 T3 Code 桌面应用版本是两套独立的版本号。
+
+`0.1.10` 调整了设置页语言目录和快捷键资源，建议使用汉化工具 `0.0.4` 或更新版本。升级 T3 Code 后，如仍有英文或旧补丁提示已安装，请获取新版汉化工具并运行 `upgrade`；仅运行旧工具的 `apply` 不会下载新词典或规则。
 
 > 以下在线命令需维护者先将本仓库脚本推送到 GitHub `main`；npm 方式还需发布 `t3code-zh-cn`。本地验证方法见文末。
 
@@ -23,14 +36,14 @@ npx t3code-zh-cn@latest restore
 npx t3code-zh-cn@latest upgrade
 ```
 
-指定汉化工具版本（以 `0.0.3` 为例，兼容 Windows 版 T3 Code `0.1.8`、`0.1.9`，最新持续更新中，更早版本暂不支持）：
+指定汉化工具版本（以 `0.0.4` 为例，对应 T3 Code `0.1.10`；需维护者先发布对应 npm 版本，其他版本请参考上方适配表）：
 
 ```sh
 # 一键汉化：使用指定版本并自动备份原始资源
-npx t3code-zh-cn@0.0.3 apply
+npx t3code-zh-cn@0.0.4 apply
 
 # 已汉化时：切换到指定版本的补丁
-npx t3code-zh-cn@0.0.3 upgrade
+npx t3code-zh-cn@0.0.4 upgrade
 ```
 
 这里指定的是汉化工具版本，不会安装或降级 T3 Code 桌面应用。选择其他已发布的汉化工具版本时，请确认其对应的 T3 Code 兼容范围。
@@ -65,61 +78,6 @@ t3code-zh-cn upgrade
 | `status` | 查看当前状态和备份目录；不指定命令时的默认动作 |
 | `--help` | 显示帮助 |
 
-
-## 方式二：直接执行脚本，无需安装 npm
-
-脚本优先使用应用自带的 Node 运行时，无需单独安装 Node.js。
-
-### Windows：在 PowerShell 中执行
-
-一键汉化：
-
-```powershell
-& ([scriptblock]::Create((irm 'https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.ps1'))) -Mode apply
-```
-
-一键恢复英文：
-
-```powershell
-& ([scriptblock]::Create((irm 'https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.ps1'))) -Mode restore
-```
-
-一键更新汉化（下载最新脚本和词典后重新应用）：
-
-```powershell
-& ([scriptblock]::Create((irm 'https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.ps1'))) -Mode upgrade
-```
-
-将 `-Mode` 改为 `check` 可只读检查翻译结果，改为 `status` 可查看当前状态。命令需要联网下载本仓库文件；执行过程中不会自动结束应用进程。
-
-默认探测 `%LOCALAPPDATA%\Programs\t3code`。自定义安装位置时，在命令末尾加上 `-InstallDir 'D:\Apps\t3code'`：
-
-```powershell
-& ([scriptblock]::Create((irm 'https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.ps1'))) -Mode apply -InstallDir 'D:\Apps\t3code'
-```
-
-### macOS：在终端中执行
-
-默认探测 `/Applications/T3 Code.app/Contents` 和 `~/Applications/T3 Code.app/Contents`。
-
-```sh
-# 一键汉化
-curl -fsSL https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.sh | sh -s -- apply
-
-# 一键恢复英文
-curl -fsSL https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.sh | sh -s -- restore
-
-# 一键更新汉化
-curl -fsSL https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.sh | sh -s -- upgrade
-```
-
-自定义安装位置时，在动作后加上 `.app` 内的 `Contents` 目录：
-
-```sh
-curl -fsSL https://raw.githubusercontent.com/Codepql/t3code-zh-cn/main/install.sh | sh -s -- check '/Applications/T3 Code.app/Contents'
-```
-
-macOS 入口尝试使用应用内的 `Contents/MacOS/T3 Code` 运行时；找不到时回退到系统 Node.js 18+。修改应用包可能触发代码签名或 Gatekeeper 校验，当前应先在副本上测试并准备重新签名。注意：macOS 版从 0.1.9 起不再包含 `server.asar`，暂不支持汉化。
 
 ## 成功后怎么使用
 
